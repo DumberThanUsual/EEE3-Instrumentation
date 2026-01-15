@@ -1,0 +1,41 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "759706a8-922e-4b06-8aed-409771f66c1e")
+	(paper "A4")
+	(lib_symbols)
+	(text "Output voltage ranges\n0.05 to 5V rms?"
+		(exclude_from_sim no)
+		(at 39.37 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8d6c4163-9509-49d4-bef4-f13a9e8ceb96")
+	)
+	(text "DAC output:\n1.25V RMS - 1.75VPk "
+		(exclude_from_sim no)
+		(at 38.1 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8f99c91b-802b-4d92-9216-e2a2f0a5c3ba")
+	)
+	(hierarchical_label "Out"
+		(shape output)
+		(at 165.1 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4cd827b0-3d5b-4933-892a-148386e60ea2")
+	)
+)
