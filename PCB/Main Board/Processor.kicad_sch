@@ -4,5 +4,11 @@
 	(generator_version "9.0")
 	(uuid "3b33d459-0d49-4c1d-b6fc-19d9dae31d5b")
 	(paper "A4")
+	(title_block
+		(date "2026-01-15")
+		(rev "Draft")
+		(company "Harry and Yuki - EEE3 Instrumentation")
+		(comment 1 "Work in Progress")
+	)
 	(lib_symbols)
 )

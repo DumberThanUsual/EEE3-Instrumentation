@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "5bf9ecb2-eb04-4ed5-8dde-edcd8ff0aff0")
 	(paper "A4")
+	(title_block
+		(date "2026-01-15")
+		(rev "Draft")
+		(company "Harry and Yuki - EEE3 Instrumentation")
+		(comment 1 "Work in Progress")
+	)
 	(lib_symbols)
 	(hierarchical_label "In"
 		(shape bidirectional)

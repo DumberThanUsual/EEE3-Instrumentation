@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "20aae4b7-3fb8-4924-82e8-1e7a29a313f8")
 	(paper "A4")
+	(title_block
+		(date "2026-01-15")
+		(rev "Draft")
+		(company "Harry and Yuki - EEE3 Instrumentation")
+		(comment 1 "Work in Progress")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
@@ -248,6 +254,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 38.1) (xy 152.4 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e850808-f243-42b4-9111-9b2d99509382")
+	)
+	(wire
+		(pts
 			(xy 177.8 111.76) (xy 190.5 111.76)
 		)
 		(stroke
@@ -275,6 +291,26 @@
 			(type default)
 		)
 		(uuid "4f550a76-b870-453d-ad02-5d9f5218ab30")
+	)
+	(wire
+		(pts
+			(xy 88.9 35.56) (xy 152.4 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56a97348-8d5f-4dce-b550-9160fb48d35a")
+	)
+	(wire
+		(pts
+			(xy 152.4 76.2) (xy 88.9 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57f5497d-c194-4502-9b17-4aa0f82b5e38")
 	)
 	(wire
 		(pts
@@ -335,6 +371,16 @@
 			(type default)
 		)
 		(uuid "b80ac2cf-01d8-4292-9885-acd4ef9d35b6")
+	)
+	(wire
+		(pts
+			(xy 88.9 114.3) (xy 152.4 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb134f2b-7e28-4e75-8517-cba4e494038f")
 	)
 	(wire
 		(pts
@@ -680,6 +726,26 @@
 				(justify right)
 			)
 		)
+		(pin "Bias" input
+			(at 152.4 35.56 180)
+			(uuid "884ba47b-3192-4d5c-bab8-b2da1391a886")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In" input
+			(at 152.4 38.1 180)
+			(uuid "b30b62e7-abac-4d1e-8ea4-aa0b3d443b78")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
@@ -928,9 +994,59 @@
 				(justify left)
 			)
 		)
-		(pin "x3" input
+		(pin "ACC2.7k" input
+			(at 152.4 66.04 180)
+			(uuid "5471bb17-8248-459e-a83d-07a9808267b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACC27k" input
+			(at 152.4 68.58 180)
+			(uuid "cd4098e8-e6c9-4583-9aa6-a09d5ef7aed5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACC270" input
+			(at 152.4 71.12 180)
+			(uuid "e26addd3-eca0-47f9-b0a2-7eab00bdca28")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACCen" input
+			(at 152.4 73.66 180)
+			(uuid "b982def8-a933-4ef8-8451-a14a5937bd0b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "InAmpx3" input
+			(at 152.4 78.74 180)
+			(uuid "d1cf83a7-8aaa-4a14-966d-7bf91afac516")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "InAmpx10" input
 			(at 152.4 81.28 180)
-			(uuid "127200ca-da2d-46f4-a5ed-82b72140b956")
+			(uuid "f9bdf9df-8ddd-41e3-86d3-165cdb22b9f3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -938,19 +1054,19 @@
 				(justify left)
 			)
 		)
-		(pin "x10" input
-			(at 152.4 83.82 180)
-			(uuid "5a82c9d9-5e6f-43dc-9af5-4b1ec896c7d8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "x30{slash}x100" input
+		(pin "InvAmpx10" input
 			(at 152.4 86.36 180)
-			(uuid "48832dc9-7118-4f00-95b3-cb157c6e92a8")
+			(uuid "3cbcaf41-740c-44c3-a83e-84681f352a0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "InvAmp{slash}2" input
+			(at 152.4 83.82 180)
+			(uuid "aa442f0b-bca5-453b-b454-46c5e1a1aad6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1092,9 +1208,59 @@
 				(justify left)
 			)
 		)
-		(pin "x3" input
+		(pin "ACC2.7k" input
+			(at 152.4 104.14 180)
+			(uuid "287adceb-9e08-4711-8a55-2dfcec0b1828")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACC27k" input
+			(at 152.4 106.68 180)
+			(uuid "59177e88-e1d7-4b60-9830-8a2007957866")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACC270" input
+			(at 152.4 109.22 180)
+			(uuid "eb285ce5-e0a1-4215-92e3-2b14d8b30cb9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACCen" input
+			(at 152.4 111.76 180)
+			(uuid "5d121fb9-1cde-4e77-a6b2-29a57b8dfbcc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "InAmpx3" input
+			(at 152.4 116.84 180)
+			(uuid "29593eb9-3931-4bf8-9c7a-955535c38a12")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "InAmpx10" input
 			(at 152.4 119.38 180)
-			(uuid "bd3973d3-562a-4ce5-ae00-b5c58c447d8f")
+			(uuid "105d5e4a-3c1c-4240-a1fd-df471ed34c97")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1102,19 +1268,19 @@
 				(justify left)
 			)
 		)
-		(pin "x10" input
-			(at 152.4 121.92 180)
-			(uuid "9947b5cb-bc92-4ce9-9951-5330474d20c1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "x30{slash}x100" input
+		(pin "InvAmpx10" input
 			(at 152.4 124.46 180)
-			(uuid "832b7d42-62e7-4791-a76d-8869644a637f")
+			(uuid "46e72e7d-a185-4a37-bcff-966d26a77432")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "InvAmp{slash}2" input
+			(at 152.4 121.92 180)
+			(uuid "2e4a8bf9-acac-47ff-be2c-d65c696db058")
 			(effects
 				(font
 					(size 1.27 1.27)
