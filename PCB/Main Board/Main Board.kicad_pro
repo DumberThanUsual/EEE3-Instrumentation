@@ -397,7 +397,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../../Schematic/Main Board/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -452,6 +452,10 @@
     [
       "c2f436a7-c2ca-471c-8f44-592cccd95dfe",
       "Input Protection3"
+    ],
+    [
+      "2542314c-0b08-493b-856b-65d680d18812",
+      "Resistor Selector"
     ]
   ],
   "text_variables": {}
