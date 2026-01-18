@@ -8,6 +8,953 @@
 		(company "Harry and Yuki - EEE3 Instrumentation")
 	)
 	(lib_symbols
+		(symbol "Analog_Switch:DG411xY"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.175 5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "DG411xY"
+				(at -3.175 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/DG411-DG413.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Quad SPST Monolithic CMOS Analog Switches, normally ON, 17Ohm Ron, SOIC-16"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "CMOS Analog Switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x9.9mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DG411xY_1_1"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -2.794 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -3.81 2.54)
+					(end 3.81 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.762) (xy 2.54 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.159 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.254) (xy 0 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.254) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 0 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.159 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 2.794 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "DG411xY_2_1"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -2.794 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -3.81 2.54)
+					(end 3.81 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.762) (xy 2.54 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.159 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.254) (xy 0 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.254) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 0 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.159 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 2.794 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "DG411xY_3_1"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -2.794 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -3.81 2.54)
+					(end 3.81 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.762) (xy 2.54 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.159 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.254) (xy 0 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.254) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 0 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.159 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 2.794 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "DG411xY_4_1"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -2.794 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -3.81 2.54)
+					(end 3.81 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.762) (xy 2.54 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.159 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.254) (xy 0 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.254) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 0 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.159 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 2.794 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "DG411xY_5_0"
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 12.7 270)
+					(length 2.54)
+					(name "VL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -12.7 90)
+					(length 2.54)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "DG411xY_5_1"
+				(rectangle
+					(start -3.81 10.16)
+					(end 6.35 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -329,40 +1276,30 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Relay:Fujitsu_FTR-LYAA005x"
+		(symbol "Relay:COTO_3602_Split"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "K"
-				(at 11.43 3.81 0)
+				(at 5.08 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Value" "Fujitsu_FTR-LYAA005x"
-				(at 11.43 1.27 0)
+			(property "Value" "COTO_3602_Split"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Footprint" "Relay_THT:Relay_SPST-NO_Fujitsu_FTR-LYAA005x_FormA_Vertical"
-				(at 11.43 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.fujitsu.com/sg/imagesgig5/ftr-ly.pdf"
-				(at 17.78 -3.81 0)
+			(property "Footprint" "Relay_THT:Relay_DPST_COTO_3602"
+				(at 5.08 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -371,7 +1308,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Relay, SPST Form A, vertical mount, 5-60V coil, 6A, 250VAC, 28 x 5 x 15mm"
+			(property "Datasheet" "https://cotorelay.com/wp-content/uploads/2014/09/3600_series_reed_relay_datasheet.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -380,7 +1317,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "6A SPST-NO Relay"
+			(property "Description" "Low thermal EMF DPST-NO reed relay, 150V 0.25A, 30.48x16.76x12.06mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -389,7 +1326,15 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Relay*Fujitsu*FTR?LYA*"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "reed relay low thermal emf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -398,24 +1343,29 @@
 					(hide yes)
 				)
 			)
-			(symbol "Fujitsu_FTR-LYAA005x_0_0"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 2.54) (xy 6.985 3.175) (xy 7.62 3.81)
+			(property "ki_fp_filters" "*Relay*COTO*3602*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+					(hide yes)
+				)
+			)
+			(symbol "COTO_3602_Split_1_0"
+				(text "+"
+					(at 0.889 2.921 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
 			)
-			(symbol "Fujitsu_FTR-LYAA005x_0_1"
+			(symbol "COTO_3602_Split_1_1"
 				(rectangle
-					(start -10.16 5.08)
-					(end 10.16 -5.08)
+					(start -3.175 1.905)
+					(end 3.175 -1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -424,20 +1374,9 @@
 						(type background)
 					)
 				)
-				(rectangle
-					(start -8.255 1.905)
-					(end -1.905 -1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
-						(xy -7.62 -1.905) (xy -2.54 1.905)
+						(xy -2.54 -1.905) (xy 2.54 1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -449,7 +1388,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 5.08) (xy -5.08 1.905)
+						(xy 0 5.08) (xy 0 1.905)
 					)
 					(stroke
 						(width 0)
@@ -461,10 +1400,102 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 -5.08) (xy -5.08 -1.905)
+						(xy 0 -5.08) (xy 0 -1.905)
 					)
 					(stroke
 						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy 3.81 5.08) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 3.81) (xy 3.81 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type dash)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "COTO_3602_Split_2_1"
+				(polyline
+					(pts
+						(xy -3.175 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -485,55 +1516,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.635 0) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 3.175 3.81)
+						(xy 0 2.54) (xy -1.905 -3.81)
 					)
 					(stroke
 						(width 0.508)
@@ -545,7 +1528,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -2.54) (xy 5.08 -5.08)
+						(xy 0 2.54) (xy 0 5.08)
 					)
 					(stroke
 						(width 0)
@@ -555,46 +1538,20 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "Fujitsu_FTR-LYAA005x_1_1"
-				(pin passive line
-					(at -5.08 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0 -2.54) (xy -0.635 -3.175) (xy 0 -3.81)
 					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 90)
+					(at 0 7.62 270)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -612,7 +1569,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 7.62 270)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -630,12 +1587,110 @@
 					)
 				)
 			)
+			(symbol "COTO_3602_Split_3_1"
+				(polyline
+					(pts
+						(xy -3.175 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -1.905 -3.81)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0 -2.54) (xy -0.635 -3.175) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
 	)
 	(rectangle
-		(start 101.6 25.4)
-		(end 127 57.15)
+		(start 127 12.7)
+		(end 152.4 44.45)
 		(stroke
 			(width 0)
 			(type dash)
@@ -645,9 +1700,43 @@
 		)
 		(uuid dbe6edc5-d7f3-4a45-bf1d-c00ba254acd7)
 	)
+	(rectangle
+		(start 31.75 146.05)
+		(end 95.25 196.85)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f30514ce-9b06-4411-8aa9-77041662a28d)
+	)
+	(text "Optional\nFor higher ranges"
+		(exclude_from_sim no)
+		(at 39.37 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1ba14530-c593-4b40-8b73-654391acb03b")
+	)
+	(text "Cut if\npopulating"
+		(exclude_from_sim no)
+		(at 60.96 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "e14f89b1-b110-4a09-8138-c4d0bbc12a51")
+	)
 	(text "Optional\nFor low-z output"
 		(exclude_from_sim no)
-		(at 102.87 26.67 0)
+		(at 128.27 13.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -656,9 +1745,291 @@
 		)
 		(uuid "f40086ae-72fc-4e77-9f47-c056c24de4fe")
 	)
+	(junction
+		(at 101.6 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17c84577-6cbb-4cef-85e4-d42161ff6f98")
+	)
+	(junction
+		(at 101.6 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "855f065a-27e9-4758-8638-e932fcab7e0d")
+	)
+	(junction
+		(at 25.4 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8889dd08-32a7-4f6e-a774-78972798473f")
+	)
+	(junction
+		(at 88.9 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a242e249-8967-4b51-8304-79f8ec77d606")
+	)
+	(junction
+		(at 38.1 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b710f079-27bf-4281-b4db-fe18423ab6df")
+	)
+	(junction
+		(at 127 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de587317-ec03-45eb-9395-6843b1d97735")
+	)
+	(junction
+		(at 63.5 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6302584-acb3-476a-9791-feea9e11fa82")
+	)
+	(wire
+		(pts
+			(xy 25.4 190.5) (xy 38.1 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15bb595f-42a8-4a5d-99c3-28b715a56948")
+	)
+	(wire
+		(pts
+			(xy 101.6 165.1) (xy 110.49 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15f06a70-7af6-43aa-9544-fef0bda1c466")
+	)
+	(wire
+		(pts
+			(xy 88.9 177.8) (xy 88.9 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab45eee-c37a-42a3-91fa-f8336b7f0cfe")
+	)
+	(wire
+		(pts
+			(xy 63.5 177.8) (xy 72.39 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cdfbe61-0b61-4359-8a28-ac32bc2fa241")
+	)
+	(wire
+		(pts
+			(xy 101.6 152.4) (xy 106.68 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "309dbc64-6b95-40a7-9506-11fc64dca40c")
+	)
+	(wire
+		(pts
+			(xy 101.6 152.4) (xy 101.6 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4740854d-bd67-4146-a67d-b66ce220eaaa")
+	)
+	(wire
+		(pts
+			(xy 127 152.4) (xy 135.89 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60721f89-9bd9-4219-8591-c4bd0a014c1a")
+	)
+	(wire
+		(pts
+			(xy 121.92 152.4) (xy 127 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67f67958-3955-43d3-b72f-494e4dabae4c")
+	)
+	(wire
+		(pts
+			(xy 58.42 177.8) (xy 63.5 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84afbfa8-bbe0-419e-b020-8bbacaaaad4f")
+	)
+	(wire
+		(pts
+			(xy 25.4 139.7) (xy 59.69 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e5ce462-d2e0-4a75-a697-c7f817654372")
+	)
+	(wire
+		(pts
+			(xy 127 151.13) (xy 127 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9067709c-729d-4b0f-9b69-56bf26acf42a")
+	)
+	(wire
+		(pts
+			(xy 43.18 177.8) (xy 38.1 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a2c0beb-4da4-45d8-83dc-8423b5e2bf7e")
+	)
+	(wire
+		(pts
+			(xy 25.4 139.7) (xy 25.4 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a352418e-7c03-46bc-bfbf-1b787b1b3e01")
+	)
+	(wire
+		(pts
+			(xy 63.5 165.1) (xy 63.5 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a70648b7-7f75-4de1-b496-687ad0145e69")
+	)
+	(wire
+		(pts
+			(xy 60.96 190.5) (xy 88.9 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a755e53c-a156-45df-8bd9-a7af835ce2fa")
+	)
+	(wire
+		(pts
+			(xy 80.01 177.8) (xy 88.9 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae5975b0-0554-4f2e-9ec9-30998287085c")
+	)
+	(wire
+		(pts
+			(xy 63.5 165.1) (xy 68.58 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b00b5e73-1cec-4edc-9255-468cd82737d2")
+	)
+	(wire
+		(pts
+			(xy 88.9 190.5) (xy 139.7 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5c0af2b-928e-47f3-8d97-1c17cdee674c")
+	)
+	(wire
+		(pts
+			(xy 83.82 165.1) (xy 101.6 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca3f78b8-66bc-4eb1-9871-c361c8839511")
+	)
+	(wire
+		(pts
+			(xy 38.1 190.5) (xy 53.34 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd62c46f-582a-4d66-8e62-953de1fdfc04")
+	)
+	(wire
+		(pts
+			(xy 101.6 139.7) (xy 101.6 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2268590-fa51-45f5-86f4-269a6dc2fe41")
+	)
+	(wire
+		(pts
+			(xy 19.05 190.5) (xy 25.4 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eed18dee-4efa-4c25-995b-e404c86bc9bd")
+	)
+	(wire
+		(pts
+			(xy 38.1 177.8) (xy 38.1 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7d1a074-093a-4fc1-aacd-7468fd4b92ed")
+	)
+	(wire
+		(pts
+			(xy 67.31 139.7) (xy 101.6 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9e7cd87-0764-47b5-9c01-8f7b897245bb")
+	)
 	(hierarchical_label "Out"
 		(shape output)
-		(at 165.1 152.4 0)
+		(at 139.7 190.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -669,7 +2040,7 @@
 	)
 	(hierarchical_label "In"
 		(shape input)
-		(at 50.8 152.4 180)
+		(at 19.05 190.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -680,7 +2051,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 113.03 96.52 90)
+		(at 139.7 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -689,7 +2060,7 @@
 		(fields_autoplaced yes)
 		(uuid "015f0e53-2695-4d9d-b964-3114d729c8c4")
 		(property "Reference" "R?"
-			(at 113.03 90.17 90)
+			(at 139.7 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -697,7 +2068,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 113.03 92.71 90)
+			(at 139.7 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -705,7 +2076,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 98.298 90)
+			(at 139.7 97.028 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -714,7 +2085,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 96.52 0)
+			(at 139.7 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -723,7 +2094,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 113.03 96.52 0)
+			(at 139.7 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -747,8 +2118,178 @@
 		)
 	)
 	(symbol
+		(lib_id "Relay:COTO_3602_Split")
+		(at 114.3 152.4 270)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f9572c2-8ca5-4f7c-8d45-bedfde759ac6")
+		(property "Reference" "K?"
+			(at 114.3 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "COTO_3602_Split"
+			(at 114.3 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_DPDT_Omron_G5V-2"
+			(at 111.76 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cotorelay.com/wp-content/uploads/2014/09/3600_series_reed_relay_datasheet.pdf"
+			(at 114.3 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low thermal EMF DPST-NO reed relay, 150V 0.25A, 30.48x16.76x12.06mm"
+			(at 114.3 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A2"
+			(uuid "9b062c98-7945-4cc4-9c46-b4252fe7e2b2")
+		)
+		(pin "A1"
+			(uuid "2b53bf2a-58c3-4ab5-95b4-fcb16c065c5b")
+		)
+		(pin "13"
+			(uuid "54178107-f1c3-47dc-a969-b4eab719e9d6")
+		)
+		(pin "SH"
+			(uuid "3f63742b-8e3d-4d41-9564-aa6c4dd08916")
+		)
+		(pin "14"
+			(uuid "cc4a2ff8-1b39-4f01-b642-0d9d09682377")
+		)
+		(pin "23"
+			(uuid "8565045d-7db2-4077-a9f5-561be4031344")
+		)
+		(pin "24"
+			(uuid "d782d041-7f1b-4313-8839-f245411f2abd")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/6b7fef71-3444-4c8f-b2e2-502774ba9b51/2542314c-0b08-493b-856b-65d680d18812"
+					(reference "K?")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:COTO_3602_Split")
+		(at 222.25 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "231b5641-9317-4779-9b2a-e3ab283916f7")
+		(property "Reference" "K?"
+			(at 227.33 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "COTO_3602_Split"
+			(at 227.33 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_DPDT_Omron_G5V-2"
+			(at 227.33 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cotorelay.com/wp-content/uploads/2014/09/3600_series_reed_relay_datasheet.pdf"
+			(at 222.25 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low thermal EMF DPST-NO reed relay, 150V 0.25A, 30.48x16.76x12.06mm"
+			(at 222.25 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A2"
+			(uuid "9b062c98-7945-4cc4-9c46-b4252fe7e2b2")
+		)
+		(pin "A1"
+			(uuid "2b53bf2a-58c3-4ab5-95b4-fcb16c065c5b")
+		)
+		(pin "13"
+			(uuid "e61e5115-5d26-42e3-9e5c-28513c08e31e")
+		)
+		(pin "SH"
+			(uuid "3f63742b-8e3d-4d41-9564-aa6c4dd08916")
+		)
+		(pin "14"
+			(uuid "a6e2b12f-d133-4b05-b8bb-1a8f7c0e147b")
+		)
+		(pin "23"
+			(uuid "8565045d-7db2-4077-a9f5-561be4031344")
+		)
+		(pin "24"
+			(uuid "d782d041-7f1b-4313-8839-f245411f2abd")
+		)
+		(instances
+			(project ""
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/6b7fef71-3444-4c8f-b2e2-502774ba9b51/2542314c-0b08-493b-856b-65d680d18812"
+					(reference "K?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 67.31 139.7 90)
+		(at 63.5 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -756,15 +2297,16 @@
 		(dnp no)
 		(uuid "32e4225b-1926-410f-890a-767bc37c4b80")
 		(property "Reference" "JP?"
-			(at 63.5 139.7 0)
+			(at 63.5 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "SolderJumper_2_Bridged"
-			(at 63.5 139.7 0)
+			(at 63.5 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -773,7 +2315,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
-			(at 67.31 139.7 0)
+			(at 63.5 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -782,7 +2324,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 67.31 139.7 0)
+			(at 63.5 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -791,7 +2333,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-			(at 67.31 139.7 0)
+			(at 63.5 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -816,7 +2358,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 114.3 38.1 90)
+		(at 139.7 25.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -825,7 +2367,7 @@
 		(fields_autoplaced yes)
 		(uuid "33caef09-5ae7-4988-a900-252625786a0b")
 		(property "Reference" "R?"
-			(at 114.3 31.75 90)
+			(at 139.7 19.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -833,7 +2375,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 114.3 34.29 90)
+			(at 139.7 21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -841,7 +2383,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 39.878 90)
+			(at 139.7 27.178 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -850,7 +2392,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 38.1 0)
+			(at 139.7 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -859,7 +2401,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 114.3 38.1 0)
+			(at 139.7 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -884,7 +2426,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 113.03 134.62 90)
+		(at 139.7 152.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -893,7 +2435,7 @@
 		(fields_autoplaced yes)
 		(uuid "62121bc8-c885-4bba-9e89-06b1a277a71a")
 		(property "Reference" "R?"
-			(at 113.03 128.27 90)
+			(at 139.7 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -901,7 +2443,7 @@
 			)
 		)
 		(property "Value" "30k"
-			(at 113.03 130.81 90)
+			(at 139.7 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -909,7 +2451,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 136.398 90)
+			(at 139.7 154.178 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -918,7 +2460,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 134.62 0)
+			(at 139.7 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -927,7 +2469,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 113.03 134.62 0)
+			(at 139.7 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -952,7 +2494,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 113.03 109.22 90)
+		(at 139.7 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -961,7 +2503,7 @@
 		(fields_autoplaced yes)
 		(uuid "663c91c4-5cae-4b75-820f-d146ec7f8bf4")
 		(property "Reference" "R?"
-			(at 113.03 102.87 90)
+			(at 139.7 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -969,7 +2511,7 @@
 			)
 		)
 		(property "Value" "3k"
-			(at 113.03 105.41 90)
+			(at 139.7 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,7 +2519,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 110.998 90)
+			(at 139.7 116.078 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -986,7 +2528,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 109.22 0)
+			(at 139.7 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -995,7 +2537,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 113.03 109.22 0)
+			(at 139.7 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1019,86 +2561,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:Fujitsu_FTR-LYAA005x")
-		(at 113.03 165.1 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "746036ff-51aa-4683-9229-b2bcfd5321b1")
-		(property "Reference" "K?"
-			(at 113.03 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fujitsu_FTR-LYAA005x"
-			(at 111.7601 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_SPST-NO_Fujitsu_FTR-LYAA005x_FormA_Vertical"
-			(at 111.76 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.fujitsu.com/sg/imagesgig5/ftr-ly.pdf"
-			(at 109.22 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Relay, SPST Form A, vertical mount, 5-60V coil, 6A, 250VAC, 28 x 5 x 15mm"
-			(at 113.03 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "14"
-			(uuid "c42c4fa2-82f4-43ab-8ea3-895476104f28")
-		)
-		(pin "13"
-			(uuid "a71639b1-48c4-475e-bf5b-f82d14667b78")
-		)
-		(pin "A2"
-			(uuid "a8f57018-efa0-48f6-98fe-084fdeb60d39")
-		)
-		(pin "A1"
-			(uuid "ffe5c00b-0e8b-4cbf-a71b-264d77ba0638")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/6b7fef71-3444-4c8f-b2e2-502774ba9b51/2542314c-0b08-493b-856b-65d680d18812"
-					(reference "K?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 113.03 147.32 90)
+		(at 114.3 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1107,7 +2571,7 @@
 		(fields_autoplaced yes)
 		(uuid "9604b2f3-2d0a-4f93-9165-13a32d413da7")
 		(property "Reference" "R?"
-			(at 113.03 140.97 90)
+			(at 114.3 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1115,7 +2579,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 113.03 143.51 90)
+			(at 114.3 161.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1123,7 +2587,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 149.098 90)
+			(at 114.3 166.878 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1132,7 +2596,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 147.32 0)
+			(at 114.3 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1141,7 +2605,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 113.03 147.32 0)
+			(at 114.3 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1166,7 +2630,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 113.03 83.82 90)
+		(at 139.7 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1175,7 +2639,7 @@
 		(fields_autoplaced yes)
 		(uuid "97981d2d-c0ee-43c1-96f9-69a8f7ed88d9")
 		(property "Reference" "R?"
-			(at 113.03 77.47 90)
+			(at 139.7 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1183,7 +2647,7 @@
 			)
 		)
 		(property "Value" "300"
-			(at 113.03 80.01 90)
+			(at 139.7 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1191,7 +2655,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 85.598 90)
+			(at 139.7 77.978 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1200,7 +2664,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 83.82 0)
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1209,7 +2673,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 113.03 83.82 0)
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1234,7 +2698,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 114.3 50.8 90)
+		(at 139.7 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1243,7 +2707,7 @@
 		(fields_autoplaced yes)
 		(uuid "a3806d30-95de-4bd2-85fb-c011cedb1132")
 		(property "Reference" "R?"
-			(at 114.3 44.45 90)
+			(at 139.7 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1251,7 +2715,7 @@
 			)
 		)
 		(property "Value" "30"
-			(at 114.3 46.99 90)
+			(at 139.7 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1259,7 +2723,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 52.578 90)
+			(at 139.7 39.878 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1268,7 +2732,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 50.8 0)
+			(at 139.7 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1277,7 +2741,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 114.3 50.8 0)
+			(at 139.7 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1301,8 +2765,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Analog_Switch:DG411xY")
+		(at 127 124.46 270)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b300f5e9-a3d0-47e1-b611-fcba7ec61570")
+		(property "Reference" "U?"
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "DG411xY"
+			(at 123.19 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+			(at 124.46 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/DG411-DG413.pdf"
+			(at 127 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad SPST Monolithic CMOS Analog Switches, normally ON, 17Ohm Ron, SOIC-16"
+			(at 127 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "437fa013-9b01-4b24-a892-9023e0b63b3e")
+		)
+		(pin "12"
+			(uuid "a37c6ce9-3167-41e5-9e35-9f50bc129c1e")
+		)
+		(pin "2"
+			(uuid "2d541462-023d-4672-b01d-761a1b73d851")
+		)
+		(pin "15"
+			(uuid "ff3b28c9-2259-4702-9e1f-76d0f698b82d")
+		)
+		(pin "9"
+			(uuid "094fb8bb-6e75-42a2-8f57-0e0ac53c3065")
+		)
+		(pin "4"
+			(uuid "85816578-0f9d-42c3-93df-d1c601222a0f")
+		)
+		(pin "5"
+			(uuid "0608424e-0886-4e1d-aab8-e123941177ae")
+		)
+		(pin "14"
+			(uuid "ded63427-a9d7-4c17-a71f-ba5cafd791a4")
+		)
+		(pin "1"
+			(uuid "7ca6e828-71d0-46bc-955c-2ab8ab08e2f9")
+		)
+		(pin "11"
+			(uuid "221e8c92-58ea-43bd-a918-d01c297dd52a")
+		)
+		(pin "16"
+			(uuid "bf5828de-5836-4c44-ba9b-a9e688a028e9")
+		)
+		(pin "3"
+			(uuid "868376a7-1c08-4243-8b7c-3e7ffb1e73d6")
+		)
+		(pin "6"
+			(uuid "0aed1cbc-a014-4da9-a63d-24043a4e49f1")
+		)
+		(pin "8"
+			(uuid "de4377c9-5723-44a9-8453-57ced5441add")
+		)
+		(pin "7"
+			(uuid "d700b39c-3c9a-4f5a-805e-4a08dae74846")
+		)
+		(pin "10"
+			(uuid "965d597a-0233-453e-ba7a-010ce78357f0")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/6b7fef71-3444-4c8f-b2e2-502774ba9b51/2542314c-0b08-493b-856b-65d680d18812"
+					(reference "U?")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 113.03 71.12 90)
+		(at 139.7 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1311,7 +2886,7 @@
 		(fields_autoplaced yes)
 		(uuid "c286cfe5-5787-4a6e-81b7-cca0049bbd1e")
 		(property "Reference" "R?"
-			(at 113.03 64.77 90)
+			(at 139.7 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1319,7 +2894,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 113.03 67.31 90)
+			(at 139.7 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1327,7 +2902,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 72.898 90)
+			(at 139.7 58.928 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1336,7 +2911,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 71.12 0)
+			(at 139.7 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1345,7 +2920,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 113.03 71.12 0)
+			(at 139.7 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1369,8 +2944,176 @@
 		)
 	)
 	(symbol
+		(lib_id "Relay:COTO_3602_Split")
+		(at 76.2 165.1 270)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c46d6172-255b-46ef-b7a1-90895999e970")
+		(property "Reference" "K?"
+			(at 76.2 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "COTO_3602_Split"
+			(at 76.2 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_DPDT_Omron_G5V-2"
+			(at 73.66 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cotorelay.com/wp-content/uploads/2014/09/3600_series_reed_relay_datasheet.pdf"
+			(at 76.2 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low thermal EMF DPST-NO reed relay, 150V 0.25A, 30.48x16.76x12.06mm"
+			(at 76.2 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A2"
+			(uuid "9b062c98-7945-4cc4-9c46-b4252fe7e2b2")
+		)
+		(pin "A1"
+			(uuid "2b53bf2a-58c3-4ab5-95b4-fcb16c065c5b")
+		)
+		(pin "13"
+			(uuid "17cf120b-5bbb-4422-826c-1797d837ae76")
+		)
+		(pin "SH"
+			(uuid "3f63742b-8e3d-4d41-9564-aa6c4dd08916")
+		)
+		(pin "14"
+			(uuid "45d1841f-b369-43d0-8491-230a3b4f2c86")
+		)
+		(pin "23"
+			(uuid "8565045d-7db2-4077-a9f5-561be4031344")
+		)
+		(pin "24"
+			(uuid "d782d041-7f1b-4313-8839-f245411f2abd")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/6b7fef71-3444-4c8f-b2e2-502774ba9b51/2542314c-0b08-493b-856b-65d680d18812"
+					(reference "K?")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:COTO_3602_Split")
+		(at 50.8 177.8 270)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce28e8b8-3e3d-4a4e-8ef1-15f7305e4c4d")
+		(property "Reference" "K?"
+			(at 50.8 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "COTO_3602_Split"
+			(at 50.8 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_DPDT_Omron_G5V-2"
+			(at 48.26 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cotorelay.com/wp-content/uploads/2014/09/3600_series_reed_relay_datasheet.pdf"
+			(at 50.8 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low thermal EMF DPST-NO reed relay, 150V 0.25A, 30.48x16.76x12.06mm"
+			(at 50.8 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A2"
+			(uuid "9b062c98-7945-4cc4-9c46-b4252fe7e2b2")
+		)
+		(pin "A1"
+			(uuid "2b53bf2a-58c3-4ab5-95b4-fcb16c065c5b")
+		)
+		(pin "13"
+			(uuid "e61e5115-5d26-42e3-9e5c-28513c08e31e")
+		)
+		(pin "SH"
+			(uuid "3f63742b-8e3d-4d41-9564-aa6c4dd08916")
+		)
+		(pin "14"
+			(uuid "a6e2b12f-d133-4b05-b8bb-1a8f7c0e147b")
+		)
+		(pin "23"
+			(uuid "8565045d-7db2-4077-a9f5-561be4031344")
+		)
+		(pin "24"
+			(uuid "d782d041-7f1b-4313-8839-f245411f2abd")
+		)
+		(instances
+			(project ""
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/6b7fef71-3444-4c8f-b2e2-502774ba9b51/2542314c-0b08-493b-856b-65d680d18812"
+					(reference "K?")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 113.03 121.92 90)
+		(at 139.7 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1379,7 +3122,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4613bc5-0e5b-48c4-ba0c-b4712c13b47e")
 		(property "Reference" "R?"
-			(at 113.03 115.57 90)
+			(at 139.7 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1387,7 +3130,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 113.03 118.11 90)
+			(at 139.7 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1395,7 +3138,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 123.698 90)
+			(at 139.7 135.128 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1404,7 +3147,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 121.92 0)
+			(at 139.7 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1413,7 +3156,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 113.03 121.92 0)
+			(at 139.7 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1438,7 +3181,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 138.43 160.02 90)
+		(at 76.2 177.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1447,7 +3190,7 @@
 		(fields_autoplaced yes)
 		(uuid "edcb5877-f438-4f53-ac6b-547fad5de6d9")
 		(property "Reference" "R?"
-			(at 138.43 153.67 90)
+			(at 76.2 171.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1455,7 +3198,7 @@
 			)
 		)
 		(property "Value" "432k"
-			(at 138.43 156.21 90)
+			(at 76.2 173.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1463,7 +3206,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 161.798 90)
+			(at 76.2 179.578 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1472,7 +3215,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 138.43 160.02 0)
+			(at 76.2 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1481,7 +3224,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 138.43 160.02 0)
+			(at 76.2 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1505,8 +3248,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Analog_Switch:DG411xY")
+		(at 127 143.51 270)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eefd63d4-28cc-47fb-92c2-7a77c74882bb")
+		(property "Reference" "U?"
+			(at 120.65 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "DG411xY"
+			(at 123.19 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+			(at 124.46 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/DG411-DG413.pdf"
+			(at 127 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad SPST Monolithic CMOS Analog Switches, normally ON, 17Ohm Ron, SOIC-16"
+			(at 127 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "437fa013-9b01-4b24-a892-9023e0b63b3e")
+		)
+		(pin "12"
+			(uuid "a37c6ce9-3167-41e5-9e35-9f50bc129c1e")
+		)
+		(pin "2"
+			(uuid "2d541462-023d-4672-b01d-761a1b73d851")
+		)
+		(pin "15"
+			(uuid "ff3b28c9-2259-4702-9e1f-76d0f698b82d")
+		)
+		(pin "9"
+			(uuid "094fb8bb-6e75-42a2-8f57-0e0ac53c3065")
+		)
+		(pin "4"
+			(uuid "85816578-0f9d-42c3-93df-d1c601222a0f")
+		)
+		(pin "5"
+			(uuid "0608424e-0886-4e1d-aab8-e123941177ae")
+		)
+		(pin "14"
+			(uuid "ded63427-a9d7-4c17-a71f-ba5cafd791a4")
+		)
+		(pin "1"
+			(uuid "7ca6e828-71d0-46bc-955c-2ab8ab08e2f9")
+		)
+		(pin "11"
+			(uuid "221e8c92-58ea-43bd-a918-d01c297dd52a")
+		)
+		(pin "16"
+			(uuid "bf5828de-5836-4c44-ba9b-a9e688a028e9")
+		)
+		(pin "3"
+			(uuid "868376a7-1c08-4243-8b7c-3e7ffb1e73d6")
+		)
+		(pin "6"
+			(uuid "633d9e6a-e3a9-4f49-9f71-2663037e40ca")
+		)
+		(pin "8"
+			(uuid "715db863-536c-4a7f-bb10-437c6a8a6dfd")
+		)
+		(pin "7"
+			(uuid "e70a83c4-bd68-4af5-8f1c-ce8c92adb488")
+		)
+		(pin "10"
+			(uuid "965d597a-0233-453e-ba7a-010ce78357f0")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/6b7fef71-3444-4c8f-b2e2-502774ba9b51/2542314c-0b08-493b-856b-65d680d18812"
+					(reference "U?")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 138.43 171.45 90)
+		(at 57.15 190.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1515,7 +3369,7 @@
 		(fields_autoplaced yes)
 		(uuid "f67b5826-16d6-4295-9d21-0af68c7beac9")
 		(property "Reference" "R?"
-			(at 138.43 165.1 90)
+			(at 57.15 184.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1523,7 +3377,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 138.43 167.64 90)
+			(at 57.15 186.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1531,7 +3385,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 173.228 90)
+			(at 57.15 192.278 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1540,7 +3394,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 138.43 171.45 0)
+			(at 57.15 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1549,7 +3403,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 138.43 171.45 0)
+			(at 57.15 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
