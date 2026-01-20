@@ -438,6 +438,10 @@
       "Auto-Balancing Bridge"
     ],
     [
+      "2542314c-0b08-493b-856b-65d680d18812",
+      "Resistor Selector"
+    ],
+    [
       "d4430a4e-6bd9-43d0-97c7-e0aac7445691",
       "Input Protection"
     ],
@@ -454,8 +458,8 @@
       "Input Protection3"
     ],
     [
-      "2542314c-0b08-493b-856b-65d680d18812",
-      "Resistor Selector"
+      "19c51356-5fe8-4a9f-9623-d1f705fed6f9",
+      "Power"
     ]
   ],
   "text_variables": {}

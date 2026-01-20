@@ -1851,16 +1851,6 @@
 		)
 		(uuid "c2930ae2-fb07-4d19-bb98-0dda0e554a97")
 	)
-	(text "Guard potential"
-		(exclude_from_sim no)
-		(at 59.69 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "cdd29f07-e504-4498-b965-191393f0a5cc")
-	)
 	(text "9.09k\n"
 		(exclude_from_sim no)
 		(at 265.43 62.23 0)
@@ -2056,7 +2046,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 60.96) (xy 36.83 68.58)
+			(xy 36.83 60.96) (xy 36.83 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2086,7 +2076,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 83.82) (xy 57.15 88.9)
+			(xy 57.15 87.63) (xy 57.15 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2536,7 +2526,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 60.96) (xy 57.15 68.58)
+			(xy 57.15 60.96) (xy 57.15 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3036,7 +3026,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 83.82) (xy 36.83 88.9)
+			(xy 36.83 87.63) (xy 36.83 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3202,7 +3192,7 @@
 	)
 	(hierarchical_label "InAmpx3"
 		(shape input)
-		(at 31.75 76.2 180)
+		(at 31.75 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3213,7 +3203,7 @@
 	)
 	(hierarchical_label "InAmpx10"
 		(shape input)
-		(at 52.07 76.2 180)
+		(at 52.07 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5152,7 +5142,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:DG411xY")
-		(at 57.15 76.2 270)
+		(at 57.15 80.01 270)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5160,7 +5150,7 @@
 		(dnp no)
 		(uuid "a3a4ca85-61ed-4f6b-a72f-6fce520dc3e6")
 		(property "Reference" "U?"
-			(at 53.34 71.12 90)
+			(at 53.34 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5169,7 +5159,7 @@
 			)
 		)
 		(property "Value" "DG411xY"
-			(at 53.34 73.66 90)
+			(at 53.34 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5178,7 +5168,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 54.61 76.2 0)
+			(at 54.61 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5187,7 +5177,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/DG411-DG413.pdf"
-			(at 57.15 76.2 0)
+			(at 57.15 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5196,7 +5186,7 @@
 			)
 		)
 		(property "Description" "Quad SPST Monolithic CMOS Analog Switches, normally ON, 17Ohm Ron, SOIC-16"
-			(at 57.15 76.2 0)
+			(at 57.15 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6091,7 +6081,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:DG411xY")
-		(at 36.83 76.2 270)
+		(at 36.83 80.01 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6099,7 +6089,7 @@
 		(dnp no)
 		(uuid "eabe7c33-bb0f-4744-9b81-e993308906ce")
 		(property "Reference" "U?"
-			(at 33.02 71.12 90)
+			(at 33.02 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6108,7 +6098,7 @@
 			)
 		)
 		(property "Value" "DG411xY"
-			(at 33.02 73.66 90)
+			(at 33.02 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6117,7 +6107,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 34.29 76.2 0)
+			(at 34.29 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6126,7 +6116,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/DG411-DG413.pdf"
-			(at 36.83 76.2 0)
+			(at 36.83 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6135,7 +6125,7 @@
 			)
 		)
 		(property "Description" "Quad SPST Monolithic CMOS Analog Switches, normally ON, 17Ohm Ron, SOIC-16"
-			(at 36.83 76.2 0)
+			(at 36.83 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
