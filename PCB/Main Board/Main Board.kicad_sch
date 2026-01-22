@@ -392,16 +392,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 38.1) (xy 248.92 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a777928-b447-430f-bde6-822b30e64907")
-	)
-	(wire
-		(pts
 			(xy 88.9 38.1) (xy 152.4 38.1)
 		)
 		(stroke
@@ -452,7 +442,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 88.9) (xy 228.6 88.9)
+			(xy 222.25 88.9) (xy 248.92 88.9)
 		)
 		(stroke
 			(width 0)
@@ -512,16 +502,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 63.5) (xy 248.92 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74eac4a0-6d3e-43f4-a75c-26c87decf12c")
-	)
-	(wire
-		(pts
 			(xy 215.9 88.9) (xy 222.25 88.9)
 		)
 		(stroke
@@ -542,16 +522,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 114.3) (xy 248.92 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c4bc2b3-9236-4390-8abf-63804757bfe8")
-	)
-	(wire
-		(pts
 			(xy 222.25 105.41) (xy 222.25 114.3)
 		)
 		(stroke
@@ -562,7 +532,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 114.3) (xy 228.6 114.3)
+			(xy 222.25 114.3) (xy 248.92 114.3)
 		)
 		(stroke
 			(width 0)
@@ -572,7 +542,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 38.1) (xy 228.6 38.1)
+			(xy 222.25 38.1) (xy 248.92 38.1)
 		)
 		(stroke
 			(width 0)
@@ -602,16 +572,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 88.9) (xy 248.92 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1ce9bb4-d20d-461b-a731-3251ff122316")
-	)
-	(wire
-		(pts
 			(xy 177.8 73.66) (xy 215.9 73.66)
 		)
 		(stroke
@@ -622,7 +582,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 63.5) (xy 228.6 63.5)
+			(xy 222.25 63.5) (xy 248.92 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1143,68 +1103,6 @@
 		)
 	)
 	(sheet
-		(at 228.6 82.55)
-		(size 12.7 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "0cce28d4-c795-4905-bde2-6bc952dd4594")
-		(property "Sheetname" "Input Protection2"
-			(at 228.6 81.8384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Protection.kicad_sch"
-			(at 228.6 95.8346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "In" bidirectional
-			(at 241.3 88.9 0)
-			(uuid "f1b6d48e-b0bc-4ade-afd0-280b1fbbdf2a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Out" bidirectional
-			(at 228.6 88.9 180)
-			(uuid "f2dfbdb3-4d28-43f8-b340-fa96ea35a8de")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(page "11")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 63.5 139.7)
 		(size 25.4 25.4)
 		(exclude_from_sim no)
@@ -1513,68 +1411,6 @@
 		)
 	)
 	(sheet
-		(at 228.6 107.95)
-		(size 12.7 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "c2f436a7-c2ca-471c-8f44-592cccd95dfe")
-		(property "Sheetname" "Input Protection3"
-			(at 228.6 107.2384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Protection.kicad_sch"
-			(at 228.6 121.2346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "In" bidirectional
-			(at 241.3 114.3 0)
-			(uuid "657218cc-746d-4033-9a79-6209215f0c09")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Out" bidirectional
-			(at 228.6 114.3 180)
-			(uuid "d81e8fba-717d-4ebd-a1b6-bf9f4ebf0857")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(page "12")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 152.4 101.6)
 		(size 25.4 25.4)
 		(exclude_from_sim no)
@@ -1727,68 +1563,6 @@
 		)
 	)
 	(sheet
-		(at 228.6 31.75)
-		(size 12.7 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "d4430a4e-6bd9-43d0-97c7-e0aac7445691")
-		(property "Sheetname" "Input Protection"
-			(at 228.6 31.0384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Protection.kicad_sch"
-			(at 228.6 45.0346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "In" bidirectional
-			(at 241.3 38.1 0)
-			(uuid "abe6fa9c-4ee9-4bb5-9d90-8f75a9f025d2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Out" bidirectional
-			(at 228.6 38.1 180)
-			(uuid "3cfbdb66-eb7f-4bdf-b78c-f9f183d6b3ab")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 63.5 25.4)
 		(size 25.4 101.6)
 		(exclude_from_sim no)
@@ -1826,68 +1600,6 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
 					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 228.6 57.15)
-		(size 12.7 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "efbc62bb-cc7d-43ea-8d3a-d24e990e8427")
-		(property "Sheetname" "Input Protection1"
-			(at 228.6 56.4384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Protection.kicad_sch"
-			(at 228.6 70.4346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "In" bidirectional
-			(at 241.3 63.5 0)
-			(uuid "12211b6c-51be-41e6-b9d5-1bc25e3a6e90")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Out" bidirectional
-			(at 228.6 63.5 180)
-			(uuid "97421d86-a783-4666-a26e-f5695e4d5624")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(page "10")
 				)
 			)
 		)
