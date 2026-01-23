@@ -1,0 +1,15 @@
+* E:\Git\Group Project\EEE3-Instrumentation\Simulations\Coursework Assignment 1 sims\Draft1.asc
+XU1 N001 0 N002 opamp Aol=100k GBW={gainbandwidth}
+V1 N003 0 SINE(0) AC AC
+R1 N001 N003 100k
+L1 N001 N004 0
+C1 N001 N004 0
+R2 N002 N001 {Rg}
+* DUT
+.step dec param f 10 10Meg 10
+.ac dec 10 10 1M
+.step param Rg list 1k 100k 100Meg
+.lib opamp.sub
+.step param gainbandwidth list 15920 1592 159.2
+.backanno
+.end
