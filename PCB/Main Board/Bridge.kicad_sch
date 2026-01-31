@@ -5811,28 +5811,28 @@
 			)
 		)
 		(pin "3"
-			(uuid "0e067bdd-9507-4b56-869a-d56e07a3df87")
+			(uuid "0e067bdd-9507-4b56-869a-d56e07a3df88")
 		)
 		(pin "7"
 			(uuid "cf640cd6-e5e8-406a-bad3-d554366ad57b")
 		)
 		(pin "8"
-			(uuid "0187d4a7-6ca6-493c-b4db-17a8ac0611ab")
+			(uuid "0187d4a7-6ca6-493c-b4db-17a8ac0611ac")
 		)
 		(pin "2"
-			(uuid "ffa2e2df-9a09-408b-9bd1-07e5fa857142")
+			(uuid "ffa2e2df-9a09-408b-9bd1-07e5fa857143")
 		)
 		(pin "5"
 			(uuid "67835a8f-a19e-4a81-87a1-68369999d6a2")
 		)
 		(pin "1"
-			(uuid "4c8e6f92-701e-430a-8367-68b4f75f2528")
+			(uuid "4c8e6f92-701e-430a-8367-68b4f75f2529")
 		)
 		(pin "6"
 			(uuid "7192decd-771b-4a02-a9f2-e7284458a952")
 		)
 		(pin "4"
-			(uuid "b8690758-76e1-48fe-8e34-30c195d6dacc")
+			(uuid "b8690758-76e1-48fe-8e34-30c195d6dacd")
 		)
 		(instances
 			(project "Main Board"

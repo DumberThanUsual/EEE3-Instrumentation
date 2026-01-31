@@ -4654,6 +4654,248 @@
 		)
 		(uuid "f1336d22-c4c3-47ee-9301-9de2b27a09c9")
 	)
+	(hierarchical_label "Source.{slash}10"
+		(shape output)
+		(at 107.95 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "00d682cf-6f06-44ba-84ca-a25dbfd7f0c3")
+	)
+	(hierarchical_label "IAmp.x1"
+		(shape output)
+		(at 107.95 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "08607bcf-8d0d-4b4a-8374-cf62782382d1")
+	)
+	(hierarchical_label "IAmp.{slash}4"
+		(shape output)
+		(at 107.95 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0cb8aacc-70a3-4c1d-8d55-5b00965d9ec0")
+	)
+	(hierarchical_label "IAmp.AC_100"
+		(shape output)
+		(at 107.95 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "27ea61fe-9ca8-453a-a2d5-ef6c9e2c9c5a")
+	)
+	(hierarchical_label "Source.Bias"
+		(shape output)
+		(at 107.95 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "300da85c-f4a9-4a3a-b561-030d32256c96")
+	)
+	(hierarchical_label "VAmp.AC_10k"
+		(shape output)
+		(at 107.95 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "40289636-0041-4dea-804d-8ae69fb90669")
+	)
+	(hierarchical_label "VAmp.~{x100}"
+		(shape output)
+		(at 107.95 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4035414e-3346-45d5-a053-d95e5a5f6e29")
+	)
+	(hierarchical_label "IAmp.x3"
+		(shape output)
+		(at 107.95 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4a8f95c8-5816-4582-a4c8-2bc0e9a4b695")
+	)
+	(hierarchical_label "IAmp.AC_1k"
+		(shape output)
+		(at 107.95 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "56048a8d-4f09-4727-926c-3c6fcf903503")
+	)
+	(hierarchical_label "VAmp.In"
+		(shape input)
+		(at 107.95 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "716a2d30-fb6e-458c-b464-0e03d0ef0e75")
+	)
+	(hierarchical_label "VAmp.x1"
+		(shape output)
+		(at 107.95 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "86a2fb11-1718-458a-8f18-3c5bedcb3c06")
+	)
+	(hierarchical_label "VAmp.AC_100"
+		(shape output)
+		(at 107.95 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b719eda-ef3d-41e9-8b5d-e17c4cb7841b")
+	)
+	(hierarchical_label "IAmp.AC_EN"
+		(shape output)
+		(at 107.95 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8e1b7f56-72d9-4b1e-b9f3-9b148dc6009e")
+	)
+	(hierarchical_label "VAmp.AC_EN"
+		(shape output)
+		(at 107.95 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9644f419-7b0d-4d67-bc52-d80bc2665b17")
+	)
+	(hierarchical_label "VAmp.x3"
+		(shape output)
+		(at 107.95 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9c944710-9dc0-4b59-b527-27ebde7ba0d9")
+	)
+	(hierarchical_label "IAmp.In"
+		(shape input)
+		(at 107.95 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bef23406-b297-44f2-b316-6cbb8a9ab3aa")
+	)
+	(hierarchical_label "Source.Signal"
+		(shape output)
+		(at 107.95 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c81acb2c-fca8-4a31-8345-7791b0c0587b")
+	)
+	(hierarchical_label "IAmp.AC_10k"
+		(shape output)
+		(at 107.95 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c89c61a9-5e8e-4905-aece-b5dc3c73d8da")
+	)
+	(hierarchical_label "VAmp.AC_1k"
+		(shape output)
+		(at 107.95 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d7bc486b-b606-4bf6-9fdc-1dddd4eb68a4")
+	)
+	(hierarchical_label "Source.~{x4}"
+		(shape output)
+		(at 107.95 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d8222585-b9c7-4774-aef0-dbcf0f5818b4")
+	)
+	(hierarchical_label "VAmp.{slash}4"
+		(shape output)
+		(at 107.95 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e43d8add-38af-455a-b796-b17c22865ec2")
+	)
+	(hierarchical_label "IAmp.~{x100}"
+		(shape output)
+		(at 107.95 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ede4101f-8cbf-447a-bcf2-6ace81058e7d")
+	)
 	(symbol
 		(lib_id "power:VBUS")
 		(at 62.23 35.56 0)
