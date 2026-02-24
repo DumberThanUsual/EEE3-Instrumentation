@@ -2970,6 +2970,18 @@
 		(uuid "49545c54-ba03-4022-8eba-7c3e3c5ba51e")
 	)
 	(junction
+		(at 31.75 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6621ea54-b268-4d4c-bc67-e474cae67cab")
+	)
+	(junction
+		(at 82.55 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6789ce8a-486b-4e8d-a9e4-18b0be92de42")
+	)
+	(junction
 		(at 55.88 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3114,6 +3126,16 @@
 	(no_connect
 		(at 45.72 171.45)
 		(uuid "bab89d55-39d6-49b9-9322-6c3210b8b7f1")
+	)
+	(wire
+		(pts
+			(xy 31.75 104.14) (xy 36.83 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07236b6a-0aed-40e6-affb-95b4f246e36d")
 	)
 	(wire
 		(pts
@@ -3307,7 +3329,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 133.35) (xy 222.25 133.35)
+			(xy 182.88 133.35) (xy 222.25 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3334,6 +3356,16 @@
 			(type default)
 		)
 		(uuid "492aa81d-1b72-4f26-8ac7-f10533f45c42")
+	)
+	(wire
+		(pts
+			(xy 48.26 113.03) (xy 55.88 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f688ad-60e4-4e7b-8eb1-74bee575619b")
 	)
 	(wire
 		(pts
@@ -3477,7 +3509,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 104.14) (xy 36.83 104.14)
+			(xy 29.21 104.14) (xy 31.75 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3524,6 +3556,16 @@
 			(type default)
 		)
 		(uuid "7cdda486-e2c1-462a-aac9-ed6f1498125c")
+	)
+	(wire
+		(pts
+			(xy 107.95 62.23) (xy 107.95 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d8fd996-e4ac-433d-909c-966c6d55bde4")
 	)
 	(wire
 		(pts
@@ -3667,7 +3709,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 53.34) (xy 87.63 53.34)
+			(xy 76.2 53.34) (xy 82.55 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3707,13 +3749,43 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 104.14) (xy 184.15 104.14)
+			(xy 100.33 62.23) (xy 107.95 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a65cf040-c176-4817-9a07-2874274e7523")
+	)
+	(wire
+		(pts
+			(xy 31.75 113.03) (xy 40.64 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acca33f9-9df3-45ed-9587-3e56402b860e")
+	)
+	(wire
+		(pts
+			(xy 201.93 104.14) (xy 182.88 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "aeb35e68-27f6-409d-8292-6bd568f53354")
+	)
+	(wire
+		(pts
+			(xy 55.88 113.03) (xy 55.88 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b042ee3e-5525-4201-83df-ec581d35adae")
 	)
 	(wire
 		(pts
@@ -3744,6 +3816,16 @@
 			(type default)
 		)
 		(uuid "bac9ac1c-d436-4354-8813-c9a9aa55d097")
+	)
+	(wire
+		(pts
+			(xy 31.75 113.03) (xy 31.75 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb5403da-b714-45c4-a68f-4db1bb04c0b3")
 	)
 	(wire
 		(pts
@@ -3817,6 +3899,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 62.23) (xy 82.55 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd2ce22f-2542-4d6f-89de-020db8b2830b")
+	)
+	(wire
+		(pts
 			(xy 82.55 48.26) (xy 87.63 48.26)
 		)
 		(stroke
@@ -3834,6 +3926,16 @@
 			(type default)
 		)
 		(uuid "d46eff65-f87b-4490-832b-f72933eda26f")
+	)
+	(wire
+		(pts
+			(xy 92.71 62.23) (xy 82.55 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d75df692-6767-4f14-8766-2a7b4509250f")
 	)
 	(wire
 		(pts
@@ -3917,6 +4019,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 53.34) (xy 87.63 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8480c9d-25bb-42a0-b8c8-8790c82b6bc7")
+	)
+	(wire
+		(pts
 			(xy 66.04 43.18) (xy 63.5 43.18)
 		)
 		(stroke
@@ -3967,7 +4079,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 104.14) (xy 184.15 133.35)
+			(xy 182.88 104.14) (xy 182.88 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4191,7 +4303,7 @@
 	)
 	(hierarchical_label "Signal"
 		(shape input)
-		(at 31.75 104.14 180)
+		(at 29.21 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6415,25 +6527,25 @@
 			(uuid "af2bff1b-361a-4dbf-8eb7-7d1ca377a034")
 		)
 		(pin "7"
-			(uuid "b8b13e85-ebc2-4b6f-8f07-2749f3cb6244")
+			(uuid "b8b13e85-ebc2-4b6f-8f07-2749f3cb6245")
 		)
 		(pin "8"
-			(uuid "0187d4a7-6ca6-493c-b4db-17a8ac0611a8")
+			(uuid "0187d4a7-6ca6-493c-b4db-17a8ac0611a9")
 		)
 		(pin "2"
 			(uuid "f17b543b-9c61-4bce-aae3-7cdca0c0de66")
 		)
 		(pin "5"
-			(uuid "26ff8d23-a8fa-4d18-8f1d-81f291dba5bf")
+			(uuid "26ff8d23-a8fa-4d18-8f1d-81f291dba5c0")
 		)
 		(pin "1"
 			(uuid "3a7109d1-4e79-43de-ae03-47d62c71f640")
 		)
 		(pin "6"
-			(uuid "14a3bf61-ea2e-49ba-b980-fe3919b35931")
+			(uuid "14a3bf61-ea2e-49ba-b980-fe3919b35932")
 		)
 		(pin "4"
-			(uuid "b8690758-76e1-48fe-8e34-30c195d6dac9")
+			(uuid "b8690758-76e1-48fe-8e34-30c195d6daca")
 		)
 		(instances
 			(project "Main Board"
@@ -7544,6 +7656,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 44.45 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b52ce5a-d5e7-4c1a-85b7-4bb225de7c8c")
+		(property "Reference" "JP?"
+			(at 44.45 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Bridged"
+			(at 44.45 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 44.45 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 44.45 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8ad8fbcc-e8ab-451a-9c8d-5d06fbec4e11")
+		)
+		(pin "1"
+			(uuid "c8c9acd4-d20d-4ce7-9008-cc22d1e2b244")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
+					(reference "JP?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 196.85 114.3 90)
 		(unit 1)
@@ -7704,7 +7884,7 @@
 			(uuid "0e067bdd-9507-4b56-869a-d56e07a3df88")
 		)
 		(pin "7"
-			(uuid "b8b13e85-ebc2-4b6f-8f07-2749f3cb6245")
+			(uuid "b8b13e85-ebc2-4b6f-8f07-2749f3cb6246")
 		)
 		(pin "8"
 			(uuid "0187d4a7-6ca6-493c-b4db-17a8ac0611aa")
@@ -7713,13 +7893,13 @@
 			(uuid "ffa2e2df-9a09-408b-9bd1-07e5fa857143")
 		)
 		(pin "5"
-			(uuid "26ff8d23-a8fa-4d18-8f1d-81f291dba5c0")
+			(uuid "26ff8d23-a8fa-4d18-8f1d-81f291dba5c1")
 		)
 		(pin "1"
 			(uuid "4c8e6f92-701e-430a-8367-68b4f75f2529")
 		)
 		(pin "6"
-			(uuid "14a3bf61-ea2e-49ba-b980-fe3919b35932")
+			(uuid "14a3bf61-ea2e-49ba-b980-fe3919b35933")
 		)
 		(pin "4"
 			(uuid "b8690758-76e1-48fe-8e34-30c195d6dacb")
@@ -8690,6 +8870,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 96.52 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7558599-067d-41e3-abc7-ac4c646d6e8b")
+		(property "Reference" "JP?"
+			(at 96.52 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Bridged"
+			(at 96.52 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 96.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 96.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "61dcdcb3-a535-4551-837f-6412cf867789")
+		)
+		(pin "1"
+			(uuid "f62614ac-bf75-43d3-aa12-4d226b009a2b")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
+					(reference "JP?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 196.85 120.65 90)
 		(unit 1)
@@ -9121,7 +9369,7 @@
 			(uuid "0e067bdd-9507-4b56-869a-d56e07a3df89")
 		)
 		(pin "7"
-			(uuid "b8b13e85-ebc2-4b6f-8f07-2749f3cb6246")
+			(uuid "b8b13e85-ebc2-4b6f-8f07-2749f3cb6247")
 		)
 		(pin "8"
 			(uuid "4ab18ca6-56b5-4066-9ca0-dbafe1a02ccf")
@@ -9130,13 +9378,13 @@
 			(uuid "ffa2e2df-9a09-408b-9bd1-07e5fa857144")
 		)
 		(pin "5"
-			(uuid "26ff8d23-a8fa-4d18-8f1d-81f291dba5c1")
+			(uuid "26ff8d23-a8fa-4d18-8f1d-81f291dba5c2")
 		)
 		(pin "1"
 			(uuid "4c8e6f92-701e-430a-8367-68b4f75f252a")
 		)
 		(pin "6"
-			(uuid "14a3bf61-ea2e-49ba-b980-fe3919b35933")
+			(uuid "14a3bf61-ea2e-49ba-b980-fe3919b35934")
 		)
 		(pin "4"
 			(uuid "ee664cf0-4930-4490-ba34-59b011c99ffd")
