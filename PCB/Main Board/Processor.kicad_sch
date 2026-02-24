@@ -4362,6 +4362,50 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "DAC_OUT1\n"
+		(exclude_from_sim no)
+		(at 274.32 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "09722945-e870-4ffe-ac02-eec67039c796")
+	)
+	(text "ADC1_IN0\n"
+		(exclude_from_sim no)
+		(at 274.32 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0c474a55-413d-4de6-b652-f86acbbef669")
+	)
+	(text "ADC2_IN1\n"
+		(exclude_from_sim no)
+		(at 274.32 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "656067de-cb6b-4127-be22-f3a87c3ac33f")
+	)
+	(text "DAC_OUT2\n"
+		(exclude_from_sim no)
+		(at 274.32 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "949bba2b-6361-42dc-93af-6ae799f764c8")
+	)
 	(junction
 		(at 241.3 49.53)
 		(diameter 0)
@@ -5154,7 +5198,7 @@
 	)
 	(hierarchical_label "Source.{slash}10"
 		(shape output)
-		(at 107.95 74.93 0)
+		(at 189.23 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5165,7 +5209,7 @@
 	)
 	(hierarchical_label "IAmp.x1"
 		(shape output)
-		(at 107.95 106.68 0)
+		(at 189.23 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5176,7 +5220,7 @@
 	)
 	(hierarchical_label "IAmp.{slash}4"
 		(shape output)
-		(at 107.95 104.14 0)
+		(at 189.23 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5187,7 +5231,7 @@
 	)
 	(hierarchical_label "IAmp.AC_100"
 		(shape output)
-		(at 107.95 119.38 0)
+		(at 189.23 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5198,7 +5242,7 @@
 	)
 	(hierarchical_label "Source.Bias"
 		(shape output)
-		(at 107.95 69.85 0)
+		(at 259.08 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5209,7 +5253,7 @@
 	)
 	(hierarchical_label "VAmp.AC_10k"
 		(shape output)
-		(at 107.95 99.06 0)
+		(at 189.23 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5220,7 +5264,7 @@
 	)
 	(hierarchical_label "VAmp.~{x100}"
 		(shape output)
-		(at 107.95 86.36 0)
+		(at 189.23 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5231,7 +5275,7 @@
 	)
 	(hierarchical_label "IAmp.x3"
 		(shape output)
-		(at 107.95 109.22 0)
+		(at 189.23 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5242,7 +5286,7 @@
 	)
 	(hierarchical_label "IAmp.AC_1k"
 		(shape output)
-		(at 107.95 121.92 0)
+		(at 189.23 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5253,7 +5297,7 @@
 	)
 	(hierarchical_label "VAmp.In"
 		(shape input)
-		(at 107.95 88.9 0)
+		(at 259.08 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5264,7 +5308,7 @@
 	)
 	(hierarchical_label "VAmp.x1"
 		(shape output)
-		(at 107.95 81.28 0)
+		(at 189.23 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5275,7 +5319,7 @@
 	)
 	(hierarchical_label "VAmp.AC_100"
 		(shape output)
-		(at 107.95 93.98 0)
+		(at 189.23 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5286,7 +5330,7 @@
 	)
 	(hierarchical_label "IAmp.AC_EN"
 		(shape output)
-		(at 107.95 116.84 0)
+		(at 189.23 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5297,7 +5341,7 @@
 	)
 	(hierarchical_label "VAmp.AC_EN"
 		(shape output)
-		(at 107.95 91.44 0)
+		(at 189.23 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5308,7 +5352,7 @@
 	)
 	(hierarchical_label "VAmp.x3"
 		(shape output)
-		(at 107.95 83.82 0)
+		(at 189.23 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5319,7 +5363,7 @@
 	)
 	(hierarchical_label "IAmp.In"
 		(shape input)
-		(at 107.95 114.3 0)
+		(at 259.08 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5330,7 +5374,7 @@
 	)
 	(hierarchical_label "Source.Signal"
 		(shape output)
-		(at 107.95 67.31 0)
+		(at 259.08 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5341,7 +5385,7 @@
 	)
 	(hierarchical_label "IAmp.AC_10k"
 		(shape output)
-		(at 107.95 124.46 0)
+		(at 189.23 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5352,7 +5396,7 @@
 	)
 	(hierarchical_label "VAmp.AC_1k"
 		(shape output)
-		(at 107.95 96.52 0)
+		(at 189.23 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5363,7 +5407,7 @@
 	)
 	(hierarchical_label "Source.~{x4}"
 		(shape output)
-		(at 107.95 72.39 0)
+		(at 189.23 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5374,7 +5418,7 @@
 	)
 	(hierarchical_label "VAmp.{slash}4"
 		(shape output)
-		(at 107.95 78.74 0)
+		(at 189.23 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5385,7 +5429,7 @@
 	)
 	(hierarchical_label "IAmp.~{x100}"
 		(shape output)
-		(at 107.95 111.76 0)
+		(at 189.23 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
