@@ -2815,6 +2815,44 @@
 			(embedded_fonts no)
 		)
 	)
+	(arc
+		(start 55.245 72.39)
+		(mid 56.9095 72.8164)
+		(end 57.785 74.295)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7e26b4d8-9e53-4e9d-82c0-f4deeeb1be00)
+	)
+	(arc
+		(start 57.785 74.93)
+		(mid 58.5289 73.1339)
+		(end 60.325 72.39)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 91ca6846-756e-43da-8af0-30684285a435)
+	)
+	(rectangle
+		(start 20.955 76.2)
+		(end 86.36 149.86)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ab28158d-379c-48b6-afb8-ad98e0e5ad35)
+	)
 	(text "Optional\nAC coupling\nFor DC bias"
 		(exclude_from_sim no)
 		(at 20.32 58.42 0)
@@ -2825,6 +2863,16 @@
 			(justify left top)
 		)
 		(uuid "5c047df8-4e8f-46bf-84ca-3ffdeb090f49")
+	)
+	(text "this should become a current sense ic"
+		(exclude_from_sim no)
+		(at 58.166 46.482 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fb38ec54-801d-47ab-a8dd-c1300c12fcaf")
 	)
 	(junction
 		(at 254 147.32)
@@ -3477,6 +3525,16 @@
 			(type default)
 		)
 		(uuid "600abf0a-b56a-4d52-9b06-e1cd76689c15")
+	)
+	(polyline
+		(pts
+			(xy 57.785 50.165) (xy 57.785 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60cafe67-f42e-4341-b897-08a4d7025bb9")
 	)
 	(wire
 		(pts
