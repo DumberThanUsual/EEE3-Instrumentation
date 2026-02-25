@@ -214,7 +214,7 @@
 	)
 	(text "HPOT"
 		(exclude_from_sim no)
-		(at 273.05 60.96 0)
+		(at 264.16 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)

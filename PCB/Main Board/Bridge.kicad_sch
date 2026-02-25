@@ -2816,9 +2816,9 @@
 		)
 	)
 	(arc
-		(start 55.245 72.39)
-		(mid 56.9095 72.8164)
-		(end 57.785 74.295)
+		(start 55.2563 72.3883)
+		(mid 57.0556 73.1305)
+		(end 57.7963 74.9283)
 		(stroke
 			(width 0)
 			(type default)
@@ -2826,7 +2826,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 7e26b4d8-9e53-4e9d-82c0-f4deeeb1be00)
+		(uuid 4f09eb50-94fb-4b28-863f-315394b6b89c)
 	)
 	(arc
 		(start 57.785 74.93)
@@ -4514,7 +4514,7 @@
 			(fill
 				(type none)
 			)
-			(uuid b099dfcc-8753-4044-a656-96e66f5ffdc0)
+			(uuid 73f320fc-f104-4d49-9303-d5d6afda083f)
 		)
 	)
 	(symbol
