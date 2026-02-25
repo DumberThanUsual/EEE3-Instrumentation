@@ -34,7 +34,7 @@ static inline float wrap_pi(float x)
 
 void measure_test(void *pvParameters) 
 {
-    uint32_t f = 1000;
+    uint32_t f = 100;
     SemaphoreHandle_t measurement_complete = xSemaphoreCreateBinary();
     while (1) {
         measurement_request_t req = {
@@ -98,13 +98,13 @@ void measure_test(void *pvParameters)
         phase2 = wrap_pi(atan2f(X_i, X_r));
 
         uint8_t msg[128];
-        int len = snprintf((char*)msg, sizeof(msg), "Frequency %f, Delta Phase: %f, Magnitude Ratio %f\r\n", f, (phase2 - phase1) * (180.0f / (float)M_PI), magnitude1 / magnitude2);
+        int len = snprintf((char*)msg, sizeof(msg), "Frequency %lu, Delta Phase: %f, Magnitude Ratio %f\r\n", f, (phase2 - phase1) * (180.0f / (float)M_PI), magnitude1 / magnitude2);
         HAL_UART_Transmit(&huart2, msg, len, HAL_MAX_DELAY);
-        vTaskDelay(pdMS_TO_TICKS(100));
+        vTaskDelay(pdMS_TO_TICKS(250));
 
-        f *= 1.25892541179; // Multiply by 10^(1/10) to increase frequency by 1 semitone
-        if (f > 1000000)
-            f = 1000;
+        f *= 1.04712854805; // Multiply by 10^(1/10) to increase frequency by 1 semitone
+        if (f > 250000)
+            f = 100;
     }
 }
 
@@ -127,10 +127,8 @@ int main(void)
     MX_TIM2_Init();
     MX_USART2_UART_Init();
 
-    HAL_TIM_Base_Start(&htim2);
-    HAL_TIM_OC_Start(&htim2, TIM_CHANNEL_1);
-
     measure_init();
+    signal_init();
 
     xTaskCreate(
         measure_test,
@@ -149,14 +147,14 @@ int main(void)
 void HAL_DAC_ConvCpltCallbackCh1(DAC_HandleTypeDef* hdac) 
 {
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
-    xHigherPriorityTaskWoken = osc_DMA_Handler(0);
+    xHigherPriorityTaskWoken = signal_DMA_Handler(0);
     portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
 }
 
 void HAL_DAC_ConvHalfCpltCallbackCh1(DAC_HandleTypeDef* hdac) 
 {
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
-    xHigherPriorityTaskWoken = osc_DMA_Handler(1);
+    xHigherPriorityTaskWoken = signal_DMA_Handler(1);
     portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
 }
 
