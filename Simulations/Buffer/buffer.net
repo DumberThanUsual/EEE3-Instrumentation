@@ -1,21 +1,28 @@
 * E:\Git\Group Project\EEE3-Instrumentation\Simulations\Buffer\buffer.asc
-D1 N002 N003 1N4148
-R1 V+ N002 1k
-R2 N005 V- 1k
-XU1 N001 N004 N003 opamp Aol=100K GBW=10Meg
+XU1 N003 N004 N003 opamp Aol=100K GBW=10Meg
 V1 N004 0 SINE(0 1 1Meg)
-Q1 V+ N002 N001 0 2N2222
-Q2 V- N005 N001 0 2N2907
 V2 V+ 0 18
 V3 0 V- 18
-D2 N003 N005 1N4148
+D3 NC_01 NC_02 1N4148
+R3 N005 N007 1k
+R4 N003 N005 15k
+R5 N002 N003 1k
+R6 N001 N002 15k
+I1 V+ N001 1m
+I2 N007 V- 1m
+M4 N006 N007 V- V- IRFP9240
+M2 N001 N002 N003 N003 IRF510
+M3 N003 N005 N007 N007 IRF510
+C1 N003 N007 1µ
+C2 N001 N003 1µ
+M1 V+ N001 N006 N006 IRF510
 .model D D
 .lib C:\Users\harry\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.dio
-.model NPN NPN
-.model PNP PNP
-.lib C:\Users\harry\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\harry\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.mos
 .tran 0 5u 0 1u
-.model D D(Ron=1m Roff=10Meg Vfwd=0.7 Vrev=100)
+.model D D(Ron=1m Roff=10Meg Vfwd=17.3 Vrev=100)
 .lib opamp.sub
 .backanno
 .end
