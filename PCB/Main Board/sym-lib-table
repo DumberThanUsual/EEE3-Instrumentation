@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "More_power")(type "KiCad")(uri "${KIPRJMOD}/Symbols/More_power.kicad_sym")(options "")(descr ""))
   (lib (name "More_symbols")(type "KiCad")(uri "${KIPRJMOD}/Symbols/More_symbols.kicad_sym")(options "")(descr ""))
+  (lib (name "INA828")(type "KiCad")(uri "${KIPRJMOD}/Symbols/INA828.kicad_sym")(options "")(descr ""))
 )
