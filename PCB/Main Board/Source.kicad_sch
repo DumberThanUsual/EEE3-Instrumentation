@@ -4909,6 +4909,17 @@
 		)
 		(uuid "fa7e6971-edfd-4d1b-af4f-90ab8f056c9f")
 	)
+	(hierarchical_label "SIG_SOURCE"
+		(shape input)
+		(at 252.73 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18a50279-7701-43df-8208-f440205b3eee")
+	)
 	(hierarchical_label "Out"
 		(shape output)
 		(at 273.05 88.9 0)
@@ -7725,15 +7736,15 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 241.3 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7178019a-2da7-42bb-b4bd-5149a5ae85ed")
 		(property "Reference" "R18"
-			(at 241.3 92.71 90)
+			(at 241.3 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7741,7 +7752,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 241.3 95.25 90)
+			(at 241.3 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7749,7 +7760,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 100.838 90)
+			(at 241.3 97.282 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10107,15 +10118,15 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 241.3 86.36 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e86276bf-419d-4d29-9e3f-7576b05f082b")
 		(property "Reference" "R15"
-			(at 241.3 80.01 90)
+			(at 241.3 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10123,7 +10134,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 241.3 82.55 90)
+			(at 241.3 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10131,7 +10142,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 88.138 90)
+			(at 241.3 84.582 90)
 			(effects
 				(font
 					(size 1.27 1.27)

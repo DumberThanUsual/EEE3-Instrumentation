@@ -623,20 +623,20 @@
       "Signal Source"
     ],
     [
-      "bd9549aa-e467-4112-8861-8ba41215560f",
-      "Voltage Amplifier"
-    ],
-    [
-      "cbba8371-ef6e-448c-bffb-b5e389595b93",
-      "Current Amplifier"
-    ],
-    [
       "6b7fef71-3444-4c8f-b2e2-502774ba9b51",
       "Auto-Balancing Bridge"
     ],
     [
       "2542314c-0b08-493b-856b-65d680d18812",
       "Resistor Selector"
+    ],
+    [
+      "95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad",
+      "Voltage Amplifier"
+    ],
+    [
+      "2e1ccfa8-8bce-4bb4-9d3d-716156df4d18",
+      "Current Amplifier"
     ],
     [
       "19c51356-5fe8-4a9f-9623-d1f705fed6f9",
