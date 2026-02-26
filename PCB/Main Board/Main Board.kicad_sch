@@ -254,6 +254,26 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 133.35) (xy 190.5 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b22b9ce-5e39-4c54-b4b6-161942023c5a")
+	)
+	(wire
+		(pts
+			(xy 139.7 156.21) (xy 190.5 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d3fd489-e7f1-43dc-889f-a0fbec5f17c2")
+	)
+	(wire
+		(pts
 			(xy 139.7 71.12) (xy 152.4 71.12)
 		)
 		(stroke
@@ -301,6 +321,16 @@
 			(type default)
 		)
 		(uuid "3d24f804-30a3-411e-aa00-b7cb28c85bde")
+	)
+	(wire
+		(pts
+			(xy 139.7 140.97) (xy 190.5 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40f97de2-9d6b-41a8-88d9-3a78c7d83a19")
 	)
 	(wire
 		(pts
@@ -354,6 +384,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 151.13) (xy 190.5 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58408dac-446a-4ea8-8df1-26373fdf9f70")
+	)
+	(wire
+		(pts
 			(xy 139.7 45.72) (xy 152.4 45.72)
 		)
 		(stroke
@@ -361,6 +401,26 @@
 			(type default)
 		)
 		(uuid "5c7c93f9-2325-4138-83c0-97dce77fa98a")
+	)
+	(wire
+		(pts
+			(xy 139.7 130.81) (xy 190.5 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cb29ee6-5bd1-4445-a6fe-a102c9be203e")
+	)
+	(wire
+		(pts
+			(xy 139.7 148.59) (xy 190.5 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61e23070-e328-4979-a793-42dbbb52f3c9")
 	)
 	(wire
 		(pts
@@ -401,6 +461,16 @@
 			(type default)
 		)
 		(uuid "6f635a57-04ad-4be1-b63a-add2c2fadd23")
+	)
+	(wire
+		(pts
+			(xy 139.7 153.67) (xy 190.5 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "806eb5a3-747b-4db8-9f58-ac6462684b86")
 	)
 	(wire
 		(pts
@@ -514,6 +584,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 146.05) (xy 190.5 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd8484da-b2b2-4a6b-8098-73535491b5d4")
+	)
+	(wire
+		(pts
 			(xy 139.7 86.36) (xy 152.4 86.36)
 		)
 		(stroke
@@ -534,6 +614,26 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 138.43) (xy 190.5 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea6766a9-9ff7-43dd-8edc-7061efa65df5")
+	)
+	(wire
+		(pts
+			(xy 139.7 143.51) (xy 190.5 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7dc97c-26e4-4f06-b1f3-3cb8372b96dc")
+	)
+	(wire
+		(pts
 			(xy 139.7 114.3) (xy 152.4 114.3)
 		)
 		(stroke
@@ -541,6 +641,16 @@
 			(type default)
 		)
 		(uuid "f0b02fee-7dfe-47dd-b9b1-e1983c60ddb3")
+	)
+	(wire
+		(pts
+			(xy 139.7 135.89) (xy 190.5 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff19d447-6a81-4bd7-abb5-72f9369b11a9")
 	)
 	(label "Guard_{out}"
 		(at 254 119.38 0)
@@ -978,7 +1088,7 @@
 	)
 	(sheet
 		(at 190.5 101.6)
-		(size 25.4 25.4)
+		(size 25.4 58.42)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1002,7 +1112,7 @@
 			)
 		)
 		(property "Sheetfile" "Bridge.kicad_sch"
-			(at 190.5 127.5846 0)
+			(at 190.5 160.6046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1033,6 +1143,136 @@
 		(pin "Out-" output
 			(at 190.5 116.84 180)
 			(uuid "4826a7b9-e513-4f88-bfd0-3013387f401f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AC_EN" input
+			(at 190.5 133.35 180)
+			(uuid "4ca923de-57ec-42ce-8bbb-f61564a69823")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT-" output
+			(at 190.5 119.38 180)
+			(uuid "bbb57e83-af1f-417c-8113-e4ae8408173b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT+" output
+			(at 190.5 114.3 180)
+			(uuid "fbb7512a-797d-4eaa-9fe0-c5abdbdb9c3a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AC_100" input
+			(at 190.5 138.43 180)
+			(uuid "1985473f-5d5e-4c9a-b6cc-af17b89fa8f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IBmonitor" output
+			(at 190.5 130.81 180)
+			(uuid "240f8ed8-3b19-4fe6-9c46-0d7889044e49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AC_1k" input
+			(at 190.5 135.89 180)
+			(uuid "988b6c27-4016-4db5-905f-c262b83c4cb9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AC_10k" input
+			(at 190.5 140.97 180)
+			(uuid "d5938564-357d-48d9-b70a-a2ca98106750")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "R_SEL_100" input
+			(at 190.5 146.05 180)
+			(uuid "d46eb00b-5900-4ba2-ab53-b78ee5cc7386")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "R_SEL_10" input
+			(at 190.5 143.51 180)
+			(uuid "eedd6641-6069-4d29-9f00-476d97d738de")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "R_SEL_432k" input
+			(at 190.5 156.21 180)
+			(uuid "a7230202-1924-40de-9453-9c774a1a6bd7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "R_SEL_10k" input
+			(at 190.5 148.59 180)
+			(uuid "b7958eac-e134-4d9c-ae40-848e9213b0bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "R_SEL_100k" input
+			(at 190.5 153.67 180)
+			(uuid "69ba8d86-4242-4607-abb9-ffbb3303793f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "R_SEL_1k" input
+			(at 190.5 151.13 180)
+			(uuid "9f46ab96-fbba-4a67-bd21-3ee41ed92e88")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1354,7 +1594,7 @@
 	)
 	(sheet
 		(at 114.3 25.4)
-		(size 25.4 101.6)
+		(size 25.4 134.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1378,7 +1618,7 @@
 			)
 		)
 		(property "Sheetfile" "Processor.kicad_sch"
-			(at 114.3 127.5846 0)
+			(at 114.3 160.6046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
