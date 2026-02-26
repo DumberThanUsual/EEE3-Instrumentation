@@ -5986,7 +5986,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BAV199"
+		(property "Value" "BAV99"
 			(at 200.66 100.3299 90)
 			(effects
 				(font
