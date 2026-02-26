@@ -3178,7 +3178,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0001d4c9-f223-435e-bd0e-6850494826f7")
-		(property "Reference" "D?"
+		(property "Reference" "D5"
 			(at 61.2775 39.37 0)
 			(effects
 				(font
@@ -3230,7 +3230,7 @@
 		(instances
 			(project ""
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/19c51356-5fe8-4a9f-9623-d1f705fed6f9"
-					(reference "D?")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -5299,7 +5299,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b9d0225-8a9d-434e-a376-94a7bde52ff5")
-		(property "Reference" "D?"
+		(property "Reference" "D6"
 			(at 60.6425 62.23 0)
 			(effects
 				(font
@@ -5351,7 +5351,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/19c51356-5fe8-4a9f-9623-d1f705fed6f9"
-					(reference "D?")
+					(reference "D6")
 					(unit 1)
 				)
 			)
