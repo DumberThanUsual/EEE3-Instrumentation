@@ -2193,7 +2193,7 @@
 				(justify right)
 			)
 		)
-		(pin "VAmp.In" input
+		(pin "VAmp.Out" input
 			(at 115.57 73.66 0)
 			(uuid "03a00690-f606-4261-b528-8317f2760c58")
 			(effects
@@ -2243,7 +2243,7 @@
 				(justify right)
 			)
 		)
-		(pin "IAmp.In" input
+		(pin "IAmp.Out" input
 			(at 115.57 111.76 0)
 			(uuid "107bf8ce-83a0-418d-9bd8-f40ffc669335")
 			(effects

@@ -6775,7 +6775,7 @@
 		)
 		(uuid "62e356fd-0f00-4626-8c1e-7af025e4df8f")
 	)
-	(hierarchical_label "VAmp.In"
+	(hierarchical_label "VAmp.Out"
 		(shape input)
 		(at 207.01 40.64 0)
 		(effects
@@ -6885,7 +6885,7 @@
 		)
 		(uuid "ba80226c-3bcc-4361-9f28-5bc83096be21")
 	)
-	(hierarchical_label "IAmp.In"
+	(hierarchical_label "IAmp.Out"
 		(shape input)
 		(at 207.01 43.18 0)
 		(effects
