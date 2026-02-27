@@ -4,4 +4,5 @@
   (lib (name "More_symbols")(type "KiCad")(uri "${KIPRJMOD}/Symbols/More_symbols.kicad_sym")(options "")(descr ""))
   (lib (name "INA828")(type "KiCad")(uri "${KIPRJMOD}/Symbols/INA828.kicad_sym")(options "")(descr ""))
   (lib (name "AGQ200A12")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AGQ200A12.kicad_sym")(options "")(descr ""))
+  (lib (name "AGQ200S24Z")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AGQ200S24Z.kicad_sym")(options "")(descr ""))
 )

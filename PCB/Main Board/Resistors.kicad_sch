@@ -2287,7 +2287,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AGQ200A03X"
+		(property "Footprint" "AGQ200A12_footprint"
 			(at 147.32 134.29 0)
 			(effects
 				(font
@@ -2491,7 +2491,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AGQ200A03X"
+		(property "Footprint" "AGQ200A12_footprint"
 			(at 171.45 107.62 0)
 			(effects
 				(font
@@ -2629,7 +2629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AGQ200A03X"
+		(property "Footprint" "AGQ200A12_footprint"
 			(at 96.52 181.28 0)
 			(effects
 				(font
@@ -3125,7 +3125,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AGQ200A03X"
+		(property "Footprint" "AGQ200A12_footprint"
 			(at 123.19 158.42 0)
 			(effects
 				(font

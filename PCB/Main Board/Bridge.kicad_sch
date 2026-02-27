@@ -11644,7 +11644,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AGQ200A03X"
+		(property "Footprint" "AGQ200A12_footprint"
 			(at 158.75 135.56 0)
 			(effects
 				(font
