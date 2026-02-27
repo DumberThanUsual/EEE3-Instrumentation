@@ -5155,11 +5155,7 @@
 		(instances
 			(project ""
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-<<<<<<< Updated upstream
 					(reference "#PWR032")
-=======
-					(reference "#PWR0321")
->>>>>>> Stashed changes
 					(unit 1)
 				)
 			)
@@ -6410,70 +6406,41 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-<<<<<<< Updated upstream
-					(reference "R9")
-=======
 					(reference "R311")
->>>>>>> Stashed changes
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-<<<<<<< Updated upstream
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 260.35 99.06 180)
-=======
-		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 260.35 99.06 0)
->>>>>>> Stashed changes
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-<<<<<<< Updated upstream
-		(uuid "53418023-a346-4b27-a860-be49b7d4f320")
-		(property "Reference" "JP?"
-			(at 258.7388 96.2571 0)
-=======
 		(uuid "53fe0b13-2a8a-46eb-81a5-ad996727ce70")
 		(property "Reference" "JP306"
 			(at 260.35 102.87 0)
->>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-<<<<<<< Updated upstream
 				(justify right)
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
 			(at 259.0801 101.6 90)
-=======
-			)
-		)
-		(property "Value" "SolderJumper_2_Bridged"
-			(at 260.35 95.25 0)
->>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-<<<<<<< Updated upstream
 				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-=======
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
->>>>>>> Stashed changes
 			(at 260.35 99.06 0)
 			(effects
 				(font
@@ -6509,11 +6476,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-<<<<<<< Updated upstream
-					(reference "JP?")
-=======
 					(reference "JP306")
->>>>>>> Stashed changes
 					(unit 1)
 				)
 			)
@@ -8114,11 +8077,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-<<<<<<< Updated upstream
-					(reference "#PWR043")
-=======
 					(reference "#PWR0309")
->>>>>>> Stashed changes
 					(unit 1)
 				)
 			)
@@ -9513,151 +9472,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-<<<<<<< Updated upstream
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 96.52 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "d5fe38cd-377a-4b29-9097-1cf399e4e818")
-		(property "Reference" "JP?"
-			(at 98.1312 65.0329 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 97.7899 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 96.52 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 96.52 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9e95dbcd-e7c7-4472-98de-92eddf57a55c")
-		)
-		(pin "2"
-			(uuid "a9dd8b2b-16c3-409c-84c8-eebce4052a3d")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "JP?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 152.4 76.2 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "d69443e9-1b75-4100-9648-1fc7d80a8bd4")
-		(property "Reference" "JP?"
-			(at 150.7888 73.3971 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 151.1301 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 152.4 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.4 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 152.4 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b574c1d4-fb50-4ccb-aabe-5583738a7ea5")
-		)
-		(pin "2"
-			(uuid "a2701202-2205-45ab-907c-13db87e8892d")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "JP?")
-=======
 					(reference "R305")
->>>>>>> Stashed changes
 					(unit 1)
 				)
 			)
