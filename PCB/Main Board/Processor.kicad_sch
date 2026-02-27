@@ -5229,10 +5229,6 @@
 		(uuid "141a95b5-f968-4e5e-9e0f-7edac608706a")
 	)
 	(no_connect
-		(at 243.84 119.38)
-		(uuid "18fbe02d-eb86-437c-bbd2-cfe925b11328")
-	)
-	(no_connect
 		(at 207.01 45.72)
 		(uuid "1fc7fecf-e121-460e-9e9c-3db7552ddc85")
 	)
@@ -5471,6 +5467,16 @@
 			(type default)
 		)
 		(uuid "208eb905-bdce-43b0-a655-5a0d763feb52")
+	)
+	(wire
+		(pts
+			(xy 243.84 119.38) (xy 245.11 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21c8e08d-003a-483b-968f-799c36d8ac0d")
 	)
 	(wire
 		(pts
@@ -5721,16 +5727,6 @@
 			(type default)
 		)
 		(uuid "557bb2c1-0775-41e9-9892-ef2b8a1120ca")
-	)
-	(wire
-		(pts
-			(xy 208.28 101.6) (xy 207.01 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55ae41bc-de6d-4946-ae9d-827ab43ff621")
 	)
 	(wire
 		(pts
@@ -6634,7 +6630,7 @@
 	)
 	(hierarchical_label "R_SEL_10k"
 		(shape output)
-		(at 245.11 104.14 0)
+		(at 245.11 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6667,7 +6663,7 @@
 	)
 	(hierarchical_label "R_SEL_100"
 		(shape output)
-		(at 245.11 109.22 0)
+		(at 245.11 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6766,7 +6762,7 @@
 	)
 	(hierarchical_label "SIG_SOURCE"
 		(shape output)
-		(at 245.11 116.84 0)
+		(at 245.11 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6788,7 +6784,7 @@
 	)
 	(hierarchical_label "R_SEL_100k"
 		(shape output)
-		(at 208.28 101.6 0)
+		(at 245.11 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6854,7 +6850,7 @@
 	)
 	(hierarchical_label "R_SEL_1k"
 		(shape output)
-		(at 245.11 106.68 0)
+		(at 245.11 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6865,7 +6861,7 @@
 	)
 	(hierarchical_label "DC_INT_ISO"
 		(shape output)
-		(at 245.11 114.3 0)
+		(at 245.11 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6876,7 +6872,7 @@
 	)
 	(hierarchical_label "R_SEL_10"
 		(shape output)
-		(at 245.11 111.76 0)
+		(at 245.11 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)

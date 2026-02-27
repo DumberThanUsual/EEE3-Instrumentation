@@ -651,10 +651,6 @@
       "Resistor Selector"
     ],
     [
-      "3b141455-3ffc-4caf-b236-781e4c798512",
-      "External DAC"
-    ],
-    [
       "95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad",
       "Voltage Amplifier"
     ],
@@ -665,6 +661,10 @@
     [
       "19c51356-5fe8-4a9f-9623-d1f705fed6f9",
       "Power"
+    ],
+    [
+      "3b141455-3ffc-4caf-b236-781e4c798512",
+      "External DAC"
     ]
   ],
   "text_variables": {}
