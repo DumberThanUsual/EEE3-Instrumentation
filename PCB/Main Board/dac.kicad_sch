@@ -2,10 +2,10 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "203a1137-cbcd-4ae0-bfed-fc018beb79a4")
+	(uuid "b4c12d20-977f-4510-b2eb-a2be118235e8")
 	(paper "A4")
 	(lib_symbols)
-	(text "summing amp dac with relay to switch between 3.3v and 18v\n"
+	(text "summing amp dac with relay (or transmission gate variable gian) to switch between 3.3v and 18v\n"
 		(exclude_from_sim no)
 		(at 118.11 80.01 0)
 		(effects
