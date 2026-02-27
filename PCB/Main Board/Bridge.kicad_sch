@@ -5408,7 +5408,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 7582b5d1-c63a-49fc-a750-83b8813b7000)
+			(uuid 2d26c281-17bb-4f9b-818a-dbac9d8f0ba6)
 		)
 	)
 	(symbol
@@ -9763,25 +9763,25 @@
 			(uuid "47ca6dc0-2a46-4703-be69-f5b57e5e7527")
 		)
 		(pin "4"
-			(uuid "08183afe-bf38-4c3f-8104-417c453859c5")
+			(uuid "08183afe-bf38-4c3f-8104-417c453859c4")
 		)
 		(pin "3"
-			(uuid "3a86be37-3793-42f1-99b2-8caafe9e176f")
+			(uuid "3a86be37-3793-42f1-99b2-8caafe9e176e")
 		)
 		(pin "5"
 			(uuid "d6830fb1-04d4-47cb-9604-50f383ed1502")
 		)
 		(pin "8"
-			(uuid "45071018-10c0-415b-963a-e857bc779f76")
+			(uuid "45071018-10c0-415b-963a-e857bc779f75")
 		)
 		(pin "7"
 			(uuid "bdb5954b-7dff-4f32-8a63-464990602d6e")
 		)
 		(pin "1"
-			(uuid "3124f67e-1648-41a8-881a-deb8b21fe0d5")
+			(uuid "3124f67e-1648-41a8-881a-deb8b21fe0d4")
 		)
 		(pin "2"
-			(uuid "225d23ee-188c-4102-942d-eee3f974d340")
+			(uuid "225d23ee-188c-4102-942d-eee3f974d33f")
 		)
 		(instances
 			(project "Main Board"
