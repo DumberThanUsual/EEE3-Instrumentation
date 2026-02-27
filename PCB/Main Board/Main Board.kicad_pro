@@ -187,8 +187,7 @@
         }
       ],
       "track_widths": [
-        0.0,
-        0.5
+        0.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -649,6 +648,10 @@
     [
       "2542314c-0b08-493b-856b-65d680d18812",
       "Resistor Selector"
+    ],
+    [
+      "3b141455-3ffc-4caf-b236-781e4c798512",
+      "External DAC"
     ],
     [
       "95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad",

@@ -1,0 +1,18 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "203a1137-cbcd-4ae0-bfed-fc018beb79a4")
+	(paper "A4")
+	(lib_symbols)
+	(text "summing amp dac with relay to switch between 3.3v and 18v\n"
+		(exclude_from_sim no)
+		(at 118.11 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ed8f1ef8-db78-402d-8cd9-9752ac83aaca")
+	)
+)

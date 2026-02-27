@@ -1552,7 +1552,7 @@
 		)
 	)
 	(sheet
-		(at 55.88 130.81)
+		(at 55.88 165.1)
 		(size 25.4 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1568,7 +1568,7 @@
 		)
 		(uuid "19c51356-5fe8-4a9f-9623-d1f705fed6f9")
 		(property "Sheetname" "Power"
-			(at 55.88 130.0984 0)
+			(at 55.88 164.3884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1577,7 +1577,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 55.88 156.7946 0)
+			(at 55.88 191.0846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1741,6 +1741,48 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
 					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 55.88 130.81)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3b141455-3ffc-4caf-b236-781e4c798512")
+		(property "Sheetname" "External DAC"
+			(at 55.88 130.0984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac.kicad_sch"
+			(at 55.88 156.7946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
+					(page "9")
 				)
 			)
 		)
