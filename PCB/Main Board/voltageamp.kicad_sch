@@ -3305,7 +3305,7 @@
 		(uuid "5474e228-37b7-4ab3-9dc9-c36fb532501a")
 	)
 	(junction
-		(at 185.42 97.79)
+		(at 184.15 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5dbd38d0-f0e6-4425-9e0f-b9019757e76b")
@@ -3596,7 +3596,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 97.79) (xy 195.58 97.79)
+			(xy 184.15 97.79) (xy 195.58 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3766,7 +3766,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 96.52) (xy 185.42 97.79)
+			(xy 184.15 96.52) (xy 184.15 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4246,7 +4246,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 97.79) (xy 185.42 99.06)
+			(xy 184.15 97.79) (xy 184.15 99.06)
 		)
 		(stroke
 			(width 0)
@@ -6790,7 +6790,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 185.42 92.71 180)
+		(at 184.15 92.71 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6799,7 +6799,7 @@
 		(fields_autoplaced yes)
 		(uuid "4929d23e-e8f4-4a7c-ac38-b59d9447cd83")
 		(property "Reference" "R614"
-			(at 187.96 91.4399 0)
+			(at 186.69 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6808,7 +6808,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 187.96 93.9799 0)
+			(at 186.69 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6817,7 +6817,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 187.198 92.71 90)
+			(at 185.928 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6826,7 +6826,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 92.71 0)
+			(at 184.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6835,7 +6835,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 185.42 92.71 0)
+			(at 184.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7199,7 +7199,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 185.42 106.68 0)
+		(at 184.15 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7208,7 +7208,7 @@
 		(fields_autoplaced yes)
 		(uuid "566e8dcb-dc2c-491c-8fe4-bd85b788aefe")
 		(property "Reference" "#PWR0614"
-			(at 185.42 113.03 0)
+			(at 184.15 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7217,7 +7217,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.42 111.76 0)
+			(at 184.15 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7225,7 +7225,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 106.68 0)
+			(at 184.15 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7234,7 +7234,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 106.68 0)
+			(at 184.15 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7243,7 +7243,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 185.42 106.68 0)
+			(at 184.15 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7797,7 +7797,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5k"
 			(at 203.2 82.55 90)
 			(effects
 				(font
@@ -10627,7 +10627,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3VA")
-		(at 185.42 88.9 0)
+		(at 184.15 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10636,7 +10636,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6b37e3e-8aeb-4ce0-9777-630918886ed9")
 		(property "Reference" "#PWR0613"
-			(at 185.42 92.71 0)
+			(at 184.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10645,7 +10645,7 @@
 			)
 		)
 		(property "Value" "+3.3VA"
-			(at 185.42 83.82 0)
+			(at 184.15 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10653,7 +10653,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 88.9 0)
+			(at 184.15 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10662,7 +10662,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 88.9 0)
+			(at 184.15 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10671,7 +10671,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 185.42 88.9 0)
+			(at 184.15 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11340,7 +11340,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 185.42 102.87 180)
+		(at 184.15 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11349,7 +11349,7 @@
 		(fields_autoplaced yes)
 		(uuid "f326575d-52d3-402a-9086-e62ea6b87ca4")
 		(property "Reference" "R615"
-			(at 187.96 101.5999 0)
+			(at 186.69 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11358,7 +11358,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 187.96 104.1399 0)
+			(at 186.69 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11367,7 +11367,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 187.198 102.87 90)
+			(at 185.928 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11376,7 +11376,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 102.87 0)
+			(at 184.15 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11385,7 +11385,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 185.42 102.87 0)
+			(at 184.15 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
