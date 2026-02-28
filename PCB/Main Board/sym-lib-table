@@ -5,4 +5,5 @@
   (lib (name "INA828")(type "KiCad")(uri "${KIPRJMOD}/Symbols/INA828.kicad_sym")(options "")(descr ""))
   (lib (name "AGQ200A12")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AGQ200A12.kicad_sym")(options "")(descr ""))
   (lib (name "AGQ200S24Z")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AGQ200S24Z.kicad_sym")(options "")(descr ""))
+  (lib (name "4610X-R2R-103LF")(type "KiCad")(uri "${KIPRJMOD}/Symbols/4610X-R2R-103LF.kicad_sym")(options "")(descr ""))
 )
