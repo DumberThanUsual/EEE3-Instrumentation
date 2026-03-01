@@ -1,0 +1,24 @@
+* E:\Git\Group Project\EEE3-Instrumentation\Simulations\Buffer\buffer.asc
+XU1 N001 N004 N003 opamp Aol=100K GBW=10Meg
+V1 N004 0 SINE(0 1 1Meg)
+V2 V+ 0 18
+V3 0 V- 18
+R3 N002 V+ 200
+R4 V- N005 200
+Q2 V+ N002 N001 0 2N4401
+V4 NC_01 0 PULSE(-18 18 1f 5u 1 1 1)
+Q1 V- N005 N001 0 2N4403
+D1 N002 N003 D
+D2 N003 N005 D
+C1 V+ 0 10n
+C2 V- 0 10n
+.model D D
+.lib C:\Users\harry\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\harry\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 0 5u 0 1u
+.model D D(Ron=1m Roff=10Meg Vfwd=0.75 Vrev=100)
+.lib opamp.sub
+.backanno
+.end
