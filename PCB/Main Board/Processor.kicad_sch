@@ -5711,7 +5711,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 81.28) (xy 146.05 81.28)
+			(xy 142.24 81.28) (xy 146.05 81.28)
 		)
 		(stroke
 			(width 0)
@@ -6021,7 +6021,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 88.9) (xy 146.05 88.9)
+			(xy 142.24 88.9) (xy 146.05 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6331,7 +6331,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 83.82) (xy 146.05 83.82)
+			(xy 142.24 83.82) (xy 146.05 83.82)
 		)
 		(stroke
 			(width 0)
@@ -6601,7 +6601,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 78.74) (xy 146.05 78.74)
+			(xy 142.24 78.74) (xy 146.05 78.74)
 		)
 		(stroke
 			(width 0)
@@ -6631,7 +6631,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 91.44) (xy 146.05 91.44)
+			(xy 142.24 91.44) (xy 146.05 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6671,7 +6671,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 93.98) (xy 146.05 93.98)
+			(xy 142.24 93.98) (xy 146.05 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6901,7 +6901,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 86.36) (xy 146.05 86.36)
+			(xy 142.24 86.36) (xy 146.05 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7141,7 +7141,7 @@
 	)
 	(hierarchical_label "R_SEL_10k"
 		(shape output)
-		(at 139.7 91.44 180)
+		(at 142.24 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7174,7 +7174,7 @@
 	)
 	(hierarchical_label "R_SEL_100"
 		(shape output)
-		(at 139.7 93.98 180)
+		(at 142.24 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7193,6 +7193,28 @@
 			(justify right)
 		)
 		(uuid "0cb8aacc-70a3-4c1d-8d55-5b00965d9ec0")
+	)
+	(hierarchical_label "DAC_7"
+		(shape output)
+		(at 142.24 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18f9a684-6211-4cc0-af07-4b742a1d933a")
+	)
+	(hierarchical_label "DAC_0"
+		(shape output)
+		(at 190.5 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "278d6e06-44cb-453e-ad9a-0390d521beeb")
 	)
 	(hierarchical_label "IAmp.AC_100"
 		(shape output)
@@ -7229,7 +7251,7 @@
 	)
 	(hierarchical_label "VAmp.AC_10k"
 		(shape output)
-		(at 119.38 83.82 180)
+		(at 142.24 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7240,12 +7262,12 @@
 	)
 	(hierarchical_label "VAmp.~{x100}"
 		(shape output)
-		(at 119.38 73.66 180)
+		(at 190.5 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "4035414e-3346-45d5-a053-d95e5a5f6e29")
 	)
@@ -7271,9 +7293,20 @@
 		)
 		(uuid "56048a8d-4f09-4727-926c-3c6fcf903503")
 	)
+	(hierarchical_label "DAC_5"
+		(shape output)
+		(at 142.24 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "59ebb3fb-2d02-427f-ba0b-c0db67d018be")
+	)
 	(hierarchical_label "SIG_SOURCE"
 		(shape output)
-		(at 203.2 119.38 0)
+		(at 190.5 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7293,17 +7326,6 @@
 		)
 		(uuid "716a2d30-fb6e-458c-b464-0e03d0ef0e75")
 	)
-	(hierarchical_label "DAC_3"
-		(shape output)
-		(at 190.5 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "75a19ef6-5995-44a4-8a80-3bf3372017b1")
-	)
 	(hierarchical_label "R_SEL_100k"
 		(shape output)
 		(at 190.5 78.74 0)
@@ -7317,7 +7339,7 @@
 	)
 	(hierarchical_label "VAmp.x1"
 		(shape output)
-		(at 119.38 68.58 180)
+		(at 142.24 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7326,7 +7348,7 @@
 		)
 		(uuid "86a2fb11-1718-458a-8f18-3c5bedcb3c06")
 	)
-	(hierarchical_label "DAC_5"
+	(hierarchical_label "DAC_4"
 		(shape output)
 		(at 190.5 60.96 0)
 		(effects
@@ -7335,11 +7357,11 @@
 			)
 			(justify left)
 		)
-		(uuid "86b4f9e7-7ee2-4209-ac0b-1c355bc7353d")
+		(uuid "89e4b344-af07-4aa6-8432-fa1b39c876bf")
 	)
 	(hierarchical_label "VAmp.AC_100"
 		(shape output)
-		(at 119.38 78.74 180)
+		(at 142.24 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7361,7 +7383,7 @@
 	)
 	(hierarchical_label "DC_INT_ISO"
 		(shape output)
-		(at 139.7 78.74 180)
+		(at 142.24 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7372,7 +7394,7 @@
 	)
 	(hierarchical_label "VAmp.AC_EN"
 		(shape output)
-		(at 119.38 76.2 180)
+		(at 142.24 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7383,7 +7405,7 @@
 	)
 	(hierarchical_label "VAmp.x3"
 		(shape output)
-		(at 119.38 71.12 180)
+		(at 142.24 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7394,7 +7416,7 @@
 	)
 	(hierarchical_label "R_SEL_1k"
 		(shape output)
-		(at 139.7 88.9 180)
+		(at 142.24 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7402,17 +7424,6 @@
 			(justify right)
 		)
 		(uuid "aa8fd6c2-0c61-4efe-8f90-fd9de4b82077")
-	)
-	(hierarchical_label "DAC_1"
-		(shape output)
-		(at 190.5 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b01b2894-5260-4966-b2f6-5adbe19f5215")
 	)
 	(hierarchical_label "R_SEL_10"
 		(shape output)
@@ -7436,16 +7447,27 @@
 		)
 		(uuid "bef23406-b297-44f2-b316-6cbb8a9ab3aa")
 	)
-	(hierarchical_label "DAC_0"
+	(hierarchical_label "DAC_3"
 		(shape output)
-		(at 139.7 81.28 180)
+		(at 190.5 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "bf694c49-39ca-4207-8f27-eebc734f95c6")
+		(uuid "c5f8e1e2-b6fb-4051-9f86-43a67d3916e0")
+	)
+	(hierarchical_label "DAC_2"
+		(shape output)
+		(at 190.5 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c604c659-b3fc-409e-b0aa-6fc5420c9ac0")
 	)
 	(hierarchical_label "Source.Signal"
 		(shape output)
@@ -7469,9 +7491,20 @@
 		)
 		(uuid "c89c61a9-5e8e-4905-aece-b5dc3c73d8da")
 	)
+	(hierarchical_label "DAC_6"
+		(shape output)
+		(at 142.24 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ca64c395-6c24-44fc-9f80-15723b37c154")
+	)
 	(hierarchical_label "VAmp.AC_1k"
 		(shape output)
-		(at 119.38 81.28 180)
+		(at 142.24 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7491,31 +7524,9 @@
 		)
 		(uuid "d8222585-b9c7-4774-aef0-dbcf0f5818b4")
 	)
-	(hierarchical_label "DAC_2"
-		(shape output)
-		(at 190.5 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d93422c4-b540-46df-aac4-f6f339300202")
-	)
-	(hierarchical_label "DAC_4"
-		(shape output)
-		(at 190.5 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e2deea25-5d75-4c07-a251-ffbefcda4425")
-	)
 	(hierarchical_label "VAmp.{slash}4"
 		(shape output)
-		(at 119.38 66.04 180)
+		(at 142.24 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7535,16 +7546,16 @@
 		)
 		(uuid "ede4101f-8cbf-447a-bcf2-6ace81058e7d")
 	)
-	(hierarchical_label "DAC_7"
+	(hierarchical_label "DAC_1"
 		(shape output)
-		(at 139.7 83.82 180)
+		(at 190.5 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "f698b8cf-6c81-4d2e-a03c-274607fb08a0")
+		(uuid "f837cdc7-f2c9-4733-a51e-3e21de07c151")
 	)
 	(hierarchical_label "DC_INT_ISO"
 		(shape output)
@@ -7556,17 +7567,6 @@
 			(justify right)
 		)
 		(uuid "fadeeef5-8734-4f79-a838-72213b58b2b7")
-	)
-	(hierarchical_label "DAC_6"
-		(shape output)
-		(at 139.7 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fde2c28c-f368-45dc-bcf5-4c36794868e4")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
