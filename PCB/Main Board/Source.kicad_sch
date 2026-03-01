@@ -3880,7 +3880,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:2N2219"
+		(symbol "Transistor_BJT:TIP41C"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -3889,7 +3889,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.905 0)
+				(at 6.35 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3897,8 +3897,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "2N2219"
-				(at 5.08 0 0)
+			(property "Value" "TIP41C"
+				(at 6.35 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3906,8 +3906,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-39-3"
-				(at 5.08 -1.905 0)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+				(at 6.35 -1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3917,7 +3917,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF"
+			(property "Datasheet" "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3927,7 +3927,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "800mA Ic, 50V Vce, NPN Transistor, TO-39"
+			(property "Description" "6A Ic, 100V Vce, Power NPN Transistor, TO-220"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3936,7 +3936,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "NPN Transistor"
+			(property "ki_keywords" "power NPN Transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3945,7 +3945,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?39*"
+			(property "ki_fp_filters" "TO?220*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3954,7 +3954,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "2N2219_0_1"
+			(symbol "TIP41C_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -3991,7 +3991,7 @@
 					)
 				)
 			)
-			(symbol "2N2219_1_1"
+			(symbol "TIP41C_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -4038,7 +4038,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4056,7 +4056,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4074,7 +4074,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4085,7 +4085,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:2N3906"
+		(symbol "Transistor_BJT:TIP42C"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -4094,7 +4094,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.905 0)
+				(at 6.35 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4102,8 +4102,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "2N3906"
-				(at 5.08 0 0)
+			(property "Value" "TIP42C"
+				(at 6.35 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4111,8 +4111,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-				(at 5.08 -1.905 0)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+				(at 6.35 -1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4122,7 +4122,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF"
+			(property "Datasheet" "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4132,7 +4132,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92"
+			(property "Description" "-6A Ic, -100V Vce, Power PNP Transistor, TO-220"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4141,7 +4141,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "PNP Transistor"
+			(property "ki_keywords" "power PNP Transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4150,7 +4150,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "TO?220*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4159,7 +4159,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "2N3906_0_1"
+			(symbol "TIP42C_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -4232,7 +4232,7 @@
 					)
 				)
 			)
-			(symbol "2N3906_1_1"
+			(symbol "TIP42C_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -4243,7 +4243,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4261,7 +4261,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4279,7 +4279,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8702,150 +8702,6 @@
 		)
 	)
 	(symbol
-		(lib_id "4610X-R2R-103LF:4610X-R2R-103LF")
-		(at 201.93 124.46 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "53734887-8f0c-4aab-9159-a187bef49bc7")
-		(property "Reference" "RN301"
-			(at 191.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4610X-R2R-103LF"
-			(at 191.77 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP10"
-			(at 185.42 219.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.bourns.com/pdfs/r2r.pdf"
-			(at 185.42 319.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor Networks & Arrays 10Pin 2% 10K"
-			(at 201.93 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "5.08"
-			(at 185.42 519.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "652-4610X-R2R-103LF"
-			(at 185.42 619.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/4610X-R2R-103LF?qs=aoibn3z0pk31UFm1GxQJlw%3D%3D"
-			(at 185.42 719.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Bourns"
-			(at 185.42 819.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "4610X-R2R-103LF"
-			(at 185.42 919.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fb80482d-9f5d-4c46-9642-fb69705f329d")
-		)
-		(pin "4"
-			(uuid "89aac90d-6842-4153-99e9-ada66119da97")
-		)
-		(pin "5"
-			(uuid "de4f69f1-83c8-4650-8ed5-d0630a9940d6")
-		)
-		(pin "9"
-			(uuid "7a45a088-e423-4106-a134-7ed001d79968")
-		)
-		(pin "1"
-			(uuid "90dc9c23-dada-47a9-babd-2eda929f0634")
-		)
-		(pin "3"
-			(uuid "70e8aa72-7193-499b-9dd9-4cbca37e88f0")
-		)
-		(pin "6"
-			(uuid "fec54f35-727a-47b3-93f1-2fcb8e60ca71")
-		)
-		(pin "8"
-			(uuid "0186dd87-f9a3-4b7a-882e-0ec5e8457999")
-		)
-		(pin "7"
-			(uuid "d8f40267-55d1-4587-8956-1128ebf3f2e3")
-		)
-		(pin "10"
-			(uuid "a8062f5d-e9d8-413d-a089-21510037f19e")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "RN301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 256.54 73.66 180)
 		(unit 1)
@@ -9705,6 +9561,81 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
 					(reference "#PWR0314")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:TIP41C")
+		(at 209.55 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "677d126b-fd6b-486c-8f78-86b4ad0b895f")
+		(property "Reference" "Q?"
+			(at 214.63 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TIP41C"
+			(at 214.63 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 215.9 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF"
+			(at 209.55 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "6A Ic, 100V Vce, Power NPN Transistor, TO-220"
+			(at 209.55 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "bbe1c9f8-acc0-46ff-b165-f22c02a25f55")
+		)
+		(pin "1"
+			(uuid "03978d8f-0064-4fc2-a4af-a612d8e828b5")
+		)
+		(pin "2"
+			(uuid "2d7bc89b-afc3-4c2d-bfeb-a69f09e04471")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
+					(reference "Q?")
 					(unit 1)
 				)
 			)
@@ -10715,6 +10646,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:TIP42C")
+		(at 209.55 82.55 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9e86260a-8a4a-4746-b9ad-a64015a8076e")
+		(property "Reference" "Q?"
+			(at 214.63 83.8201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TIP42C"
+			(at 214.63 81.2801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 215.9 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF"
+			(at 209.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "-6A Ic, -100V Vce, Power PNP Transistor, TO-220"
+			(at 209.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a82baa0b-d6c3-4232-978a-93e8220d900f")
+		)
+		(pin "2"
+			(uuid "c7b396e4-a4f3-4200-b3c7-986114278dba")
+		)
+		(pin "3"
+			(uuid "f03cb953-cf41-44c8-b9c6-d806b6d8257a")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:OPA2197xD")
 		(at 173.99 73.66 0)
 		(mirror x)
@@ -10796,82 +10803,6 @@
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
 					(reference "U304")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:2N3906")
-		(at 209.55 82.55 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9f7fd4bd-1157-4bc5-a518-2daeee28cc9b")
-		(property "Reference" "Q302"
-			(at 214.63 83.8201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N4403"
-			(at 214.63 81.2801 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
-			(at 214.63 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF"
-			(at 209.55 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92"
-			(at 209.55 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "edcd2067-e406-45a9-9b1a-fff6f48fcc02")
-		)
-		(pin "1"
-			(uuid "cc206fbc-062b-4984-ab0b-28e3aa31e7f4")
-		)
-		(pin "3"
-			(uuid "8b72fced-febc-4cdd-9b88-aa89ca40f6fe")
-		)
-		(instances
-			(project ""
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "Q302")
-					(unit 1)
 				)
 			)
 		)
@@ -12183,6 +12114,150 @@
 		)
 	)
 	(symbol
+		(lib_id "4610X-R2R-103LF:4610X-R2R-103LF")
+		(at 201.93 124.46 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0702dd8-8824-4563-97f5-a4a89a93af35")
+		(property "Reference" "RN?"
+			(at 191.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4610X-R2R-103LF"
+			(at 191.77 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SIP249W51P254L2535H508Q10P"
+			(at 185.42 219.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/pdfs/r2r.pdf"
+			(at 185.42 319.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor Networks & Arrays 10Pin 2% 10K"
+			(at 201.93 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "5.08"
+			(at 185.42 519.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "652-4610X-R2R-103LF"
+			(at 185.42 619.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/4610X-R2R-103LF?qs=aoibn3z0pk31UFm1GxQJlw%3D%3D"
+			(at 185.42 719.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Bourns"
+			(at 185.42 819.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4610X-R2R-103LF"
+			(at 185.42 919.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "0970166d-0dc2-4f0c-8f99-eb4614dcc165")
+		)
+		(pin "9"
+			(uuid "0af87c78-7424-4f7f-9367-627bf7acdfd6")
+		)
+		(pin "8"
+			(uuid "0517304b-fd85-4b1b-9a66-e180f744d109")
+		)
+		(pin "7"
+			(uuid "4a5ea3ec-5cbf-4645-b4ec-ff4cd005b1da")
+		)
+		(pin "2"
+			(uuid "8ef4b324-f94f-4d92-a7d7-febf86238b32")
+		)
+		(pin "1"
+			(uuid "6dc32619-eb06-49f8-aa88-02d1c570c421")
+		)
+		(pin "10"
+			(uuid "880b7257-27ff-456b-86c8-057be0bf019c")
+		)
+		(pin "3"
+			(uuid "824002b6-06a7-490e-9589-4535b1d570cb")
+		)
+		(pin "5"
+			(uuid "5b8ca97a-9008-4d55-a4c1-135efee2815c")
+		)
+		(pin "6"
+			(uuid "4a7bb2f6-3039-4f91-899c-0abcd537d271")
+		)
+		(instances
+			(project ""
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
+					(reference "RN?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 187.96 92.71 90)
 		(unit 1)
@@ -12998,82 +13073,6 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
 					(reference "R304")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:2N2219")
-		(at 209.55 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eecf3a80-0b0a-410f-9c82-6c286cdf016f")
-		(property "Reference" "Q301"
-			(at 214.63 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N4401"
-			(at 214.63 66.0399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
-			(at 214.63 66.675 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF"
-			(at 209.55 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "800mA Ic, 50V Vce, NPN Transistor, TO-39"
-			(at 209.55 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "65c86fa1-ffd4-45a3-8efd-ec40edb7cdcb")
-		)
-		(pin "1"
-			(uuid "e84d9047-ba2b-436b-a002-7e5f2e6f0792")
-		)
-		(pin "2"
-			(uuid "574a623b-ffc0-45ef-aecd-e3be6bae2070")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "Q301")
 					(unit 1)
 				)
 			)
