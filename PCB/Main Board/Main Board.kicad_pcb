@@ -19654,7 +19654,7 @@
 	(footprint "AGQ:RELAY_AGQ_A_PAN"
 		(layer "F.Cu")
 		(uuid "5130cfc4-cb0f-4ae4-b97a-217815bd78b6")
-		(at 212.598 119.126 90)
+		(at 217.678 118.491 90)
 		(tags "AGQ200A12 ")
 		(property "Reference" "K301"
 			(at 0 0 90)
@@ -31806,7 +31806,7 @@
 	(footprint "Resistor_SMD:R_2512_6332Metric"
 		(layer "F.Cu")
 		(uuid "7a8d2616-83c7-4746-b744-763bb51c7d81")
-		(at 247.771 93.032)
+		(at 240.786 134.942)
 		(descr "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R318"
@@ -34814,11 +34814,11 @@
 	(footprint "Resistor_SMD:R_2512_6332Metric"
 		(layer "F.Cu")
 		(uuid "84080d12-d2b0-4b6a-a784-b16d4326ae49")
-		(at 247.65 105.664 -90)
+		(at 248.636215 134.946765 180)
 		(descr "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R315"
-			(at 0 -2.63 270)
+			(at 0 -2.63 0)
 			(layer "F.SilkS")
 			(uuid "0ecf061f-4aa4-46f7-8cee-46c2ee06392b")
 			(effects
@@ -34829,7 +34829,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 0 2.63 270)
+			(at 0 2.63 0)
 			(layer "F.Fab")
 			(uuid "b419941d-6ca0-424e-a427-5919b4b76388")
 			(effects
@@ -34840,7 +34840,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 270)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d6a43352-cf41-459c-b030-125956603e95")
@@ -34852,7 +34852,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 270)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fe2c75c6-a3f2-4e8c-9ff3-1ad1046f154b")
@@ -34888,9 +34888,10 @@
 			(layer "F.SilkS")
 			(uuid "6b5431b0-3d43-455b-bb0f-c78d11cb46c8")
 		)
-		(fp_rect
-			(start -3.83 -1.93)
-			(end 3.83 1.93)
+		(fp_poly
+			(pts
+				(xy -3.83 -1.93) (xy -3.83 1.93) (xy 3.83 1.93) (xy 3.83 -1.93)
+			)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -34899,9 +34900,10 @@
 			(layer "F.CrtYd")
 			(uuid "80e2f2e0-fe1a-4581-bbe4-7e1064ec2670")
 		)
-		(fp_rect
-			(start -3.15 -1.6)
-			(end 3.15 1.6)
+		(fp_poly
+			(pts
+				(xy -3.15 -1.6) (xy -3.15 1.6) (xy 3.15 1.6) (xy 3.15 -1.6)
+			)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -34911,7 +34913,7 @@
 			(uuid "ddc67c41-f62d-4694-a28d-96521a773ca9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "b15f1a99-a11e-4882-a50c-496d702bd776")
 			(effects
@@ -34922,7 +34924,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -2.9625 0 270)
+			(at -2.9625 0 180)
 			(size 1.225 3.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.204082)
@@ -34931,7 +34933,7 @@
 			(uuid "610e55b0-aebc-4e2e-922b-ca5dc06b7235")
 		)
 		(pad "2" smd roundrect
-			(at 2.9625 0 270)
+			(at 2.9625 0 180)
 			(size 1.225 3.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.204082)
@@ -53001,7 +53003,7 @@
 	(footprint "Resistor_SMD:R_2512_6332Metric"
 		(layer "F.Cu")
 		(uuid "dd4e84f0-8e14-4807-bec2-3146500f17d9")
-		(at 247.771 97.942)
+		(at 253.486 125.882)
 		(descr "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R319"
@@ -60626,7 +60628,7 @@
 	(footprint "Resistor_SMD:R_2512_6332Metric"
 		(layer "F.Cu")
 		(uuid "f7b94af0-0bae-4593-8c9a-b8a39f18bc5b")
-		(at 247.771 88.122)
+		(at 253.486 116.062)
 		(descr "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R316"
