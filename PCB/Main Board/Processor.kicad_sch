@@ -1900,104 +1900,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_13"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_13_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_13_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "GND_14"
 			(power)
 			(pin_names
@@ -5433,504 +5335,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_Array:ULN2003"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 15.875 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "ULN2003"
-				(at 0 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/uln2003a.pdf"
-				(at 2.54 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "High Voltage, High Current Darlington Transistor Arrays, SOIC16/SOIC16W/DIP16/TSSOP16"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "darlington transistor array"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* SSOP*4.4x5.2mm*P0.65mm* TSSOP*4.4x5mm*P0.65mm* SOIC*W*5.3x10.2mm*P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ULN2003_0_1"
-				(rectangle
-					(start -7.62 -12.7)
-					(end 7.62 12.7)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.572 5.08) (xy -3.556 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.556 6.096) (xy -3.556 4.064) (xy -2.032 5.08) (xy -3.556 6.096)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.778 5.08)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 5.08) (xy 4.064 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 2.54)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -1.27 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -1.27 -2.286)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -0.508 5.08)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 5.08) (xy -0.508 10.16) (xy 2.921 10.16)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 6.731) (xy -1.016 6.731)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.969) (xy -1.016 5.969) (xy -0.508 6.731) (xy 0 5.969)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "ULN2003_1_1"
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "I1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "I2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "I3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "I4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "I5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -7.62 0)
-					(length 2.54)
-					(name "I6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -10.16 0)
-					(length 2.54)
-					(name "I7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -15.24 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 10.16 180)
-					(length 2.54)
-					(name "COM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "O1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "O2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "O3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "O4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "O5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 10.16 -7.62 180)
-					(length 2.54)
-					(name "O6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 10.16 -10.16 180)
-					(length 2.54)
-					(name "O7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -6427,16 +5831,6 @@
 		)
 		(uuid "0c474a55-413d-4de6-b652-f86acbbef669")
 	)
-	(text "flyback included on psu\n"
-		(exclude_from_sim no)
-		(at 215.9 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2198dbaf-9bf4-4532-a21e-93cda929c8a6")
-	)
 	(text "ADC2_IN1\n"
 		(exclude_from_sim no)
 		(at 205.74 43.18 0)
@@ -6592,10 +5986,6 @@
 		(uuid "b6894f2c-54a1-4d4a-8633-be97e84f0fdb")
 	)
 	(no_connect
-		(at 223.52 99.06)
-		(uuid "c2f47ea8-c208-4802-862a-cc66588721f0")
-	)
-	(no_connect
 		(at 186.69 76.2)
 		(uuid "d1c94111-2c17-4212-8ab1-1a962e0ffe41")
 	)
@@ -6665,7 +6055,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 111.76) (xy 186.69 111.76)
+			(xy 186.69 111.76) (xy 203.2 111.76)
 		)
 		(stroke
 			(width 0)
@@ -6702,16 +6092,6 @@
 			(type default)
 		)
 		(uuid "0c0bad3a-6a05-40ab-bc3c-d258f0737b2a")
-	)
-	(wire
-		(pts
-			(xy 223.52 114.3) (xy 224.79 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12e8b578-4497-4f4d-8866-c941710cdd34")
 	)
 	(wire
 		(pts
@@ -6775,33 +6155,13 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 106.68) (xy 186.69 106.68)
+			(xy 186.69 106.68) (xy 203.2 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "208eb905-bdce-43b0-a655-5a0d763feb52")
-	)
-	(wire
-		(pts
-			(xy 223.52 119.38) (xy 224.79 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21c8e08d-003a-483b-968f-799c36d8ac0d")
-	)
-	(wire
-		(pts
-			(xy 224.79 111.76) (xy 223.52 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2583068d-df78-4431-8ed9-0d8095ed5160")
 	)
 	(wire
 		(pts
@@ -6985,7 +6345,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 119.38) (xy 186.69 119.38)
+			(xy 186.69 119.38) (xy 203.2 119.38)
 		)
 		(stroke
 			(width 0)
@@ -7105,7 +6465,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 116.84) (xy 186.69 116.84)
+			(xy 186.69 116.84) (xy 203.2 116.84)
 		)
 		(stroke
 			(width 0)
@@ -7122,16 +6482,6 @@
 			(type default)
 		)
 		(uuid "5cb75606-bb2f-4c67-807b-3239ead25f67")
-	)
-	(wire
-		(pts
-			(xy 224.79 106.68) (xy 223.52 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d36ba91-e1c8-4a8e-85fe-99517ff349e4")
 	)
 	(wire
 		(pts
@@ -7325,16 +6675,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 116.84) (xy 223.52 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93b8ea7a-9dd0-4934-b951-26aeb49915af")
-	)
-	(wire
-		(pts
 			(xy 85.09 31.75) (xy 85.09 39.37)
 		)
 		(stroke
@@ -7345,7 +6685,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 114.3) (xy 186.69 114.3)
+			(xy 186.69 114.3) (xy 203.2 114.3)
 		)
 		(stroke
 			(width 0)
@@ -7545,16 +6885,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 109.22) (xy 223.52 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c717a346-b3e5-40d6-81cf-5e79d1c965e6")
-	)
-	(wire
-		(pts
 			(xy 72.39 31.75) (xy 72.39 39.37)
 		)
 		(stroke
@@ -7635,7 +6965,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 104.14) (xy 186.69 104.14)
+			(xy 186.69 104.14) (xy 203.2 104.14)
 		)
 		(stroke
 			(width 0)
@@ -7662,16 +6992,6 @@
 			(type default)
 		)
 		(uuid "db516e3c-d309-4ce1-ae6f-1e11fdb02048")
-	)
-	(wire
-		(pts
-			(xy 224.79 104.14) (xy 223.52 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dea67329-2d7d-4144-b215-a4a5d3c1d1dc")
 	)
 	(wire
 		(pts
@@ -7735,7 +7055,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 109.22) (xy 186.69 109.22)
+			(xy 186.69 109.22) (xy 203.2 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8075,7 +7395,7 @@
 	)
 	(hierarchical_label "R_SEL_10k"
 		(shape output)
-		(at 224.79 106.68 0)
+		(at 203.2 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8108,7 +7428,7 @@
 	)
 	(hierarchical_label "R_SEL_100"
 		(shape output)
-		(at 224.79 111.76 0)
+		(at 203.2 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8218,7 +7538,7 @@
 	)
 	(hierarchical_label "SIG_SOURCE"
 		(shape output)
-		(at 224.79 119.38 0)
+		(at 203.2 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8251,7 +7571,7 @@
 	)
 	(hierarchical_label "R_SEL_100k"
 		(shape output)
-		(at 224.79 104.14 0)
+		(at 203.2 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8328,7 +7648,7 @@
 	)
 	(hierarchical_label "R_SEL_1k"
 		(shape output)
-		(at 224.79 109.22 0)
+		(at 203.2 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8350,7 +7670,7 @@
 	)
 	(hierarchical_label "DC_INT_ISO"
 		(shape output)
-		(at 224.79 116.84 0)
+		(at 203.2 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8361,7 +7681,7 @@
 	)
 	(hierarchical_label "R_SEL_10"
 		(shape output)
-		(at 224.79 114.3 0)
+		(at 203.2 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9668,117 +8988,6 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/e5018641-2f50-45af-a491-5d0cd121e7a0"
 					(reference "C203")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_Array:ULN2003")
-		(at 213.36 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ac0fb06-b499-466e-8199-baf005011945")
-		(property "Reference" "U203"
-			(at 213.36 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ULN2003"
-			(at 213.36 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 214.63 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/uln2003a.pdf"
-			(at 215.9 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "High Voltage, High Current Darlington Transistor Arrays, SOIC16/SOIC16W/DIP16/TSSOP16"
-			(at 213.36 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "72d1c18f-e1a1-4c0a-8e50-e09c06125d16")
-		)
-		(pin "15"
-			(uuid "9cbc0c90-db82-41e4-9da4-80e140667ee8")
-		)
-		(pin "1"
-			(uuid "8a286677-840f-4907-a87d-6a914e50af9d")
-		)
-		(pin "7"
-			(uuid "801943ce-fd89-4bed-afc9-f5bb12bfda3c")
-		)
-		(pin "9"
-			(uuid "be23b38b-9ff2-48df-a280-5cef1edab6c8")
-		)
-		(pin "10"
-			(uuid "c679c5b2-4e34-4498-ae17-a333ba81d43f")
-		)
-		(pin "8"
-			(uuid "cc6e892b-8c11-4e19-91e6-01ef2a154af8")
-		)
-		(pin "12"
-			(uuid "391ae91d-1ea2-4ca2-8a16-a73103485a94")
-		)
-		(pin "5"
-			(uuid "44e90fac-0585-45e7-8552-5079e691672a")
-		)
-		(pin "2"
-			(uuid "dfaeb832-c750-4fa1-8e26-0d968118bcc6")
-		)
-		(pin "3"
-			(uuid "f62660b2-7a00-46a6-8357-5716e7e510e4")
-		)
-		(pin "16"
-			(uuid "2427679c-6e6a-443b-8f7a-e2cfe6d6bf92")
-		)
-		(pin "14"
-			(uuid "9fe3efdf-9cd0-4ebd-9875-d4ca9e2ba163")
-		)
-		(pin "11"
-			(uuid "17af24b5-b27f-406e-b791-c1b3c91e8289")
-		)
-		(pin "13"
-			(uuid "f9b0c743-77cf-4a57-a78c-471dfbd178b2")
-		)
-		(pin "6"
-			(uuid "a6680432-5a9c-4de5-b7cf-ea36615b20cd")
-		)
-		(instances
-			(project ""
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/e5018641-2f50-45af-a491-5d0cd121e7a0"
-					(reference "U203")
 					(unit 1)
 				)
 			)
@@ -12283,72 +11492,6 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/e5018641-2f50-45af-a491-5d0cd121e7a0"
 					(reference "C210")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_13")
-		(lib_id "power:GND")
-		(at 213.36 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c4e31d89-df0c-4a18-94e4-cf99ede85792")
-		(property "Reference" "#PWR0233"
-			(at 213.36 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 213.36 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "07fc517d-ea95-42f5-b755-1f28d67d1330")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/e5018641-2f50-45af-a491-5d0cd121e7a0"
-					(reference "#PWR0233")
 					(unit 1)
 				)
 			)
