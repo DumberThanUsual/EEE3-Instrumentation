@@ -8889,7 +8889,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4690aca5-903b-4b9f-a905-bf67ef9c0b85")
-		(property "Reference" "R?"
+		(property "Reference" "R319"
 			(at 240.03 57.15 90)
 			(effects
 				(font
@@ -8941,7 +8941,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "R?")
+					(reference "R319")
 					(unit 1)
 				)
 			)
@@ -10709,7 +10709,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7178019a-2da7-42bb-b4bd-5149a5ae85ed")
-		(property "Reference" "R316"
+		(property "Reference" "R317"
 			(at 237.49 80.01 90)
 			(effects
 				(font
@@ -10761,7 +10761,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "R316")
+					(reference "R317")
 					(unit 1)
 				)
 			)
@@ -10844,7 +10844,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ddcdcf2-5e6e-4226-801e-ca22152df6e0")
-		(property "Reference" "R?"
+		(property "Reference" "R316"
 			(at 232.41 57.15 90)
 			(effects
 				(font
@@ -10896,7 +10896,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "R?")
+					(reference "R316")
 					(unit 1)
 				)
 			)
@@ -12501,7 +12501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c52f3e5e-8d51-4937-abca-7418af9544fa")
-		(property "Reference" "RN?"
+		(property "Reference" "RN301"
 			(at 198.12 121.92 90)
 			(effects
 				(font
@@ -12595,7 +12595,7 @@
 		(instances
 			(project ""
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "RN?")
+					(reference "RN301")
 					(unit 1)
 				)
 			)
@@ -13654,7 +13654,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0829581-0bc1-4365-8371-d75e54f0bfe9")
-		(property "Reference" "R?"
+		(property "Reference" "R318"
 			(at 240.03 39.37 90)
 			(effects
 				(font
@@ -13706,7 +13706,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "R?")
+					(reference "R318")
 					(unit 1)
 				)
 			)
