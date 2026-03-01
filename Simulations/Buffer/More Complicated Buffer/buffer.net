@@ -1,0 +1,26 @@
+* E:\Git\Group Project\EEE3-Instrumentation\Simulations\Buffer\More Complicated Buffer\buffer.asc
+XU1 N002 N006 N002 opamp Aol=100K GBW=10Meg
+V1 N006 0 SINE(0 1 1Meg)
+V2 V+ 0 18
+V3 0 V- 18
+D3 NC_01 NC_02 1N4148
+R1 N005 0 100
+R3 N003 N005 10k
+R4 N003 N004 8
+I3 0 0 PULSE(0 100m 0 5u 1 1 1 1)
+C1 NC_03 N002 1µ
+C2 NC_04 N002 1µ
+M1 V+ NC_05 N001 N001 IRF530
+M2 N001 NC_06 V- V- IRF7343P
+M3 N004 N005 0 0 IRF7343P
+I1 V+ N003 PULSE(0 100m 0 5u 1 1 1 1)
+.model D D
+.lib C:\Users\harry\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\harry\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 10u 0 1u
+.model D D(Ron=1m Roff=10Meg Vfwd=17.3 Vrev=100)
+.lib opamp.sub
+.backanno
+.end
