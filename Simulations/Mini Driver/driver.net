@@ -1,0 +1,14 @@
+* E:\Git\Group Project\EEE3-Instrumentation\Simulations\Mini Driver\driver.asc
+V1 N003 0 PULSE(0 3.3 0 100n 100n 400n 1u)
+V2 V+ 0 12
+M1 N002 N003 0 0 2N7002
+L1 V+ N001 10µ
+R1 N001 N002 1k
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\harry\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 5u 0 1u
+.model D D(Ron=1m Roff=10Meg Vfwd=0.75 Vrev=100)
+.lib opamp.sub
+.backanno
+.end
