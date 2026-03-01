@@ -3380,7 +3380,7 @@
 				)
 			)
 		)
-		(property "Value" "160p"
+		(property "Value" "56p"
 			(at 43.18 176.53 90)
 			(effects
 				(font

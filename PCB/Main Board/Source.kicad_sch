@@ -9575,7 +9575,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "677d126b-fd6b-486c-8f78-86b4ad0b895f")
-		(property "Reference" "Q?"
+		(property "Reference" "Q301"
 			(at 214.63 63.4999 0)
 			(effects
 				(font
@@ -9593,7 +9593,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
 			(at 215.9 66.675 0)
 			(effects
 				(font
@@ -9635,7 +9635,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "Q?")
+					(reference "Q301")
 					(unit 1)
 				)
 			)
@@ -10655,7 +10655,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e86260a-8a4a-4746-b9ad-a64015a8076e")
-		(property "Reference" "Q?"
+		(property "Reference" "Q302"
 			(at 214.63 83.8201 0)
 			(effects
 				(font
@@ -10673,7 +10673,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
 			(at 215.9 80.645 0)
 			(effects
 				(font
@@ -10715,7 +10715,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "Q?")
+					(reference "Q302")
 					(unit 1)
 				)
 			)
@@ -12123,7 +12123,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d0702dd8-8824-4563-97f5-a4a89a93af35")
-		(property "Reference" "RN?"
+		(property "Reference" "RN301"
 			(at 191.77 154.94 0)
 			(effects
 				(font
@@ -12251,7 +12251,7 @@
 		(instances
 			(project ""
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "RN?")
+					(reference "RN301")
 					(unit 1)
 				)
 			)
