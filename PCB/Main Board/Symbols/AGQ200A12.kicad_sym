@@ -24,7 +24,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "AGQ200A03X"
+		(property "Footprint" "AGQ:RELAY_AGQ_A_PAN"
 			(at 11.43 -64.44 0)
 			(effects
 				(font

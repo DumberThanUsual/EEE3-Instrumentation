@@ -250,6 +250,25 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at 2.54 12.7 270)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12-UA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 7.62 0 180)
 				(length 2.54)
@@ -440,6 +459,25 @@
 					)
 				)
 				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 2.54 12.7 270)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12-UB"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -644,6 +682,25 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at 2.54 12.7 270)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12-UC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 7.62 0 180)
 				(length 2.54)
@@ -841,6 +898,25 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at 2.54 12.7 270)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12-UD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 7.62 0 180)
 				(length 2.54)
@@ -926,6 +1002,25 @@
 				)
 				(fill
 					(type background)
+				)
+			)
+			(pin no_connect line
+				(at 2.54 12.7 270)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)

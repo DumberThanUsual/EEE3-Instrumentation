@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "AGQ")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AGQ.pretty")(options "")(descr ""))
+)
