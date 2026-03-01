@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "4816PR2R103LF"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "4816PR2R103LF")
+        (spec "default")
+    )
+)

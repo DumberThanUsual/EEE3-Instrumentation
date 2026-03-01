@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 4816P-R2R-103LF
+D 10k, 20k Ohm +/-2% 125mW Power Per Element R2R Ladder 16 Resistor Network/Array +/-100ppm/C 16-SOIC (0.220", 5.59mm Width)
+K
+F https://www.bourns.com/docs/product-datasheets/4800p.pdf?sfvrsn=a1f0c8d9_7
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,569 @@
+
+(EDIF
+  (rename &4816P_R2R_103LF "4816P_R2R_103LF")
+  (EDIFVersion 2 0 0)
+  (EDIFLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2026 03 01 12 33 06)
+      (dataOrigin "896270/1462922/2.50/16/3/Resistor Network (16-Pin)")
+      (program "SamacSys ECAD Model 4816P_R2R_103LF"
+        (version "1.1"))))
+  (library
+  (rename &4816P_R2R_103LF "4816P_R2R_103LF")
+    (EDIFLevel 0)
+    (technology
+      (numberDefinition (scale 1 (e 254 -6) (unit DISTANCE)))
+      (userData GRIDRESOLUTION (integer 50 50))
+      (figureGroup DEFAULT (pathWidth 10) (textHeight 100))
+      (figureGroup PROPERTY (pathWidth 10) (textHeight 90))
+      (figureGroup PINNUMBER (pathWidth 10) (textHeight 90))
+      (figureGroup PINNAME (pathWidth 10) (textHeight 90))
+      (figureGroup COMMENT (pathWidth 10) (textHeight 90))
+      (figureGroup PIN (pathWidth 10) (textHeight 90))
+      (figureGroup GRAPHIC (pathWidth 10) (textHeight 100))
+    )
+    (cell
+      (rename &4816P_R2R_103LF "4816P_R2R_103LF")
+      (cellType GENERIC)
+      (view
+        (rename NORMAL "Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (designator "RN")
+          (property (rename PACKAGENAME "PackageName") (string "4816P_R2R_103LF"))
+          (property (rename ISHETEROGENEOUS "IsHeterogeneous") (string "False"))
+          (property (rename DEVICESINVIEW "DevicesInView") (string "1"))
+          (property (rename DEVICESINPACKAGE "DevicesInPackage") (string "1"))
+          (property (rename DEVICEDESIGNATOR "DeviceDesignator") (string "A"))
+          (property (rename DEVICENUMBERING "DeviceNumbering") (string "Alpha"))
+          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "4816PR2R103LF"))
+          (property (rename &Mouser_Part_Number "Mouser Part Number") (string "652-4816P-R2R-103LF"))
+          (property (rename &Mouser_Price_Stock "Mouser Price/Stock") (string "https://www.mouser.co.uk/ProductDetail/Bourns/4816P-R2R-103LF?qs=ywolDd32d7%2FY0wPpCpCeWQ%3D%3D"))
+          (property (rename &Manufacturer_Name "Manufacturer_Name") (string "Bourns"))
+          (property (rename &Manufacturer_Part_Number "Manufacturer_Part_Number") (string "4816P-R2R-103LF"))
+          (property (rename &Description "Description") (string "10k, 20k Ohm +/-2percent 125mW Power Per Element R2R Ladder 16 Resistor Network/Array +/-100ppm/C 16-SOIC (0.220\", 5.59mm Width)"))
+          (property (rename &Datasheet_Link "Datasheet Link") (string "https://www.bourns.com/docs/product-datasheets/4800p.pdf?sfvrsn=a1f0c8d9_7"))
+          (property (rename &Height "Height") (string "2.4 mm"))
+          (property (rename &_60__32_VALUE_32__62_ "Value") (string "4816P_R2R_103LF"))
+          (property (rename VALUE "Value") (string "Value"))
+          (port
+            (rename &1 "1")
+            (designator "1")
+            (property (rename ORDER "Order") (string "0") (owner "OrCAD"))
+          )
+          (port
+            (rename &2 "2")
+            (designator "2")
+            (property (rename ORDER "Order") (string "1") (owner "OrCAD"))
+          )
+          (port
+            (rename &3 "3")
+            (designator "3")
+            (property (rename ORDER "Order") (string "2") (owner "OrCAD"))
+          )
+          (port
+            (rename &4 "4")
+            (designator "4")
+            (property (rename ORDER "Order") (string "3") (owner "OrCAD"))
+          )
+          (port
+            (rename &5 "5")
+            (designator "5")
+            (property (rename ORDER "Order") (string "4") (owner "OrCAD"))
+          )
+          (port
+            (rename &6 "6")
+            (designator "6")
+            (property (rename ORDER "Order") (string "5") (owner "OrCAD"))
+          )
+          (port
+            (rename &7 "7")
+            (designator "7")
+            (property (rename ORDER "Order") (string "6") (owner "OrCAD"))
+          )
+          (port
+            (rename &8 "8")
+            (designator "8")
+            (property (rename ORDER "Order") (string "7") (owner "OrCAD"))
+          )
+          (port
+            (rename &9 "9")
+            (designator "9")
+            (property (rename ORDER "Order") (string "8") (owner "OrCAD"))
+          )
+          (port
+            (rename &10 "10")
+            (designator "10")
+            (property (rename ORDER "Order") (string "9") (owner "OrCAD"))
+          )
+          (port
+            (rename &11 "11")
+            (designator "11")
+            (property (rename ORDER "Order") (string "10") (owner "OrCAD"))
+          )
+          (port
+            (rename &12 "12")
+            (designator "12")
+            (property (rename ORDER "Order") (string "11") (owner "OrCAD"))
+          )
+          (port
+            (rename &13 "13")
+            (designator "13")
+            (property (rename ORDER "Order") (string "12") (owner "OrCAD"))
+          )
+          (port
+            (rename &14 "14")
+            (designator "14")
+            (property (rename ORDER "Order") (string "13") (owner "OrCAD"))
+          )
+          (port
+            (rename &15 "15")
+            (designator "15")
+            (property (rename ORDER "Order") (string "14") (owner "OrCAD"))
+          )
+          (port
+            (rename &16 "16")
+            (designator "16")
+            (property (rename ORDER "Order") (string "15") (owner "OrCAD"))
+          )
+          (symbol
+            (portImplementation
+              (name &1)
+              (figure PIN (path (pointList (pt 0 -900) (pt 0 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt 0 -900))))
+            )
+            (portImplementation
+              (name &2)
+              (figure PIN (path (pointList (pt 200 -900) (pt 200 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt 200 -900))))
+            )
+            (portImplementation
+              (name &3)
+              (figure PIN (path (pointList (pt 400 -900) (pt 400 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt 400 -900))))
+            )
+            (portImplementation
+              (name &4)
+              (figure PIN (path (pointList (pt 600 -900) (pt 600 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt 600 -900))))
+            )
+            (portImplementation
+              (name &5)
+              (figure PIN (path (pointList (pt 800 -900) (pt 800 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt 800 -900))))
+            )
+            (portImplementation
+              (name &6)
+              (figure PIN (path (pointList (pt 1000 -900) (pt 1000 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt 1000 -900))))
+            )
+            (portImplementation
+              (name &7)
+              (figure PIN (path (pointList (pt 1200 -900) (pt 1200 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt 1200 -900))))
+            )
+            (portImplementation
+              (name &8)
+              (figure PIN (path (pointList (pt 1400 -900) (pt 1400 -700))))
+              (connectLocation (figure GRAPHIC (dot (pt 1400 -900))))
+            )
+            (portImplementation
+              (name &9)
+              (figure PIN (path (pointList (pt 1400 180) (pt 1400 -20))))
+              (connectLocation (figure GRAPHIC (dot (pt 1400 180))))
+            )
+            (portImplementation
+              (name &10)
+              (figure PIN (path (pointList (pt 1200 180) (pt 1200 -20))))
+              (connectLocation (figure GRAPHIC (dot (pt 1200 180))))
+            )
+            (portImplementation
+              (name &11)
+              (figure PIN (path (pointList (pt 1000 180) (pt 1000 -20))))
+              (connectLocation (figure GRAPHIC (dot (pt 1000 180))))
+            )
+            (portImplementation
+              (name &12)
+              (figure PIN (path (pointList (pt 800 180) (pt 800 -20))))
+              (connectLocation (figure GRAPHIC (dot (pt 800 180))))
+            )
+            (portImplementation
+              (name &13)
+              (figure PIN (path (pointList (pt 600 180) (pt 600 -20))))
+              (connectLocation (figure GRAPHIC (dot (pt 600 180))))
+            )
+            (portImplementation
+              (name &14)
+              (figure PIN (path (pointList (pt 400 180) (pt 400 -20))))
+              (connectLocation (figure GRAPHIC (dot (pt 400 180))))
+            )
+            (portImplementation
+              (name &15)
+              (figure PIN (path (pointList (pt 200 180) (pt 200 -20))))
+              (connectLocation (figure GRAPHIC (dot (pt 200 180))))
+            )
+            (portImplementation
+              (name &16)
+              (figure PIN (path (pointList (pt 0 180) (pt 0 -20))))
+              (connectLocation (figure GRAPHIC (dot (pt 0 180))))
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 0 -360)
+                  (pt 0 -460)
+                  (pt 40 -480)
+                  (pt -40 -500)
+                  (pt 40 -520)
+                  (pt -40 -540)
+                  (pt 40 -560)
+                  (pt -40 -580)
+                  (pt 0 -600)
+                  (pt 0 -700)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 200 -360)
+                  (pt 200 -460)
+                  (pt 240 -480)
+                  (pt 160 -500)
+                  (pt 240 -520)
+                  (pt 160 -540)
+                  (pt 240 -560)
+                  (pt 160 -580)
+                  (pt 200 -600)
+                  (pt 200 -700)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 400 -360)
+                  (pt 400 -460)
+                  (pt 440 -480)
+                  (pt 360 -500)
+                  (pt 440 -520)
+                  (pt 360 -540)
+                  (pt 440 -560)
+                  (pt 360 -580)
+                  (pt 400 -600)
+                  (pt 400 -700)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 600 -360)
+                  (pt 600 -460)
+                  (pt 640 -480)
+                  (pt 560 -500)
+                  (pt 640 -520)
+                  (pt 560 -540)
+                  (pt 640 -560)
+                  (pt 560 -580)
+                  (pt 600 -600)
+                  (pt 600 -700)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 800 -360)
+                  (pt 800 -460)
+                  (pt 840 -480)
+                  (pt 760 -500)
+                  (pt 840 -520)
+                  (pt 760 -540)
+                  (pt 840 -560)
+                  (pt 760 -580)
+                  (pt 800 -600)
+                  (pt 800 -700)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 1000 -360)
+                  (pt 1000 -460)
+                  (pt 1040 -480)
+                  (pt 960 -500)
+                  (pt 1040 -520)
+                  (pt 960 -540)
+                  (pt 1040 -560)
+                  (pt 960 -580)
+                  (pt 1000 -600)
+                  (pt 1000 -700)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 1200 -360)
+                  (pt 1200 -460)
+                  (pt 1240 -480)
+                  (pt 1160 -500)
+                  (pt 1240 -520)
+                  (pt 1160 -540)
+                  (pt 1240 -560)
+                  (pt 1160 -580)
+                  (pt 1200 -600)
+                  (pt 1200 -700)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 1400 -360)
+                  (pt 1400 -460)
+                  (pt 1440 -480)
+                  (pt 1360 -500)
+                  (pt 1440 -520)
+                  (pt 1360 -540)
+                  (pt 1440 -560)
+                  (pt 1360 -580)
+                  (pt 1400 -600)
+                  (pt 1400 -700)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 200 -360)
+                  (pt 170 -360)
+                  (pt 150 -320)
+                  (pt 130 -400)
+                  (pt 110 -320)
+                  (pt 90 -400)
+                  (pt 70 -320)
+                  (pt 50 -400)
+                  (pt 30 -360)
+                  (pt 0 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 400 -360)
+                  (pt 370 -360)
+                  (pt 350 -320)
+                  (pt 330 -400)
+                  (pt 310 -320)
+                  (pt 290 -400)
+                  (pt 270 -320)
+                  (pt 250 -400)
+                  (pt 230 -360)
+                  (pt 200 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 600 -360)
+                  (pt 570 -360)
+                  (pt 550 -320)
+                  (pt 530 -400)
+                  (pt 510 -320)
+                  (pt 490 -400)
+                  (pt 470 -320)
+                  (pt 450 -400)
+                  (pt 430 -360)
+                  (pt 400 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 800 -360)
+                  (pt 770 -360)
+                  (pt 750 -320)
+                  (pt 730 -400)
+                  (pt 710 -320)
+                  (pt 690 -400)
+                  (pt 670 -320)
+                  (pt 650 -400)
+                  (pt 630 -360)
+                  (pt 600 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 1000 -360)
+                  (pt 970 -360)
+                  (pt 950 -320)
+                  (pt 930 -400)
+                  (pt 910 -320)
+                  (pt 890 -400)
+                  (pt 870 -320)
+                  (pt 850 -400)
+                  (pt 830 -360)
+                  (pt 800 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 1200 -360)
+                  (pt 1170 -360)
+                  (pt 1150 -320)
+                  (pt 1130 -400)
+                  (pt 1110 -320)
+                  (pt 1090 -400)
+                  (pt 1070 -320)
+                  (pt 1050 -400)
+                  (pt 1030 -360)
+                  (pt 1000 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 1400 -360)
+                  (pt 1370 -360)
+                  (pt 1350 -320)
+                  (pt 1330 -400)
+                  (pt 1310 -320)
+                  (pt 1290 -400)
+                  (pt 1270 -320)
+                  (pt 1250 -400)
+                  (pt 1230 -360)
+                  (pt 1200 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 0 -20)
+                  (pt 0 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 200 -20)
+                  (pt 200 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 400 -20)
+                  (pt 400 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 600 -20)
+                  (pt 600 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 800 -20)
+                  (pt 800 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 1000 -20)
+                  (pt 1000 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 1200 -20)
+                  (pt 1200 -360)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 1400 -20)
+                  (pt 1400 -360)
+                )
+              )
+            )
+            (keywordDisplay DESIGNATOR (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 550 -480))))
+            (propertyDisplay &_60__32_VALUE_32__62_ (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 550 -580))))
+          )
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,284 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "4816P-R2R-103LF"
+   (description "10k, 20k Ohm +/-2% 125mW Power Per Element R2R Ladder 16 Resistor Network/Array +/-100ppm/C 16-SOIC (0.220\", 5.59mm Width)")
+   (family "ANA")
+   (package "4816PR2R103LF")
+   (attribute "Datasheet Link" "https://www.bourns.com/docs/product-datasheets/4800p.pdf?sfvrsn=a1f0c8d9_7")
+   (attribute "Geometry.Height" "2.4mm")
+   (attribute "Mouser Part Number" "652-4816P-R2R-103LF")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/4816P-R2R-103LF?qs=ywolDd32d7%2FY0wPpCpCeWQ%3D%3D")
+   (attribute "Manufacturer_Name" "Bourns")
+   (attribute "Manufacturer_Part_Number" "4816P-R2R-103LF")
+   (gate
+    (symbol "4816P-R2R-103LF")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+    (pin "6" 6 PS)
+    (pin "7" 7 PS)
+    (pin "8" 8 PS)
+    (pin "9" 9 PS)
+    (pin "10" 10 PS)
+    (pin "11" 11 PS)
+    (pin "12" 12 PS)
+    (pin "13" 13 PS)
+    (pin "14" 14 PS)
+    (pin "15" 15 PS)
+    (pin "16" 16 PS)
+   )
+  )
+  (symbol "4816P-R2R-103LF"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 340) (pt 0 240) (pt 40 220) (pt -40 200) (pt 40 180) (pt -40 160) (pt 40 140) (pt -40 120) (pt 0 100) (pt 0 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 200 340) (pt 200 240) (pt 240 220) (pt 160 200) (pt 240 180) (pt 160 160) (pt 240 140) (pt 160 120) (pt 200 100) (pt 200 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 340) (pt 400 240) (pt 440 220) (pt 360 200) (pt 440 180) (pt 360 160) (pt 440 140) (pt 360 120) (pt 400 100) (pt 400 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 600 340) (pt 600 240) (pt 640 220) (pt 560 200) (pt 640 180) (pt 560 160) (pt 640 140) (pt 560 120) (pt 600 100) (pt 600 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 800 340) (pt 800 240) (pt 840 220) (pt 760 200) (pt 840 180) (pt 760 160) (pt 840 140) (pt 760 120) (pt 800 100) (pt 800 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 1000 340) (pt 1000 240) (pt 1040 220) (pt 960 200) (pt 1040 180) (pt 960 160) (pt 1040 140) (pt 960 120) (pt 1000 100) (pt 1000 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 1200 340) (pt 1200 240) (pt 1240 220) (pt 1160 200) (pt 1240 180) (pt 1160 160) (pt 1240 140) (pt 1160 120) (pt 1200 100) (pt 1200 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 1400 340) (pt 1400 240) (pt 1440 220) (pt 1360 200) (pt 1440 180) (pt 1360 160) (pt 1440 140) (pt 1360 120) (pt 1400 100) (pt 1400 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 200 340) (pt 170 340) (pt 150 380) (pt 130 300) (pt 110 380) (pt 90 300) (pt 70 380) (pt 50 300) (pt 30 340) (pt 0 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 340) (pt 370 340) (pt 350 380) (pt 330 300) (pt 310 380) (pt 290 300) (pt 270 380) (pt 250 300) (pt 230 340) (pt 200 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 600 340) (pt 570 340) (pt 550 380) (pt 530 300) (pt 510 380) (pt 490 300) (pt 470 380) (pt 450 300) (pt 430 340) (pt 400 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 800 340) (pt 770 340) (pt 750 380) (pt 730 300) (pt 710 380) (pt 690 300) (pt 670 380) (pt 650 300) (pt 630 340) (pt 600 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 1000 340) (pt 970 340) (pt 950 380) (pt 930 300) (pt 910 380) (pt 890 300) (pt 870 380) (pt 850 300) (pt 830 340) (pt 800 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 1200 340) (pt 1170 340) (pt 1150 380) (pt 1130 300) (pt 1110 380) (pt 1090 300) (pt 1070 380) (pt 1050 300) (pt 1030 340) (pt 1000 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 1400 340) (pt 1370 340) (pt 1350 380) (pt 1330 300) (pt 1310 380) (pt 1290 300) (pt 1270 380) (pt 1250 300) (pt 1230 340) (pt 1200 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 0 680) (pt 0 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 200 680) (pt 200 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 680) (pt 400 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 600 680) (pt 600 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 800 680) (pt 800 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 1000 680) (pt 1000 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 1200 680) (pt 1200 340))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 1400 680) (pt 1400 340))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 200 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 400 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 600 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 880) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 880) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 880) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 880) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 600 880) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 400 880) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 200 880) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 880) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "4816PR2R103LF"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -5.59 2.795)
+      (pt 5.59 2.795)
+      (pt 5.59 -2.795)
+      (pt -5.59 -2.795)
+      (pt -5.59 2.795))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -6.59 5.45)
+      (pt 6.59 5.45)
+      (pt 6.59 -5.45)
+      (pt -6.59 -5.45)
+      (pt -6.59 5.45))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -5 2.795)
+      (pt -5.59 2.795)
+      (pt -5.59 -2.795)
+      (pt -5 -2.795))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 5 2.8)
+      (pt 5.59 2.8)
+      (pt 5.59 -2.795)
+      (pt 5 -2.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.445 -5)
+      (arc (pt -4.445 -5.000) (pt -4.495 -5.000) (pt -4.395 -4.900) (start 180.0) (sweep -90.0))
+      (pt -4.445 -4.9)
+      (arc (pt -4.445 -4.900) (pt -4.495 -5.000) (pt -4.395 -4.900) (start 180.0) (sweep 90.0))
+      (pt -4.445 -5))))
+   (leg 1 (pt -4.445 -3.450) (padstack 0))
+   (leg 2 (pt -3.175 -3.450) (padstack 0))
+   (leg 3 (pt -1.905 -3.450) (padstack 0))
+   (leg 4 (pt -0.635 -3.450) (padstack 0))
+   (leg 5 (pt 0.635 -3.450) (padstack 0))
+   (leg 6 (pt 1.905 -3.450) (padstack 0))
+   (leg 7 (pt 3.175 -3.450) (padstack 0))
+   (leg 8 (pt 4.445 -3.450) (padstack 0))
+   (leg 9 (pt 4.445 3.450) (padstack 0))
+   (leg 10 (pt 3.175 3.450) (padstack 0))
+   (leg 11 (pt 1.905 3.450) (padstack 0))
+   (leg 12 (pt 0.635 3.450) (padstack 0))
+   (leg 13 (pt -0.635 3.450) (padstack 0))
+   (leg 14 (pt -1.905 3.450) (padstack 0))
+   (leg 15 (pt -3.175 3.450) (padstack 0))
+   (leg 16 (pt -4.445 3.450) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.630 2.000 0 0 90.000))
+   )
+   (model "4816P-R2R-103LF.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

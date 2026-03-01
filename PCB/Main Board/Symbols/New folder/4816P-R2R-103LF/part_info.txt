@@ -1,0 +1,9 @@
+Manufacturer=Bourns
+PartNumber=4816P-R2R-103LF
+PartCategory=Resistor Network (16-Pin)
+PackageCategory=Other
+PinCount=16
+Version=1.1
+Released=2025-01-11 15:00:06
+Downloaded=2026-03-01 12:33:06
+3D=Y

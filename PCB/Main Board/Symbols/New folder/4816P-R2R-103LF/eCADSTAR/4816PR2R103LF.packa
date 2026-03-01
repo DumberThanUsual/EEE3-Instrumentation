@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "4816P-R2R-103LF"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2025-01-11-15:00:06)
+    (mountForm default
+        (footprintRef "4816PR2R103LF")
+        (spec "System")
+    )
+)
