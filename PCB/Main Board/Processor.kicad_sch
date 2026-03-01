@@ -7397,12 +7397,12 @@
 	)
 	(hierarchical_label "IAmp.x1"
 		(shape output)
-		(at 119.38 88.9 180)
+		(at 190.5 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "08607bcf-8d0d-4b4a-8374-cf62782382d1")
 	)
@@ -7419,7 +7419,7 @@
 	)
 	(hierarchical_label "IAmp.{slash}4"
 		(shape output)
-		(at 119.38 86.36 180)
+		(at 142.24 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7485,12 +7485,12 @@
 	)
 	(hierarchical_label "IAmp.x3"
 		(shape output)
-		(at 119.38 91.44 180)
+		(at 190.5 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "4a8f95c8-5816-4582-a4c8-2bc0e9a4b695")
 	)
@@ -7749,12 +7749,12 @@
 	)
 	(hierarchical_label "IAmp.~{x100}"
 		(shape output)
-		(at 119.38 93.98 180)
+		(at 190.5 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "ede4101f-8cbf-447a-bcf2-6ace81058e7d")
 	)
