@@ -1,32 +1,27 @@
 Circuit: * E:\Git\Group Project\EEE3-Instrumentation\Simulations\Buffer\buffer.asc
 
-WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for i1.  Increasing period to 3
 WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for v4.  Increasing period to 2.00001
-WARNING: Node NC_03 is floating.
-
 WARNING: Less than two connections to node NC_01.  This node is used by V4.
-WARNING: Less than two connections to node NC_02.  This node is used by R1.
-WARNING: Less than two connections to node NC_03.  This node is used by R2.
 Direct Newton iteration for .op point succeeded.
 Ignoring empty pin current: Ix(u1:1)
 Ignoring empty pin current: Ix(u1:2)
 Ignoring empty pin current: Ix(u1:1)
 Ignoring empty pin current: Ix(u1:2)
 
-Date: Sun Mar 01 12:00:10 2026
-Total elapsed time: 0.040 seconds.
+Date: Sun Mar 01 12:55:07 2026
+Total elapsed time: 0.042 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 516
-traniter = 498
-tranpoints = 250
-accept = 176
-rejected = 74
+totiter = 488
+traniter = 474
+tranpoints = 238
+accept = 172
+rejected = 66
 matrix size = 19
-fillins = 6
+fillins = 17
 solver = Normal
-Matrix Compiler1:      78 opcodes  0.2/[0.1]/0.1
-Matrix Compiler2: off  [0.1]/0.1/0.1
+Matrix Compiler1: 1.83 KB object code size  0.5/0.2/[0.1]
+Matrix Compiler2:     137 opcodes  0.2/[0.1]/0.2
 
