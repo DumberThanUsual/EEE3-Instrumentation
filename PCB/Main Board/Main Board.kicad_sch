@@ -550,7 +550,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 118.11) (xy 60.96 118.11)
+			(xy 48.26 118.11) (xy 66.04 118.11)
 		)
 		(stroke
 			(width 0)
@@ -570,7 +570,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 86.36) (xy 60.96 86.36)
+			(xy 48.26 86.36) (xy 66.04 86.36)
 		)
 		(stroke
 			(width 0)
@@ -590,7 +590,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 83.82) (xy 60.96 83.82)
+			(xy 48.26 83.82) (xy 66.04 83.82)
 		)
 		(stroke
 			(width 0)
@@ -600,7 +600,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 118.11) (xy 99.06 118.11)
+			(xy 91.44 118.11) (xy 99.06 118.11)
 		)
 		(stroke
 			(width 0)
@@ -610,7 +610,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 43.18) (xy 60.96 43.18)
+			(xy 48.26 43.18) (xy 66.04 43.18)
 		)
 		(stroke
 			(width 0)
@@ -620,7 +620,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 123.19) (xy 60.96 123.19)
+			(xy 48.26 123.19) (xy 66.04 123.19)
 		)
 		(stroke
 			(width 0)
@@ -630,7 +630,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 44.45) (xy 158.75 44.45)
+			(xy 91.44 44.45) (xy 158.75 44.45)
 		)
 		(stroke
 			(width 0)
@@ -640,7 +640,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 93.98) (xy 60.96 93.98)
+			(xy 48.26 93.98) (xy 66.04 93.98)
 		)
 		(stroke
 			(width 0)
@@ -650,7 +650,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 91.44) (xy 124.46 91.44)
+			(xy 91.44 91.44) (xy 124.46 91.44)
 		)
 		(stroke
 			(width 0)
@@ -670,7 +670,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 55.88) (xy 60.96 55.88)
+			(xy 48.26 55.88) (xy 66.04 55.88)
 		)
 		(stroke
 			(width 0)
@@ -680,7 +680,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 50.8) (xy 60.96 50.8)
+			(xy 48.26 50.8) (xy 66.04 50.8)
 		)
 		(stroke
 			(width 0)
@@ -700,7 +700,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 91.44) (xy 60.96 91.44)
+			(xy 48.26 91.44) (xy 66.04 91.44)
 		)
 		(stroke
 			(width 0)
@@ -710,7 +710,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 66.04) (xy 60.96 66.04)
+			(xy 48.26 66.04) (xy 66.04 66.04)
 		)
 		(stroke
 			(width 0)
@@ -730,7 +730,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 110.49) (xy 60.96 110.49)
+			(xy 48.26 110.49) (xy 66.04 110.49)
 		)
 		(stroke
 			(width 0)
@@ -740,7 +740,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 96.52) (xy 60.96 96.52)
+			(xy 48.26 96.52) (xy 66.04 96.52)
 		)
 		(stroke
 			(width 0)
@@ -770,7 +770,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 63.5) (xy 60.96 63.5)
+			(xy 48.26 63.5) (xy 66.04 63.5)
 		)
 		(stroke
 			(width 0)
@@ -810,7 +810,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 128.27) (xy 60.96 128.27)
+			(xy 48.26 128.27) (xy 66.04 128.27)
 		)
 		(stroke
 			(width 0)
@@ -820,7 +820,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 40.64) (xy 60.96 40.64)
+			(xy 48.26 40.64) (xy 66.04 40.64)
 		)
 		(stroke
 			(width 0)
@@ -840,7 +840,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 113.03) (xy 60.96 113.03)
+			(xy 48.26 113.03) (xy 66.04 113.03)
 		)
 		(stroke
 			(width 0)
@@ -850,7 +850,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 58.42) (xy 60.96 58.42)
+			(xy 48.26 58.42) (xy 66.04 58.42)
 		)
 		(stroke
 			(width 0)
@@ -860,7 +860,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 81.28) (xy 60.96 81.28)
+			(xy 48.26 81.28) (xy 66.04 81.28)
 		)
 		(stroke
 			(width 0)
@@ -870,7 +870,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 48.26) (xy 60.96 48.26)
+			(xy 48.26 48.26) (xy 66.04 48.26)
 		)
 		(stroke
 			(width 0)
@@ -880,7 +880,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 123.19) (xy 99.06 123.19)
+			(xy 91.44 123.19) (xy 99.06 123.19)
 		)
 		(stroke
 			(width 0)
@@ -900,7 +900,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 60.96) (xy 60.96 60.96)
+			(xy 48.26 60.96) (xy 66.04 60.96)
 		)
 		(stroke
 			(width 0)
@@ -910,7 +910,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 45.72) (xy 60.96 45.72)
+			(xy 48.26 45.72) (xy 66.04 45.72)
 		)
 		(stroke
 			(width 0)
@@ -920,7 +920,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 53.34) (xy 60.96 53.34)
+			(xy 48.26 53.34) (xy 66.04 53.34)
 		)
 		(stroke
 			(width 0)
@@ -930,7 +930,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 60.96) (xy 157.48 60.96)
+			(xy 91.44 60.96) (xy 157.48 60.96)
 		)
 		(stroke
 			(width 0)
@@ -940,7 +940,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 78.74) (xy 60.96 78.74)
+			(xy 48.26 78.74) (xy 66.04 78.74)
 		)
 		(stroke
 			(width 0)
@@ -960,7 +960,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 88.9) (xy 60.96 88.9)
+			(xy 48.26 88.9) (xy 66.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -970,7 +970,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 130.81) (xy 60.96 130.81)
+			(xy 48.26 130.81) (xy 66.04 130.81)
 		)
 		(stroke
 			(width 0)
@@ -980,7 +980,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 115.57) (xy 60.96 115.57)
+			(xy 48.26 115.57) (xy 66.04 115.57)
 		)
 		(stroke
 			(width 0)
@@ -990,7 +990,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 86.36) (xy 124.46 86.36)
+			(xy 91.44 86.36) (xy 124.46 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1020,7 +1020,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 99.06) (xy 60.96 99.06)
+			(xy 48.26 99.06) (xy 66.04 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1030,7 +1030,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 125.73) (xy 60.96 125.73)
+			(xy 48.26 125.73) (xy 66.04 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1040,7 +1040,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 35.56) (xy 60.96 35.56)
+			(xy 48.26 35.56) (xy 66.04 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1080,7 +1080,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 120.65) (xy 60.96 120.65)
+			(xy 48.26 120.65) (xy 66.04 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1090,7 +1090,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 38.1) (xy 60.96 38.1)
+			(xy 48.26 38.1) (xy 66.04 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1356,7 +1356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48625320-4b2e-483d-acba-eff3d2de4c46")
-		(property "Reference" "J104"
+		(property "Reference" "J105"
 			(at 166.37 119.6731 0)
 			(effects
 				(font
@@ -1410,7 +1410,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J104")
+					(reference "J105")
 					(unit 1)
 				)
 			)
@@ -1425,7 +1425,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78af17ed-5045-4117-b2bf-66cb4c122cf0")
-		(property "Reference" "J105"
+		(property "Reference" "J101"
 			(at 168.8856 44.45 0)
 			(effects
 				(font
@@ -1475,7 +1475,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J105")
+					(reference "J101")
 					(unit 1)
 				)
 			)
@@ -1491,7 +1491,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f6a5b61-3162-480c-b604-2f9a5234cbe1")
-		(property "Reference" "J102"
+		(property "Reference" "J103"
 			(at 166.37 80.3031 0)
 			(effects
 				(font
@@ -1545,7 +1545,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J102")
+					(reference "J103")
 					(unit 1)
 				)
 			)
@@ -1691,7 +1691,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0626da7-465c-4593-9a0d-884b9f7f6d96")
-		(property "Reference" "J103"
+		(property "Reference" "J104"
 			(at 166.37 100.6231 0)
 			(effects
 				(font
@@ -1745,7 +1745,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J103")
+					(reference "J104")
 					(unit 1)
 				)
 			)
@@ -1825,7 +1825,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db76fee3-c970-4e7e-a036-ef44b4042c9a")
-		(property "Reference" "J101"
+		(property "Reference" "J102"
 			(at 166.37 59.9831 0)
 			(effects
 				(font
@@ -1879,14 +1879,14 @@
 		(instances
 			(project ""
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J101")
+					(reference "J102")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 60.96 31.75)
+		(at 66.04 31.75)
 		(size 25.4 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1902,7 +1902,7 @@
 		)
 		(uuid "018dbbaa-4414-4e5b-943a-751bd604c3b0")
 		(property "Sheetname" "Signal Source"
-			(at 60.96 31.0384 0)
+			(at 66.04 31.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1911,7 +1911,7 @@
 			)
 		)
 		(property "Sheetfile" "Source.kicad_sch"
-			(at 60.96 70.4346 0)
+			(at 66.04 70.4346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1920,7 +1920,7 @@
 			)
 		)
 		(pin "Out" output
-			(at 86.36 60.96 0)
+			(at 91.44 60.96 0)
 			(uuid "41632e0b-2fac-4f73-a074-391a40bdda69")
 			(effects
 				(font
@@ -1930,7 +1930,7 @@
 			)
 		)
 		(pin "Bias" input
-			(at 60.96 58.42 180)
+			(at 66.04 58.42 180)
 			(uuid "884ba47b-3192-4d5c-bab8-b2da1391a886")
 			(effects
 				(font
@@ -1940,7 +1940,7 @@
 			)
 		)
 		(pin "Signal" input
-			(at 60.96 60.96 180)
+			(at 66.04 60.96 180)
 			(uuid "b30b62e7-abac-4d1e-8ea4-aa0b3d443b78")
 			(effects
 				(font
@@ -1950,7 +1950,7 @@
 			)
 		)
 		(pin "~{x4}" input
-			(at 60.96 63.5 180)
+			(at 66.04 63.5 180)
 			(uuid "f974c10b-ca83-4f6a-9d12-02b763cfd0cd")
 			(effects
 				(font
@@ -1960,7 +1960,7 @@
 			)
 		)
 		(pin "{slash}10" input
-			(at 60.96 66.04 180)
+			(at 66.04 66.04 180)
 			(uuid "2d6e11e3-934a-4de7-84d2-b228970ce1f4")
 			(effects
 				(font
@@ -1970,7 +1970,7 @@
 			)
 		)
 		(pin "SIG_SOURCE" input
-			(at 60.96 55.88 180)
+			(at 66.04 55.88 180)
 			(uuid "ab1d73dc-6a33-4914-8df0-3e3b33e550ce")
 			(effects
 				(font
@@ -1980,7 +1980,7 @@
 			)
 		)
 		(pin "DAC_1" output
-			(at 60.96 38.1 180)
+			(at 66.04 38.1 180)
 			(uuid "7528ec2a-ca77-4e40-88cb-bb069e0fcef1")
 			(effects
 				(font
@@ -1990,7 +1990,7 @@
 			)
 		)
 		(pin "DAC_5" output
-			(at 60.96 48.26 180)
+			(at 66.04 48.26 180)
 			(uuid "2899f6f8-7477-4144-81b5-b5656e8c9154")
 			(effects
 				(font
@@ -2000,7 +2000,7 @@
 			)
 		)
 		(pin "DAC_3" output
-			(at 60.96 43.18 180)
+			(at 66.04 43.18 180)
 			(uuid "81c5acd6-62f6-48a4-9da7-aa68c402d7a5")
 			(effects
 				(font
@@ -2010,7 +2010,7 @@
 			)
 		)
 		(pin "DAC_6" output
-			(at 60.96 50.8 180)
+			(at 66.04 50.8 180)
 			(uuid "9c7bcebd-814a-469a-95bb-ad8a760e78ce")
 			(effects
 				(font
@@ -2020,7 +2020,7 @@
 			)
 		)
 		(pin "DAC_7" output
-			(at 60.96 53.34 180)
+			(at 66.04 53.34 180)
 			(uuid "cdb8c61f-2042-469f-96f6-840f41abea64")
 			(effects
 				(font
@@ -2030,7 +2030,7 @@
 			)
 		)
 		(pin "DAC_4" output
-			(at 60.96 45.72 180)
+			(at 66.04 45.72 180)
 			(uuid "c6055a4c-6025-491c-9341-5c726b98882f")
 			(effects
 				(font
@@ -2040,7 +2040,7 @@
 			)
 		)
 		(pin "DAC_2" output
-			(at 60.96 40.64 180)
+			(at 66.04 40.64 180)
 			(uuid "56788595-49d2-4524-a713-b0838451465b")
 			(effects
 				(font
@@ -2050,7 +2050,7 @@
 			)
 		)
 		(pin "DAC_0" output
-			(at 60.96 35.56 180)
+			(at 66.04 35.56 180)
 			(uuid "e749438c-9687-4190-8277-e71ad475c3a4")
 			(effects
 				(font
@@ -2060,7 +2060,7 @@
 			)
 		)
 		(pin "AUX_DAC_OUT" output
-			(at 86.36 44.45 0)
+			(at 91.44 44.45 0)
 			(uuid "b1c83968-f0e3-40f3-b77a-30685d29001f")
 			(effects
 				(font
@@ -2120,7 +2120,7 @@
 		)
 	)
 	(sheet
-		(at 60.96 107.95)
+		(at 66.04 107.95)
 		(size 25.4 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2136,7 +2136,7 @@
 		)
 		(uuid "2e1ccfa8-8bce-4bb4-9d3d-716156df4d18")
 		(property "Sheetname" "Current Amplifier"
-			(at 60.96 107.2384 0)
+			(at 66.04 107.2384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2145,7 +2145,7 @@
 			)
 		)
 		(property "Sheetfile" "currentamp.kicad_sch"
-			(at 60.96 133.9346 0)
+			(at 66.04 133.9346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2154,7 +2154,7 @@
 			)
 		)
 		(pin "AC_100" input
-			(at 60.96 125.73 180)
+			(at 66.04 125.73 180)
 			(uuid "11dfcbd6-e9a2-41a3-916a-6201f8bf6152")
 			(effects
 				(font
@@ -2164,7 +2164,7 @@
 			)
 		)
 		(pin "AC_EN" input
-			(at 60.96 123.19 180)
+			(at 66.04 123.19 180)
 			(uuid "d7a8a1b4-6d3c-49ef-beb6-b53ea1999f28")
 			(effects
 				(font
@@ -2174,7 +2174,7 @@
 			)
 		)
 		(pin "x3" input
-			(at 60.96 115.57 180)
+			(at 66.04 115.57 180)
 			(uuid "df09d451-c54d-4785-81ef-333c2d37fae5")
 			(effects
 				(font
@@ -2184,7 +2184,7 @@
 			)
 		)
 		(pin "{slash}4" input
-			(at 60.96 110.49 180)
+			(at 66.04 110.49 180)
 			(uuid "2e3d11fd-4fab-420d-80e5-3ee2c58a8178")
 			(effects
 				(font
@@ -2194,7 +2194,7 @@
 			)
 		)
 		(pin "In-" input
-			(at 86.36 123.19 0)
+			(at 91.44 123.19 0)
 			(uuid "5a8424e7-4a77-412b-bf63-db422ea855c0")
 			(effects
 				(font
@@ -2204,7 +2204,7 @@
 			)
 		)
 		(pin "AC_1k" input
-			(at 60.96 128.27 180)
+			(at 66.04 128.27 180)
 			(uuid "32d0e4ab-05dd-44b5-874f-6e06f557751c")
 			(effects
 				(font
@@ -2214,7 +2214,7 @@
 			)
 		)
 		(pin "~{x100}" input
-			(at 60.96 118.11 180)
+			(at 66.04 118.11 180)
 			(uuid "b9ab0ac7-7b9a-4b0e-854e-9a3d0e0f1e51")
 			(effects
 				(font
@@ -2224,7 +2224,7 @@
 			)
 		)
 		(pin "In+" input
-			(at 86.36 118.11 0)
+			(at 91.44 118.11 0)
 			(uuid "209ab2f4-a387-43ab-ab40-aa35eb66f439")
 			(effects
 				(font
@@ -2234,7 +2234,7 @@
 			)
 		)
 		(pin "AC_10k" input
-			(at 60.96 130.81 180)
+			(at 66.04 130.81 180)
 			(uuid "465be7af-fa5f-4f61-b77a-510f8aab78a6")
 			(effects
 				(font
@@ -2244,7 +2244,7 @@
 			)
 		)
 		(pin "Out" output
-			(at 60.96 120.65 180)
+			(at 66.04 120.65 180)
 			(uuid "55a343e7-d874-4cde-8d81-057eccd037ed")
 			(effects
 				(font
@@ -2254,7 +2254,7 @@
 			)
 		)
 		(pin "x1" input
-			(at 60.96 113.03 180)
+			(at 66.04 113.03 180)
 			(uuid "da64bf5c-e9c1-47d9-9cea-07e39ab19f36")
 			(effects
 				(font
@@ -2454,7 +2454,7 @@
 		)
 	)
 	(sheet
-		(at 60.96 76.2)
+		(at 66.04 76.2)
 		(size 25.4 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2470,7 +2470,7 @@
 		)
 		(uuid "95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad")
 		(property "Sheetname" "Voltage Amplifier"
-			(at 60.96 75.4884 0)
+			(at 66.04 75.4884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2479,7 +2479,7 @@
 			)
 		)
 		(property "Sheetfile" "voltageamp.kicad_sch"
-			(at 60.96 102.1846 0)
+			(at 66.04 102.1846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2488,7 +2488,7 @@
 			)
 		)
 		(pin "AC_10k" input
-			(at 60.96 99.06 180)
+			(at 66.04 99.06 180)
 			(uuid "78fe9c87-2481-436e-ae00-1c959214afee")
 			(effects
 				(font
@@ -2498,7 +2498,7 @@
 			)
 		)
 		(pin "x3" input
-			(at 60.96 83.82 180)
+			(at 66.04 83.82 180)
 			(uuid "fdae1797-52a6-4ea3-a0bc-ad6998ca9226")
 			(effects
 				(font
@@ -2508,7 +2508,7 @@
 			)
 		)
 		(pin "In-" input
-			(at 86.36 91.44 0)
+			(at 91.44 91.44 0)
 			(uuid "7bab4bdc-9b5d-4225-ad05-dfdccb88b955")
 			(effects
 				(font
@@ -2518,7 +2518,7 @@
 			)
 		)
 		(pin "AC_1k" input
-			(at 60.96 96.52 180)
+			(at 66.04 96.52 180)
 			(uuid "bbc4c15c-18b7-48a4-8824-2d34fb093934")
 			(effects
 				(font
@@ -2528,7 +2528,7 @@
 			)
 		)
 		(pin "Out" output
-			(at 60.96 88.9 180)
+			(at 66.04 88.9 180)
 			(uuid "338a01f1-a702-42c2-a632-d22694e906e2")
 			(effects
 				(font
@@ -2538,7 +2538,7 @@
 			)
 		)
 		(pin "AC_EN" input
-			(at 60.96 91.44 180)
+			(at 66.04 91.44 180)
 			(uuid "51c3de14-9009-48e1-b06f-35799176d887")
 			(effects
 				(font
@@ -2548,7 +2548,7 @@
 			)
 		)
 		(pin "AC_100" input
-			(at 60.96 93.98 180)
+			(at 66.04 93.98 180)
 			(uuid "6e6f5221-a541-432c-a4d0-ffd745962c08")
 			(effects
 				(font
@@ -2558,7 +2558,7 @@
 			)
 		)
 		(pin "In+" input
-			(at 86.36 86.36 0)
+			(at 91.44 86.36 0)
 			(uuid "4f460b95-fd8d-4df1-abd7-1a8ddcae84d9")
 			(effects
 				(font
@@ -2568,7 +2568,7 @@
 			)
 		)
 		(pin "x1" input
-			(at 60.96 81.28 180)
+			(at 66.04 81.28 180)
 			(uuid "a420ea0c-5f6a-4519-82f0-07b13f52c94f")
 			(effects
 				(font
@@ -2578,7 +2578,7 @@
 			)
 		)
 		(pin "~{x100}" input
-			(at 60.96 86.36 180)
+			(at 66.04 86.36 180)
 			(uuid "bbc13cc4-3359-4b1e-b0eb-b0d0db553c75")
 			(effects
 				(font
@@ -2588,7 +2588,7 @@
 			)
 		)
 		(pin "{slash}4" input
-			(at 60.96 78.74 180)
+			(at 66.04 78.74 180)
 			(uuid "2f582a41-5c39-4721-8e7d-2135f2666d47")
 			(effects
 				(font
