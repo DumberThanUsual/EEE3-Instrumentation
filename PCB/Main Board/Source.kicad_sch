@@ -12905,7 +12905,6 @@
 	(symbol
 		(lib_id "More_symbols:DG201")
 		(at 46.99 113.03 90)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12913,7 +12912,7 @@
 		(dnp no)
 		(uuid "c3e76587-4afb-4ec3-837c-45b16eec79ae")
 		(property "Reference" "U302"
-			(at 43.18 111.7601 90)
+			(at 43.18 111.7599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12922,7 +12921,7 @@
 			)
 		)
 		(property "Value" "DG201"
-			(at 43.18 114.3001 90)
+			(at 43.18 114.2999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
