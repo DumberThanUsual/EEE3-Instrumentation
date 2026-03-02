@@ -11,7 +11,7 @@
 		(company "Harry and Yuki - EEE3 Instrumentation")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Pin"
+		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -27,8 +27,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x01_Pin"
-				(at 0 -2.54 0)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -53,7 +53,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
+			(property "Description" "Generic connector, single row, 01x02, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -88,10 +88,21 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x01_Pin_1_1"
+			(symbol "Conn_01x02_Pin_1_1"
 				(rectangle
 					(start 0.8636 0.127)
 					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -112,6 +123,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at 5.08 0 180)
 					(length 3.81)
@@ -123,6 +146,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -940,6 +981,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 40.64) (xy 161.29 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b113fe83-67c8-41a0-9f3c-11db38c6d374")
+	)
+	(wire
+		(pts
 			(xy 50.8 133.35) (xy 101.6 133.35)
 		)
 		(stroke
@@ -1007,6 +1058,16 @@
 			(type default)
 		)
 		(uuid "d7fb9d19-0dfe-47d8-a8a1-85916ff52117")
+	)
+	(wire
+		(pts
+			(xy 158.75 41.91) (xy 158.75 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d89efc8a-a9e9-4ea6-97e5-82261cc90954")
 	)
 	(wire
 		(pts
@@ -1132,7 +1193,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "089d26d9-5f83-4faa-9709-c9d0912cfaf4")
-		(property "Reference" "H4"
+		(property "Reference" "H104"
 			(at 234.95 152.3999 0)
 			(effects
 				(font
@@ -1180,7 +1241,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "H4")
+					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -1196,7 +1257,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ac30309-0cc8-4825-9e2b-b9b00b250da1")
-		(property "Reference" "H3"
+		(property "Reference" "H103"
 			(at 234.95 147.3199 0)
 			(effects
 				(font
@@ -1244,7 +1305,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "H3")
+					(reference "H103")
 					(unit 1)
 				)
 			)
@@ -1260,7 +1321,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2483ac6d-69dc-40a5-ba94-4f86805c0342")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0102"
 			(at 165.1 62.23 0)
 			(effects
 				(font
@@ -1310,7 +1371,73 @@
 		(instances
 			(project ""
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "#PWR01")
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d985f56-0f4d-472f-9943-4170b88e8a10")
+		(property "Reference" "#PWR0101"
+			(at 158.75 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f247e6a-62a0-4ec9-bedf-8355a38e6964")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -1326,7 +1453,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48625320-4b2e-483d-acba-eff3d2de4c46")
-		(property "Reference" "J4"
+		(property "Reference" "J105"
 			(at 168.91 113.3231 0)
 			(effects
 				(font
@@ -1380,72 +1507,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 166.37 38.1 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "78af17ed-5045-4117-b2bf-66cb4c122cf0")
-		(property "Reference" "J5"
-			(at 171.4256 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 165.735 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
-			(at 166.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 166.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 166.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8afa080a-1205-4f42-bcaf-3b70a2adc67c")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J5")
+					(reference "J105")
 					(unit 1)
 				)
 			)
@@ -1461,7 +1523,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f6a5b61-3162-480c-b604-2f9a5234cbe1")
-		(property "Reference" "J2"
+		(property "Reference" "J103"
 			(at 168.91 71.4131 0)
 			(effects
 				(font
@@ -1515,7 +1577,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J2")
+					(reference "J103")
 					(unit 1)
 				)
 			)
@@ -1531,7 +1593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a551b6e6-ccde-4a33-b510-c6ef087fec6d")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0103"
 			(at 165.1 83.82 0)
 			(effects
 				(font
@@ -1581,7 +1643,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "#PWR02")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -1597,7 +1659,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aeae4b6e-e13a-49da-bab0-aa20085c839a")
-		(property "Reference" "H2"
+		(property "Reference" "H102"
 			(at 234.95 142.2399 0)
 			(effects
 				(font
@@ -1645,7 +1707,77 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "H2")
+					(reference "H102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 166.37 40.64 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af77c8b6-a7e5-498e-83be-ace486a479ef")
+		(property "Reference" "J101"
+			(at 167.64 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 167.64 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
+			(at 166.37 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 166.37 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "49a74174-abdf-4e3c-9160-6264daea5efc")
+		)
+		(pin "1"
+			(uuid "b7f5f21d-51a1-4517-964b-983771b38965")
+		)
+		(instances
+			(project ""
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
+					(reference "J101")
 					(unit 1)
 				)
 			)
@@ -1661,7 +1793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0626da7-465c-4593-9a0d-884b9f7f6d96")
-		(property "Reference" "J3"
+		(property "Reference" "J104"
 			(at 168.91 91.7331 0)
 			(effects
 				(font
@@ -1715,7 +1847,7 @@
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J3")
+					(reference "J104")
 					(unit 1)
 				)
 			)
@@ -1731,7 +1863,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0c1dc34-4af5-4e49-b3da-e012df13f5a3")
-		(property "Reference" "H1"
+		(property "Reference" "H101"
 			(at 234.95 137.1599 0)
 			(effects
 				(font
@@ -1779,7 +1911,7 @@
 		(instances
 			(project ""
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "H1")
+					(reference "H101")
 					(unit 1)
 				)
 			)
@@ -1795,7 +1927,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db76fee3-c970-4e7e-a036-ef44b4042c9a")
-		(property "Reference" "J1"
+		(property "Reference" "J102"
 			(at 168.91 49.8231 0)
 			(effects
 				(font
@@ -1849,7 +1981,7 @@
 		(instances
 			(project ""
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
-					(reference "J1")
+					(reference "J102")
 					(unit 1)
 				)
 			)
