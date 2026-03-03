@@ -5523,6 +5523,17 @@
 		)
 		(uuid "949bba2b-6361-42dc-93af-6ae799f764c8")
 	)
+	(text "ADC3_IN13\n"
+		(exclude_from_sim no)
+		(at 130.81 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a0792ae3-2b3e-496f-9280-e7284d003242")
+	)
 	(junction
 		(at 168.91 30.48)
 		(diameter 0)
@@ -5642,10 +5653,6 @@
 	(no_connect
 		(at 49.53 25.4)
 		(uuid "8298b073-055d-49a2-814e-a69018934f22")
-	)
-	(no_connect
-		(at 146.05 78.74)
-		(uuid "8c09ba23-465b-48ca-aa9f-3865df176eb2")
 	)
 	(no_connect
 		(at 186.69 106.68)
