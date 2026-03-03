@@ -8901,32 +8901,33 @@
 	)
 	(symbol
 		(lib_id "More_symbols:DG201")
-		(at 50.8 177.8 0)
+		(at 46.99 113.03 90)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "32c93625-27ea-403c-8fdf-2b6a2559bcaf")
 		(property "Reference" "U3"
-			(at 50.8 170.18 0)
+			(at 43.18 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "DG201"
-			(at 50.8 172.72 0)
+			(at 43.18 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 50.8 180.34 0)
+			(at 49.53 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8935,7 +8936,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/70037/dg201b.pdf"
-			(at 50.8 177.8 0)
+			(at 46.99 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8944,7 +8945,7 @@
 			)
 		)
 		(property "Description" "Improved Quad CMOS Analog Switches, normally ON, 45Ohm Ron, SOIC-16"
-			(at 50.8 177.8 0)
+			(at 46.99 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13316,7 +13317,7 @@
 	)
 	(symbol
 		(lib_id "More_symbols:DG201")
-		(at 46.99 113.03 90)
+		(at 50.8 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13324,25 +13325,23 @@
 		(dnp no)
 		(uuid "c3e76587-4afb-4ec3-837c-45b16eec79ae")
 		(property "Reference" "U3"
-			(at 43.18 111.7599 90)
+			(at 50.8 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "DG201"
-			(at 43.18 114.2999 90)
+			(at 50.8 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 49.53 113.03 0)
+			(at 50.8 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13351,7 +13350,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/70037/dg201b.pdf"
-			(at 46.99 113.03 0)
+			(at 50.8 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13360,7 +13359,7 @@
 			)
 		)
 		(property "Description" "Improved Quad CMOS Analog Switches, normally ON, 45Ohm Ron, SOIC-16"
-			(at 46.99 113.03 0)
+			(at 50.8 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)

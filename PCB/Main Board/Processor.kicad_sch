@@ -5512,6 +5512,16 @@
 		)
 		(uuid "656067de-cb6b-4127-be22-f3a87c3ac33f")
 	)
+	(text "FIX IBIASMON\n"
+		(exclude_from_sim no)
+		(at 114.3 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7f41d19f-4478-462c-9a34-f77ebac7214d")
+	)
 	(text "DAC_OUT2\n"
 		(exclude_from_sim no)
 		(at 205.74 53.34 0)
