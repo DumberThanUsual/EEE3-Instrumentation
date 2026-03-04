@@ -6551,7 +6551,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 262.89 71.755 0)
 			(effects
 				(font
@@ -8315,7 +8315,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 87.63 83.185 0)
 			(effects
 				(font
@@ -9634,7 +9634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 87.63 69.215 0)
 			(effects
 				(font
@@ -11811,7 +11811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 262.89 85.725 0)
 			(effects
 				(font

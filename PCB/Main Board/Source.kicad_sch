@@ -13062,7 +13062,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 214.63 66.675 0)
 			(effects
 				(font
@@ -14760,7 +14760,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 214.63 80.645 0)
 			(effects
 				(font
