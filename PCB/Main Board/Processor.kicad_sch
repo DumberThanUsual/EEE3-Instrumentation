@@ -4815,14 +4815,6 @@
 		(uuid "fff9611e-e09d-42d2-9be3-358c44192437")
 	)
 	(no_connect
-		(at 186.69 116.84)
-		(uuid "071e4d65-7419-4296-95dd-c46b7b09298f")
-	)
-	(no_connect
-		(at 186.69 119.38)
-		(uuid "1765bf58-afe5-4e00-813b-9392cdccb0ef")
-	)
-	(no_connect
 		(at 186.69 109.22)
 		(uuid "1cd49531-3e01-4e40-909d-7e120be46f12")
 	)
@@ -5477,6 +5469,26 @@
 			(type default)
 		)
 		(uuid "fdaf14e9-56ec-4a6f-befc-8b9e49cf29e9")
+	)
+	(label "USB_DP"
+		(at 186.69 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0739e9f4-3f88-4228-86b3-763106030045")
+	)
+	(label "USB_DN"
+		(at 186.69 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "13c6963e-cfec-4f00-954c-20729cdf8283")
 	)
 	(label "XTAL1"
 		(at 146.05 50.8 180)
@@ -8088,7 +8100,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "702eaccf-51a0-47f5-84f0-faa2dd616f8a")
-		(property "Reference" "J?"
+		(property "Reference" "J10"
 			(at 184.15 146.0499 0)
 			(effects
 				(font
@@ -8145,7 +8157,7 @@
 		(instances
 			(project ""
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/e5018641-2f50-45af-a491-5d0cd121e7a0"
-					(reference "J?")
+					(reference "J10")
 					(unit 1)
 				)
 			)
