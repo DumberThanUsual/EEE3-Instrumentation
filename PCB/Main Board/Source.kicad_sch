@@ -7025,16 +7025,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 135.89) (xy 264.16 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d08f9cdf-9019-494f-b73d-3df0b2fe8528")
-	)
-	(wire
-		(pts
 			(xy 78.74 35.56) (xy 83.82 35.56)
 		)
 		(stroke
@@ -7793,8 +7783,7 @@
 	)
 	(symbol
 		(lib_id "More_symbols:DG201")
-		(at 151.13 63.5 0)
-		(mirror y)
+		(at 25.4 177.8 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7802,7 +7791,7 @@
 		(dnp no)
 		(uuid "0d3cddfb-5b15-4133-a2ca-af18ec61ad05")
 		(property "Reference" "U3"
-			(at 151.13 55.88 0)
+			(at 25.4 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7810,7 +7799,7 @@
 			)
 		)
 		(property "Value" "DG201"
-			(at 151.13 58.42 0)
+			(at 25.4 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7818,7 +7807,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 151.13 66.04 0)
+			(at 25.4 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7827,7 +7816,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/70037/dg201b.pdf"
-			(at 151.13 63.5 0)
+			(at 25.4 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7836,7 +7825,7 @@
 			)
 		)
 		(property "Description" "Improved Quad CMOS Analog Switches, normally ON, 45Ohm Ron, SOIC-16"
-			(at 151.13 63.5 0)
+			(at 25.4 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11122,73 +11111,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 264.16 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6172087c-314f-4723-819a-0688ac0a561d")
-		(property "Reference" "TP8"
-			(at 266.7 131.3179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AUX_DAC_OUT"
-			(at 266.7 133.8579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 269.24 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 269.24 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 264.16 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4c642ee5-5bd4-425e-9b53-7bc567acebcb")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 186.69 54.61 90)
 		(unit 1)
@@ -11462,16 +11384,15 @@
 	)
 	(symbol
 		(lib_id "More_symbols:DG201")
-		(at 25.4 177.8 0)
+		(at 151.13 63.5 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6e9f704c-ddee-4093-b271-4dca19fbff48")
 		(property "Reference" "U3"
-			(at 25.4 170.18 0)
+			(at 151.13 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11479,7 +11400,7 @@
 			)
 		)
 		(property "Value" "DG201"
-			(at 25.4 172.72 0)
+			(at 151.13 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11487,7 +11408,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 25.4 180.34 0)
+			(at 151.13 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11496,7 +11417,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/70037/dg201b.pdf"
-			(at 25.4 177.8 0)
+			(at 151.13 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11505,7 +11426,7 @@
 			)
 		)
 		(property "Description" "Improved Quad CMOS Analog Switches, normally ON, 45Ohm Ron, SOIC-16"
-			(at 25.4 177.8 0)
+			(at 151.13 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
