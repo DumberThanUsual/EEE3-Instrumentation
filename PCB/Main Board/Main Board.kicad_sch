@@ -3546,6 +3546,16 @@
 				(justify right)
 			)
 		)
+		(pin "I_B_MON" input
+			(at 50.8 130.81 0)
+			(uuid "d3f197a4-c12a-4e8c-b4c5-95d5d2f9f4aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8"
