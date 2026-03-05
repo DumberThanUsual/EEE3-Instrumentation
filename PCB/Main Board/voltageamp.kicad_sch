@@ -3316,7 +3316,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 50.8) (xy 247.65 50.8)
+			(xy 234.95 53.34) (xy 247.65 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3783,6 +3783,16 @@
 			(type default)
 		)
 		(uuid "7c322898-6690-4748-ba19-b6466d60d0c2")
+	)
+	(wire
+		(pts
+			(xy 121.92 143.51) (xy 121.92 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cc6bc3e-ed30-4c27-bfd6-e8240e637e74")
 	)
 	(wire
 		(pts
@@ -4296,16 +4306,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 50.8) (xy 234.95 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d372965f-f5f5-4c55-b2b7-d6faf7bede32")
-	)
-	(wire
-		(pts
 			(xy 86.36 165.1) (xy 90.17 165.1)
 		)
 		(stroke
@@ -4343,6 +4343,16 @@
 			(type default)
 		)
 		(uuid "dc9ec57e-8519-42ef-b852-5f09abea8d67")
+	)
+	(wire
+		(pts
+			(xy 121.92 142.24) (xy 133.35 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de5aefb2-61f6-4e98-b116-eeb9a26473c5")
 	)
 	(wire
 		(pts
@@ -4650,7 +4660,7 @@
 	)
 	(hierarchical_label "Out"
 		(shape output)
-		(at 247.65 50.8 0)
+		(at 247.65 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5337,6 +5347,76 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad"
 					(reference "R71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 121.92 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13a7401c-ec22-45bb-8c28-73f0ac6e5d19")
+		(property "Reference" "C?"
+			(at 125.73 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 125.73 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 122.8852 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 121.92 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09c28192-e68f-418f-95d4-76b9620e80e0")
+		)
+		(pin "2"
+			(uuid "20c9638a-1e07-4eae-b376-f823fed128ac")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -9473,7 +9553,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "bf2ce1cb-5e8a-4cbb-bfca-d91fdcb3520a")
 		(property "Reference" "R60"
 			(at 63.5 133.35 90)
@@ -9528,6 +9608,72 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad"
 					(reference "R60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf67ecc8-5178-43bf-95e6-96313f3a1e87")
+		(property "Reference" "#PWR0601"
+			(at 121.92 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d73efffa-cd4d-44c3-ae1c-c892f6c2cc81")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad"
+					(reference "#PWR0601")
 					(unit 1)
 				)
 			)

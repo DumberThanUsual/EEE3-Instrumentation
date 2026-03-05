@@ -2955,7 +2955,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 50.8) (xy 247.65 50.8)
+			(xy 234.95 53.34) (xy 247.65 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3132,16 +3132,6 @@
 			(type default)
 		)
 		(uuid "6be9ef9e-9c86-4e12-866b-c5620d3e350e")
-	)
-	(wire
-		(pts
-			(xy 234.95 50.8) (xy 234.95 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ebe6a5f-3b4b-4e4b-88b4-825bf41962a8")
 	)
 	(wire
 		(pts
@@ -3559,7 +3549,7 @@
 	)
 	(hierarchical_label "Out"
 		(shape output)
-		(at 247.65 50.8 0)
+		(at 247.65 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -9756,7 +9756,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "9d419ca9-b9b9-4150-bc94-f75ea55ec4e8")
 		(property "Reference" "R34"
 			(at 104.14 97.79 90)

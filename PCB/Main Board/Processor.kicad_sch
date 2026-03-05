@@ -4852,6 +4852,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 40.64) (xy 82.55 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00c80a33-008d-4618-aed8-2e74739e6088")
+	)
+	(wire
+		(pts
 			(xy 49.53 43.18) (xy 49.53 45.72)
 		)
 		(stroke
@@ -4919,6 +4929,16 @@
 			(type default)
 		)
 		(uuid "1f99b5b8-775a-4f28-9963-4ec040251ccd")
+	)
+	(wire
+		(pts
+			(xy 82.55 45.72) (xy 80.01 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25fe9512-79c9-4985-acba-67a464882c77")
 	)
 	(wire
 		(pts
@@ -5292,6 +5312,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 43.18) (xy 82.55 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b13a5063-2b3a-42de-9d49-d91e26b79a7b")
+	)
+	(wire
+		(pts
 			(xy 72.39 130.81) (xy 72.39 128.27)
 		)
 		(stroke
@@ -5462,6 +5492,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 45.72) (xy 80.01 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd898517-5032-4013-a7c6-b9403d020881")
+	)
+	(wire
+		(pts
 			(xy 97.79 128.27) (xy 97.79 130.81)
 		)
 		(stroke
@@ -5549,6 +5589,16 @@
 			(justify left bottom)
 		)
 		(uuid "41949598-e44f-44c5-8857-f8eaca01293f")
+	)
+	(label "USB_DN"
+		(at 77.47 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "44e2e44a-d1b8-4af8-b1fa-9d0c0a09368b")
 	)
 	(label "~{RST}"
 		(at 142.24 152.4 180)
@@ -5729,6 +5779,16 @@
 			(justify left)
 		)
 		(uuid "d6772282-4ffe-474c-822a-2d91c61c122a")
+	)
+	(label "USB_DP"
+		(at 77.47 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ec9147ee-03fa-4e71-9247-a760f350b92d")
 	)
 	(label "BOOT0"
 		(at 116.84 128.27 0)
@@ -7686,6 +7746,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 87.63 43.18 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55d2c062-472c-42e6-b925-1f38a88d801f")
+		(property "Reference" "J?"
+			(at 88.9 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 88.9 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 87.63 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 87.63 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73d82d7f-64b6-4035-8c33-57a44bbbeb26")
+		)
+		(pin "2"
+			(uuid "8495d8da-bf61-488d-bd28-355959467e98")
+		)
+		(pin "3"
+			(uuid "8c5092dd-6e59-425b-9c83-36cc4fb5897f")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/e5018641-2f50-45af-a491-5d0cd121e7a0"
+					(reference "J?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 88.9 168.91 0)
 		(unit 1)
@@ -8098,10 +8231,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "702eaccf-51a0-47f5-84f0-faa2dd616f8a")
 		(property "Reference" "J10"
-			(at 184.15 146.0499 0)
+			(at 184.15 147.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8116,6 +8248,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
@@ -9381,6 +9514,73 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/e5018641-2f50-45af-a491-5d0cd121e7a0"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 80.01 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d95dc4a2-5564-4505-b672-d6113332608b")
+		(property "Reference" "#PWR0201"
+			(at 80.01 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "163983ad-53ed-4e52-8668-9df9fa321c43")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/e5018641-2f50-45af-a491-5d0cd121e7a0"
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
