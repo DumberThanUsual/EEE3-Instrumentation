@@ -3028,12 +3028,6 @@
 		(uuid "bfdd061c-8e35-470e-b044-b8f4c76eb5ac")
 	)
 	(junction
-		(at 190.5 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "012ae1bc-65ab-4a75-a103-b45b21bd9720")
-	)
-	(junction
 		(at 234.95 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3134,12 +3128,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87b81f59-7fcb-4704-87d6-4733258bad5c")
-	)
-	(junction
-		(at 234.95 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b12c2ab-b60d-428a-8452-6b8a798d8ee7")
 	)
 	(junction
 		(at 110.49 127)
@@ -3498,16 +3486,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 38.1) (xy 234.95 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45d17f3b-5bb2-4991-a9b9-c100fc966cd3")
-	)
-	(wire
-		(pts
 			(xy 152.4 25.4) (xy 143.51 25.4)
 		)
 		(stroke
@@ -3575,16 +3553,6 @@
 			(type default)
 		)
 		(uuid "5940cc1d-fe0d-47fa-b76e-7274bf90974c")
-	)
-	(wire
-		(pts
-			(xy 234.95 38.1) (xy 234.95 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a3e59a1-7f44-4fc3-af9a-3d7c882068f1")
 	)
 	(wire
 		(pts
@@ -3715,16 +3683,6 @@
 			(type default)
 		)
 		(uuid "69177256-f851-4285-b40b-b5c314389317")
-	)
-	(wire
-		(pts
-			(xy 190.5 38.1) (xy 190.5 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a41e780-3c2f-41eb-84c9-b752674a4101")
 	)
 	(wire
 		(pts
@@ -3985,16 +3943,6 @@
 			(type default)
 		)
 		(uuid "94a2e0cd-9d9c-4f3b-b5d4-fe908775ae56")
-	)
-	(wire
-		(pts
-			(xy 190.5 50.8) (xy 193.04 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f7bc7cd-039e-4a04-b9f2-5bc64ec1b44e")
 	)
 	(wire
 		(pts
@@ -4328,16 +4276,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 50.8) (xy 190.5 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1fe1a50-8289-4e15-a5e5-cbd6f13e4a98")
-	)
-	(wire
-		(pts
 			(xy 177.8 121.92) (xy 177.8 125.73)
 		)
 		(stroke
@@ -4508,16 +4446,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 38.1) (xy 190.5 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef9599b8-7fc0-4532-8a9d-5723a72d5cca")
-	)
-	(wire
-		(pts
 			(xy 127 44.45) (xy 127 50.8)
 		)
 		(stroke
@@ -4668,7 +4596,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 50.8) (xy 180.34 50.8)
+			(xy 152.4 50.8) (xy 193.04 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6794,74 +6722,6 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad"
 					(reference "#PWR0116")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 215.9 38.1 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "49cd901d-ea75-454b-b57f-cb01e2f8e483")
-		(property "Reference" "C48"
-			(at 215.9 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47p"
-			(at 215.9 33.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 219.71 37.1348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 215.9 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bddd17c1-20db-44f8-94f7-ed966b4beef6")
-		)
-		(pin "2"
-			(uuid "2053170b-c2b7-4b03-b030-64976bdef37b")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad"
-					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -10609,74 +10469,6 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad"
 					(reference "R65")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 184.15 50.8 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb356001-9263-47e7-8e8a-2aad0ea5998f")
-		(property "Reference" "R74"
-			(at 184.15 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.85k"
-			(at 184.15 46.99 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 184.15 52.578 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 184.15 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "00f2ec6c-47d4-43b9-b1fb-2d2404978895")
-		)
-		(pin "1"
-			(uuid "31e65870-721c-4b08-954f-4f265dedd95f")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/95088de2-bf01-4c0a-bbbc-d1b3fecbe0ad"
-					(reference "R74")
 					(unit 1)
 				)
 			)

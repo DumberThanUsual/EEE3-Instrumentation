@@ -5492,12 +5492,6 @@
 		(uuid "09252e80-2f9c-48c2-aa36-29e3376b39e8")
 	)
 	(junction
-		(at 90.17 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0a72a5f9-7b29-40f7-970b-d63e239762d6")
-	)
-	(junction
 		(at 120.65 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5712,12 +5706,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd48a38a-dcd2-4f51-bf80-d0e955352cdf")
-	)
-	(junction
-		(at 90.17 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f762269c-9368-4fde-9332-eb0b56ea4189")
 	)
 	(junction
 		(at 245.11 48.26)
@@ -6055,16 +6043,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 74.93) (xy 71.12 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e84da8a-5cb1-4347-b6f8-b49c08d620ba")
-	)
-	(wire
-		(pts
 			(xy 245.11 48.26) (xy 245.11 50.8)
 		)
 		(stroke
@@ -6292,16 +6270,6 @@
 			(type default)
 		)
 		(uuid "63dd2c70-0751-4265-a278-a49678cb4e20")
-	)
-	(wire
-		(pts
-			(xy 90.17 63.5) (xy 90.17 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64c840bf-1ee7-40c4-bbc7-de7ae1350d99")
 	)
 	(wire
 		(pts
@@ -6605,16 +6573,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 78.74) (xy 90.17 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90913d39-1168-47a3-84fb-846aa85518a4")
-	)
-	(wire
-		(pts
 			(xy 151.13 71.12) (xy 151.13 68.58)
 		)
 		(stroke
@@ -6642,16 +6600,6 @@
 			(type default)
 		)
 		(uuid "92a3f642-a0d3-4f2c-a054-d909f17916f1")
-	)
-	(wire
-		(pts
-			(xy 90.17 74.93) (xy 90.17 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92c96d4d-f8c0-431c-a58d-27728c1e0e89")
 	)
 	(wire
 		(pts
@@ -6702,16 +6650,6 @@
 			(type default)
 		)
 		(uuid "9bc427a7-b1c3-42d8-8b98-301ec4a64b7f")
-	)
-	(wire
-		(pts
-			(xy 90.17 63.5) (xy 120.65 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d1cc53f-30e5-410e-aec5-b89679320c13")
 	)
 	(wire
 		(pts
@@ -6905,7 +6843,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 78.74) (xy 77.47 78.74)
+			(xy 71.12 78.74) (xy 101.6 78.74)
 		)
 		(stroke
 			(width 0)
@@ -6922,16 +6860,6 @@
 			(type default)
 		)
 		(uuid "c4399cb3-e584-4a4c-bfc0-900dec9d3fcc")
-	)
-	(wire
-		(pts
-			(xy 71.12 63.5) (xy 90.17 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c602a6ac-244d-4513-9a88-fad773396f87")
 	)
 	(wire
 		(pts
@@ -7082,16 +7010,6 @@
 			(type default)
 		)
 		(uuid "d9d51c4c-1f9f-4e83-ba9f-fae9993da1d2")
-	)
-	(wire
-		(pts
-			(xy 71.12 63.5) (xy 71.12 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da7926cd-d902-445c-889a-79c4c4189c0f")
 	)
 	(wire
 		(pts
@@ -7322,16 +7240,6 @@
 			(type default)
 		)
 		(uuid "f2c538e1-99c0-4dfc-befc-bae480be559c")
-	)
-	(wire
-		(pts
-			(xy 90.17 78.74) (xy 101.6 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f46705bb-abae-4f81-88fb-410c82bc1c38")
 	)
 	(wire
 		(pts
@@ -11178,76 +11086,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 90.17 71.12 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "67dfa141-6ef0-46fa-9081-ba1eb04dad41")
-		(property "Reference" "C10"
-			(at 86.36 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "47p"
-			(at 86.36 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 91.1352 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 90.17 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 90.17 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "eae3a4e5-680c-4b17-baac-7ad528cf5654")
-		)
-		(pin "1"
-			(uuid "56086208-1aec-47cc-a393-55faf1b96eb0")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 182.88 92.71 270)
 		(unit 1)
@@ -14244,74 +14082,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 81.28 78.74 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e46f81ac-31c2-4160-b1ec-3c3059f2f380")
-		(property "Reference" "R12"
-			(at 81.28 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.3k"
-			(at 81.28 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 81.28 76.962 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 81.28 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fb4d70e4-4847-47d6-b3dd-a42b697633e6")
-		)
-		(pin "1"
-			(uuid "c0e77721-cafa-405b-837b-1af37635f917")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 120.65 181.61 0)
 		(unit 1)
@@ -14443,76 +14213,6 @@
 			(project "Main Board"
 				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 71.12 71.12 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ee60fb63-4e14-4176-84a6-22539557aaef")
-		(property "Reference" "R11"
-			(at 68.58 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2.4k"
-			(at 68.58 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 69.342 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 71.12 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1fd4e229-fd8a-4394-94dd-56457d14b948")
-		)
-		(pin "1"
-			(uuid "d2112405-19d8-481f-af91-51a5e3048e92")
-		)
-		(instances
-			(project "Main Board"
-				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/018dbbaa-4414-4e5b-943a-751bd604c3b0"
-					(reference "R11")
 					(unit 1)
 				)
 			)
