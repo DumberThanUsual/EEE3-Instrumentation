@@ -1,0 +1,397 @@
+classdef SimpleSweepApp < matlab.apps.AppBase
+
+    properties (Access = public)
+        UIFigure        matlab.ui.Figure
+        LeftPanel       matlab.ui.container.Panel
+        RightPanel      matlab.ui.container.Panel
+        
+        % Connection controls
+        scanButton      matlab.ui.control.Button
+        portDropdown    matlab.ui.control.DropDown
+        connectButton   matlab.ui.control.Button
+        statusLabel     matlab.ui.control.Label
+        
+        % Sweep settings
+        startFreqField  matlab.ui.control.NumericEditField
+        stopFreqField   matlab.ui.control.NumericEditField
+        pointsField     matlab.ui.control.NumericEditField
+        sweepButton     matlab.ui.control.Button
+        saveButton      matlab.ui.control.Button
+        
+        % Display
+        bodeAxes        matlab.ui.control.UIAxes
+        dataTable       matlab.ui.control.Table
+    end
+
+    properties (Access = private)
+        inst            % Serialport object
+        connected = false
+        freq            % Frequency data
+        mag             % Magnitude data
+        phase           % Phase data
+    end
+
+    methods (Access = private)
+
+        function startupFcn(app)
+            app.scanButtonPushed();
+            app.sweepButton.Enable = 'off';
+            app.saveButton.Enable = 'off';
+            app.startFreqField.Value = 100;
+            app.stopFreqField.Value = 10000;
+            app.pointsField.Value = 101;
+        end
+
+        function scanButtonPushed(app, ~)
+            try
+                ports = serialportlist("available");
+                if isempty(ports)
+                    app.portDropdown.Items = {'No ports'};
+                    app.portDropdown.Value = 'No ports';
+                else
+                    app.portDropdown.Items = ports;
+                    app.portDropdown.Value = ports(1);
+                end
+                app.statusLabel.Text = 'Ports scanned';
+            catch ME
+                uialert(app.UIFigure, ME.message, 'Error');
+            end
+        end
+
+        function connectButtonPushed(app, ~)
+            if app.connected
+                try
+                    if ~isempty(app.inst)
+                        clear app.inst
+                    end
+                    app.connected = false;
+                    app.connectButton.Text = 'Connect';
+                    app.statusLabel.Text = 'Disconnected';
+                    app.sweepButton.Enable = 'off';
+                catch ME
+                    uialert(app.UIFigure, ME.message, 'Error');
+                end
+                return
+            end
+            
+            try
+                port = app.portDropdown.Value;
+                if strcmp(port, 'No ports')
+                    uialert(app.UIFigure, 'No port selected', 'Error');
+                    return;
+                end
+                
+                app.inst = serialport(port, 115200, 'Timeout', 3);
+                configureTerminator(app.inst, "LF");
+                flush(app.inst);
+                
+                writeline(app.inst, '*IDN?');
+                pause(0.1);
+                
+                if app.inst.NumBytesAvailable == 0
+                    error('No response');
+                end
+                
+                idn = readline(app.inst);
+                
+                app.connected = true;
+                app.connectButton.Text = 'Disconnect';
+                app.statusLabel.Text = ['Connected: ' idn];
+                app.sweepButton.Enable = 'on';
+                
+            catch ME
+                uialert(app.UIFigure, ME.message, 'Connection Failed');
+            end
+        end
+
+        function sweepButtonPushed(app, ~)
+            if ~app.connected
+                uialert(app.UIFigure, 'Not connected', 'Error');
+                return;
+            end
+            
+            app.sweepButton.Enable = 'off';
+            app.sweepButton.Text = 'Sweeping...';
+            
+            d = uiprogressdlg(app.UIFigure, 'Title', 'Sweeping', 'Indeterminate', 'on');
+            
+            try
+                f1 = app.startFreqField.Value;
+                f2 = app.stopFreqField.Value;
+                n = app.pointsField.Value;
+                
+                if f1 >= f2
+                    error('Start must be < stop');
+                end
+                
+                % Configure
+                flush(app.inst);
+                writeline(app.inst, '*CLS');
+                pause(0.05);
+                writeline(app.inst, sprintf('FREQ:START %f', f1));
+                pause(0.05);
+                writeline(app.inst, sprintf('FREQ:STOP %f', f2));
+                pause(0.05);
+                writeline(app.inst, sprintf('SWE:POINTS %d', n));
+                pause(0.05);
+                
+                % Start
+                writeline(app.inst, 'INIT:IMM');
+                
+                % Wait
+                tic;
+                while toc < 30
+                    writeline(app.inst, '*OPC?');
+                    pause(0.05);
+                    if app.inst.NumBytesAvailable > 0
+                        if str2double(readline(app.inst)) == 1
+                            break;
+                        end
+                    end
+                end
+                
+                % Get data
+                writeline(app.inst, 'FETC:ARR?');
+                pause(0.2);
+                
+                data = '';
+                tic;
+                while toc < 5
+                    if app.inst.NumBytesAvailable > 0
+                        data = readline(app.inst);
+                        break;
+                    end
+                end
+                
+                if isempty(data)
+                    error('No data');
+                end
+                
+                % Parse
+                app.parseData(data, f1, f2, n);
+                
+                % Update plots
+                app.updatePlots();
+                
+                close(d);
+                app.sweepButton.Enable = 'on';
+                app.sweepButton.Text = 'START SWEEP';
+                app.saveButton.Enable = 'on';
+                app.statusLabel.Text = sprintf('Done: %d points', length(app.freq));
+                
+            catch ME
+                close(d);
+                app.sweepButton.Enable = 'on';
+                app.sweepButton.Text = 'START SWEEP';
+                app.statusLabel.Text = 'Failed';
+                uialert(app.UIFigure, ME.message, 'Error');
+            end
+        end
+
+        function parseData(app, dataStr, f1, f2, n)
+            dataStr = strtrim(char(dataStr));
+            
+            if startsWith(dataStr, '#')
+                h = str2double(dataStr(2));
+                dataStr = dataStr(3+h:end);
+            end
+            
+            vals = str2double(split(dataStr, ','));
+            vals = vals(~isnan(vals));
+            
+            if length(vals) == n * 3
+                m = reshape(vals, 3, [])';
+                app.freq = m(:,1);
+                app.mag = m(:,2);
+                app.phase = m(:,3);
+            elseif length(vals) >= n
+                app.freq = linspace(f1, f2, n)';
+                app.mag = vals(1:n);
+                app.phase = zeros(n,1);
+            else
+                app.freq = (1:length(vals))';
+                app.mag = vals;
+                app.phase = zeros(size(vals));
+            end
+        end
+
+        function updatePlots(app)
+            if isempty(app.freq)
+                return;
+            end
+            
+            cla(app.bodeAxes);
+            
+            % Magnitude
+            subplot(2,1,1, 'Parent', app.bodeAxes.Parent);
+            if max(abs(app.mag)) < 100
+                semilogx(app.freq, 20*log10(abs(app.mag)+1e-6), 'b-');
+                ylabel('Magnitude (dB)');
+            else
+                semilogx(app.freq, app.mag, 'b-');
+                ylabel('Magnitude');
+            end
+            grid on;
+            title('Bode Plot');
+            
+            % Phase
+            subplot(2,1,2, 'Parent', app.bodeAxes.Parent);
+            semilogx(app.freq, app.phase, 'r-');
+            grid on;
+            xlabel('Frequency (Hz)');
+            ylabel('Phase (deg)');
+            
+            % Table
+            n = min([length(app.freq), length(app.mag), length(app.phase)]);
+            app.dataTable.Data = [app.freq(1:n), app.mag(1:n), app.phase(1:n)];
+        end
+
+        function saveButtonPushed(app, ~)
+            if isempty(app.freq)
+                uialert(app.UIFigure, 'No data', 'Error');
+                return;
+            end
+            
+            [f, p] = uiputfile('*.csv', 'Save', sprintf('sweep_%s.csv', datestr(now, 'HHMMSS')));
+            if f == 0
+                return;
+            end
+            
+            try
+                n = min([length(app.freq), length(app.mag), length(app.phase)]);
+                T = table(app.freq(1:n), app.mag(1:n), app.phase(1:n), ...
+                    'VariableNames', {'Freq_Hz', 'Mag', 'Phase_Deg'});
+                writetable(T, fullfile(p, f));
+                app.statusLabel.Text = ['Saved: ' f];
+            catch ME
+                uialert(app.UIFigure, ME.message, 'Error');
+            end
+        end
+
+        function closeRequest(app, ~)
+            if app.connected && ~isempty(app.inst)
+                try
+                    clear app.inst
+                catch
+                end
+            end
+            delete(app.UIFigure);
+        end
+    end
+
+    methods (Access = private)
+
+        function createComponents(app)
+            app.UIFigure = uifigure('Visible', 'off');
+            app.UIFigure.Position = [100 100 1000 600];
+            app.UIFigure.Name = 'Simple Sweep';
+            app.UIFigure.CloseRequestFcn = @app.closeRequest;
+
+            % Left panel (300px)
+            app.LeftPanel = uipanel(app.UIFigure);
+            app.LeftPanel.Position = [10 10 280 580];
+            app.LeftPanel.Title = 'Controls';
+            app.LeftPanel.BackgroundColor = [0.95 0.95 0.95];
+            
+            y = 530;
+            
+            % Connection section
+            uilabel(app.LeftPanel, 'Position', [10 y 260 20], 'Text', 'CONNECTION', ...
+                'FontWeight', 'bold', 'FontColor', [0 0.5 0]);
+            y = y - 25;
+            
+            app.scanButton = uibutton(app.LeftPanel, 'push');
+            app.scanButton.Position = [10 y 120 30];
+            app.scanButton.Text = 'Scan Ports';
+            app.scanButton.ButtonPushedFcn = @app.scanButtonPushed;
+            
+            app.portDropdown = uidropdown(app.LeftPanel);
+            app.portDropdown.Position = [140 y 130 30];
+            app.portDropdown.Items = {'Scan first'};
+            
+            y = y - 35;
+            app.connectButton = uibutton(app.LeftPanel, 'push');
+            app.connectButton.Position = [10 y 260 30];
+            app.connectButton.Text = 'Connect';
+            app.connectButton.ButtonPushedFcn = @app.connectButtonPushed;
+            
+            y = y - 25;
+            app.statusLabel = uilabel(app.LeftPanel);
+            app.statusLabel.Position = [10 y 260 20];
+            app.statusLabel.Text = 'Status: Disconnected';
+            
+            y = y - 40;
+            
+            % Sweep section
+            uilabel(app.LeftPanel, 'Position', [10 y 260 20], 'Text', 'SWEEP SETTINGS', ...
+                'FontWeight', 'bold', 'FontColor', [0 0.5 0]);
+            y = y - 25;
+            
+            uilabel(app.LeftPanel, 'Position', [10 y 60 20], 'Text', 'Start:');
+            app.startFreqField = uieditfield(app.LeftPanel, 'numeric');
+            app.startFreqField.Position = [80 y 120 22];
+            
+            uilabel(app.LeftPanel, 'Position', [210 y 30 20], 'Text', 'Hz');
+            
+            y = y - 30;
+            uilabel(app.LeftPanel, 'Position', [10 y 60 20], 'Text', 'Stop:');
+            app.stopFreqField = uieditfield(app.LeftPanel, 'numeric');
+            app.stopFreqField.Position = [80 y 120 22];
+            
+            uilabel(app.LeftPanel, 'Position', [210 y 30 20], 'Text', 'Hz');
+            
+            y = y - 30;
+            uilabel(app.LeftPanel, 'Position', [10 y 60 20], 'Text', 'Points:');
+            app.pointsField = uieditfield(app.LeftPanel, 'numeric');
+            app.pointsField.Position = [80 y 120 22];
+            
+            y = y - 40;
+            
+            app.sweepButton = uibutton(app.LeftPanel, 'push');
+            app.sweepButton.Position = [10 y 260 35];
+            app.sweepButton.Text = 'START SWEEP';
+            app.sweepButton.FontSize = 14;
+            app.sweepButton.FontWeight = 'bold';
+            app.sweepButton.BackgroundColor = [0.8 0.9 1];
+            app.sweepButton.ButtonPushedFcn = @app.sweepButtonPushed;
+            
+            y = y - 40;
+            app.saveButton = uibutton(app.LeftPanel, 'push');
+            app.saveButton.Position = [10 y 260 30];
+            app.saveButton.Text = 'SAVE DATA';
+            app.saveButton.BackgroundColor = [0.9 0.9 0.9];
+            app.saveButton.ButtonPushedFcn = @app.saveButtonPushed;
+
+            % Right panel
+            app.RightPanel = uipanel(app.UIFigure);
+            app.RightPanel.Position = [300 10 690 580];
+            app.RightPanel.Title = 'Display';
+
+            app.bodeAxes = uiaxes(app.RightPanel);
+            app.bodeAxes.Position = [30 300 630 250];
+            app.bodeAxes.XScale = 'log';
+            
+            app.dataTable = uitable(app.RightPanel);
+            app.dataTable.Position = [30 30 630 250];
+            app.dataTable.ColumnName = {'Frequency (Hz)', 'Magnitude', 'Phase (deg)'};
+
+            app.UIFigure.Visible = 'on';
+        end
+    end
+
+    methods (Access = public)
+
+        function app = SimpleSweepApp
+            createComponents(app)
+            registerApp(app, app.UIFigure)
+            runStartupFcn(app, @startupFcn)
+            if nargout == 0
+                clear app
+            end
+        end
+
+        function delete(app)
+            delete(app.UIFigure)
+        end
+    end
+end
