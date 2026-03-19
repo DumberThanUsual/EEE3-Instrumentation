@@ -32,34 +32,31 @@ catch ME
 end
 
 %% 2. Configure Measurement
-measurementSelect = input("Single or Sweep? (enter 0 or 1)");
+measurementSelect = input("Single or Sweep? (enter 0 or 1)")
 
-if measurementSelect == 0
-    fprintf("add shit here for the image selection");
+if measurementSelect == 1
+    fprintf("add shit here for the image selection")
 
-else
-    try
-        measurementRequest = input("Start Frequency?");
-        stopFreq = input("Stop Frequency?");
-        points = input("Number of Points?");
-        linearLog = input("Linear/Log? doesnt do anything yet");
+try
+    startFreq = 100;
+    stopFreq = 10000;
+    points = 101;
     
-        flush(inst);
+    flush(inst);
     
-        writeline(inst, '*CLS');
-        pause(0.05);
-        writeline(inst, sprintf('FREQ:START %f', startFreq));
-        pause(0.05);
-        writeline(inst, sprintf('FREQ:STOP %f', stopFreq));
-        pause(0.05);
-        writeline(inst, sprintf('SWE:POINTS %d', points));
-        pause(0.05);
+    writeline(inst, '*CLS');
+    pause(0.05);
+    writeline(inst, sprintf('FREQ:START %f', startFreq));
+    pause(0.05);
+    writeline(inst, sprintf('FREQ:STOP %f', stopFreq));
+    pause(0.05);
+    writeline(inst, sprintf('SWE:POINTS %d', points));
+    pause(0.05);
     
-    catch ME
-        fprintf('Config failed: %s\n', ME.message);
-        clear inst;
-        return;
-    end
+catch ME
+    fprintf('Config failed: %s\n', ME.message);
+    clear inst;
+    return;
 end
 
 %% 3. Measure
