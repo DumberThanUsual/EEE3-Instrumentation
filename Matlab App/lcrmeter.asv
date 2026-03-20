@@ -1,0 +1,428 @@
+clear all; close all; clc;
+
+SCPI_LOGGING = true;
+
+%% 1. Connect to Instrument
+try
+    ports = serialportlist("available");
+    
+    if isempty(ports)
+        error('No COM ports found');
+    end
+
+    fprintf('\nAvailable COM Ports:\n');
+    fprintf('--------------------\n');
+    for i = 1:length(ports)
+        fprintf('%d. %s\n', i, ports(i));
+    end
+    fprintf('--------------------\n');
+
+    prompt = sprintf('\nSelect COM port (1-%d): ', length(ports));
+    selection = str2double(input(prompt, 's'));
+    
+    if isnan(selection) || selection < 1 || selection > length(ports)
+        error('Invalid selection');
+    end
+
+    selectedPort = ports(selection);
+    fprintf('\nSelected: %s\n', selectedPort);
+
+    inst = serialport(selectedPort, 115200, 'Timeout', 3);
+    configureTerminator(inst, "LF");
+    flush(inst);
+    
+    if SCPI_LOGGING; fprintf('\n[SCPI TX] *IDN?\n'); end
+    writeline(inst, '*IDN?');
+    pause(0.1);
+    
+    if inst.NumBytesAvailable == 0
+        error('No response from instrument');
+    end
+    
+    idn = readline(inst);
+    if SCPI_LOGGING; fprintf('[SCPI RX] %s\n', idn); end
+    fprintf('Connected: %s\n', idn);
+    
+catch ME
+    fprintf('Connection failed: %s\n', ME.message);
+    return;
+end
+
+%% 2. Select Mode and Configure
+try
+    mode = str2double(input('Mode? (0=Single Frequency, 1=Sweep): ', 's'));
+    
+    while isnan(mode) || (mode ~= 0 && mode ~= 1)
+        fprintf('Invalid input. Please enter 0 or 1.\n');
+        mode = str2double(input('Mode? (0=Single Frequency, 1=Sweep): ', 's'));
+    end
+
+    if mode == 0
+        freqPrompt = 'Frequency (Hz)? ';
+        freq = str2double(input(freqPrompt, 's'));
+        
+        while isnan(freq) || freq <= 0
+            fprintf('Invalid frequency. Please enter a positive number.\n');
+            freq = str2double(input(freqPrompt, 's'));
+        end
+        
+        points = 1;
+        startFreq = freq;
+        stopFreq = freq;
+        
+    else
+        startPrompt = 'Start Frequency (Hz)? ';
+        startFreq = str2double(input(startPrompt, 's'));
+        
+        while isnan(startFreq) || startFreq <= 0
+            fprintf('Invalid frequency. Please enter a positive number.\n');
+            startFreq = str2double(input(startPrompt, 's'));
+        end
+        
+        stopPrompt = 'Stop Frequency (Hz)? ';
+        stopFreq = str2double(input(stopPrompt, 's'));
+        
+        while isnan(stopFreq) || stopFreq <= startFreq
+            fprintf('Stop frequency must be greater than start frequency.\n');
+            stopFreq = str2double(input(stopPrompt, 's'));
+        end
+        
+        pointsPrompt = 'Number of Points? ';
+        points = str2double(input(pointsPrompt, 's'));
+        
+        while isnan(points) || points < 1 || points ~= round(points)
+            fprintf('Invalid points. Please enter a positive integer.\n');
+            points = str2double(input(pointsPrompt, 's'));
+        end
+        
+        fprintf('\nSweep mode: Will measure %d individual frequencies\n', points);
+    end
+    
+catch ME
+    fprintf('Configuration failed: %s\n', ME.message);
+    clear inst;
+    return;
+end
+
+%% 3. Measure
+try
+    if mode == 0
+        disp('Measuring single frequency...');
+        flush(inst);
+        
+        cmd = sprintf('FREQ %f', freq);
+        if SCPI_LOGGING; fprintf('\n[SCPI TX] %s\n', cmd); end
+        writeline(inst, cmd);
+        pause(0.05);
+        
+        if SCPI_LOGGING; fprintf('[SCPI TX] INIT:IMM\n'); end
+        writeline(inst, 'INIT:IMM');
+        pause(0.1);
+        
+        timeout = 10;
+        tic;
+        while toc < timeout
+            if SCPI_LOGGING; fprintf('[SCPI TX] *OPC?\n'); end
+            writeline(inst, '*OPC?');
+            pause(0.05);
+            
+            if inst.NumBytesAvailable > 0
+                resp = readline(inst);
+                if SCPI_LOGGING; fprintf('[SCPI RX] %s\n', strtrim(resp)); end
+                if str2double(resp) == 1
+                    break;
+                end
+            end
+            pause(0.1);
+        end
+        
+        if toc >= timeout
+            error('Measurement timeout');
+        end
+        
+        if SCPI_LOGGING; fprintf('\n[SCPI TX] FETC:ARR?\n'); end
+        writeline(inst, 'FETC:ARR?');
+        pause(0.2);
+        
+        dataStr = '';
+        readTimeout = 5;
+        tic;
+        while toc < readTimeout
+            if inst.NumBytesAvailable > 0
+                dataStr = readline(inst);
+                break;
+            end
+            pause(0.05);
+        end
+        
+        if isempty(dataStr)
+            error('No data received');
+        end
+        
+        if SCPI_LOGGING
+            if length(dataStr) > 100
+                fprintf('[SCPI RX] %s... (truncated, %d bytes total)\n', dataStr(1:100), length(dataStr));
+            else
+                fprintf('[SCPI RX] %s\n', dataStr);
+            end
+        end
+        
+    else
+        fprintf('\n=== Starting Sweep Measurement ===\n');
+        fprintf('Measuring %d points from %.2f Hz to %.2f Hz\n', points, startFreq, stopFreq);
+        
+        freqList = linspace(startFreq, stopFreq, points);
+        mag = zeros(points, 1);
+        phase = zeros(points, 1);
+        
+        fprintf('\nProgress: [');
+        progressWidth = 50;
+        
+        for i = 1:points
+            currentFreq = freqList(i);
+            
+            if mod(i, max(1, round(points/50))) == 0 || i == points
+                progress = round(i/points * progressWidth);
+                fprintf(repmat('=', 1, progress - sum(ismember(progressBar, '='))) + ...
+                       repmat('>', 1, (i == points)) + ...
+                       repmat(' ', 1, progressWidth - progress));
+                fprintf('] %d/%d (%.1f%%)\n', i, points, i/points*100);
+                if i < points
+                    fprintf('Progress: [');
+                end
+            end
+            
+            cmd = sprintf('FREQ %f', currentFreq);
+            if SCPI_LOGGING; fprintf('\n[SCPI TX] %s\n', cmd); end
+            writeline(inst, cmd);
+            pause(0.02);
+            
+            if SCPI_LOGGING; fprintf('[SCPI TX] INIT:IMM\n'); end
+            writeline(inst, 'INIT:IMM');
+            pause(0.05);
+            
+            timeout = 5;
+            tic;
+            measurementReady = false;
+            while toc < timeout
+                if SCPI_LOGGING; fprintf('[SCPI TX] *OPC?\n'); end
+                writeline(inst, '*OPC?');
+                pause(0.05);
+                
+                if inst.NumBytesAvailable > 0
+                    resp = readline(inst);
+                    if SCPI_LOGGING; fprintf('[SCPI RX] %s\n', strtrim(resp)); end
+                    if str2double(resp) == 1
+                        measurementReady = true;
+                        break;
+                    end
+                end
+                pause(0.05);
+            end
+            
+            if ~measurementReady
+                fprintf('\nWarning: Timeout at frequency %.2f Hz\n', currentFreq);
+                mag(i) = NaN;
+                phase(i) = NaN;
+                continue;
+            end
+            
+            if SCPI_LOGGING; fprintf('[SCPI TX] FETC:ARR?\n'); end
+            writeline(inst, 'FETC:ARR?');
+            pause(0.1);
+            
+            dataStr = '';
+            readTimeout = 3;
+            tic;
+            while toc < readTimeout
+                if inst.NumBytesAvailable > 0
+                    dataStr = readline(inst);
+                    break;
+                end
+                pause(0.05);
+            end
+            
+            if isempty(dataStr)
+                fprintf('\nWarning: No data at frequency %.2f Hz\n', currentFreq);
+                mag(i) = NaN;
+                phase(i) = NaN;
+                continue;
+            end
+            
+            dataStr = strtrim(char(dataStr));
+            
+            if startsWith(dataStr, '#')
+                headerDigits = str2double(dataStr(2));
+                dataStart = 3 + headerDigits;
+                dataStr = dataStr(dataStart:end);
+            end
+            
+            parts = split(dataStr, ',');
+            values = str2double(parts);
+            values = values(~isnan(values));
+            
+            if isempty(values)
+                fprintf('\nWarning: Invalid data at frequency %.2f Hz\n', currentFreq);
+                mag(i) = NaN;
+                phase(i) = NaN;
+                continue;
+            end
+            
+            if length(values) >= 2
+                mag(i) = values(1);
+                phase(i) = values(2);
+            else
+                mag(i) = values(1);
+                phase(i) = 0;
+            end
+            
+            if SCPI_LOGGING
+                fprintf('[RESULT] Freq=%.2f Hz, Mag=%.4f, Phase=%.2f deg\n', ...
+                    currentFreq, mag(i), phase(i));
+            end
+            
+            pause(0.05);
+        end
+        
+        fprintf('\n=== Sweep Measurement Complete ===\n');
+        fprintf('Successfully measured %d of %d points\n', sum(~isnan(mag)), points);
+        
+        freq = freqList;
+    end
+    
+catch ME
+    fprintf('Measure failed: %s\n', ME.message);
+    clear inst;
+    return;
+end
+
+%% 4. Parse Data
+if mode == 0
+    try
+        dataStr = strtrim(char(dataStr));
+        
+        if startsWith(dataStr, '#')
+            if SCPI_LOGGING; fprintf('[PARSE] Detected binary block format\n'); end
+            headerDigits = str2double(dataStr(2));
+            dataStart = 3 + headerDigits;
+            dataStr = dataStr(dataStart:end);
+            if SCPI_LOGGING; fprintf('[PARSE] Binary data size: %d bytes\n', length(dataStr)); end
+        end
+        
+        parts = split(dataStr, ',');
+        values = str2double(parts);
+        values = values(~isnan(values));
+        
+        if isempty(values)
+            error('No valid numbers');
+        end
+        
+        if SCPI_LOGGING; fprintf('[PARSE] Found %d valid data points\n', length(values)); end
+        
+        if length(values) == points * 3
+            if SCPI_LOGGING; fprintf('[PARSE] Interleaved format (freq,mag,phase)\n'); end
+            matrix = reshape(values, 3, [])';
+            freq = matrix(:,1);
+            mag = matrix(:,2);
+            phase = matrix(:,3);
+        elseif length(values) >= points
+            if SCPI_LOGGING; fprintf('[PARSE] Magnitude-only format\n'); end
+            if mode == 0
+                freq = ones(points,1) * startFreq;
+            else
+                freq = linspace(startFreq, stopFreq, points)';
+            end
+            mag = values(1:points);
+            phase = zeros(points,1);
+        else
+            if SCPI_LOGGING; fprintf('[PARSE] Unknown format, using indices\n'); end
+            freq = (1:length(values))';
+            mag = values;
+            phase = zeros(size(freq));
+        end
+        
+        if SCPI_LOGGING
+            fprintf('[PARSE] Frequency range: %.2f - %.2f Hz\n', min(freq), max(freq));
+            fprintf('[PARSE] Magnitude range: %.2f - %.2f\n', min(mag), max(mag));
+        end
+        
+    catch ME
+        fprintf('Parse failed: %s\n', ME.message);
+        clear inst;
+        return;
+    end
+end
+
+%% 5. Save to CSV
+try
+    filename = sprintf('measurement_%s.csv', datestr(now, 'yyyy-mm-dd_HH-MM-SS'));
+    n = min([length(freq), length(mag), length(phase)]);
+    
+    newData = table(freq(1:n), mag(1:n), phase(1:n), ...
+        repmat({datestr(now)}, n, 1), ...
+        'VariableNames', {'Frequency_Hz', 'Magnitude', 'Phase_Deg', 'Timestamp'});
+    
+    writetable(newData, filename);
+    fprintf('\nData saved to %s (%d points)\n', filename, n);
+    
+    if SCPI_LOGGING; fprintf('[SAVE] CSV file created successfully\n'); end
+    
+catch ME
+    fprintf('Save failed: %s\n', ME.message);
+end
+
+%% 6. Plot
+try
+    figure('Name', 'Measurement Results', 'NumberTitle', 'off');
+    
+    subplot(2,1,1);
+    if max(abs(mag)) < 100 && any(mag > 0)
+        semilogx(freq, 20*log10(abs(mag)+1e-6), 'b-', 'LineWidth', 1.5);
+        ylabel('Magnitude (dB)');
+    else
+        if mode == 0
+            plot(freq, mag, 'bo', 'MarkerSize', 8, 'LineWidth', 1.5);
+        else
+            semilogx(freq, mag, 'b-', 'LineWidth', 1.5);
+        end
+        ylabel('Magnitude');
+    end
+    grid on;
+    title(sprintf('Mode %d: %s', mode, filename));
+    if mode == 0
+        xlabel(sprintf('Frequency = %.3f Hz', freq(1)));
+    end
+    
+    if any(phase ~= 0)
+        subplot(2,1,2);
+        if mode == 0
+            plot(freq, phase, 'ro', 'MarkerSize', 8, 'LineWidth', 1.5);
+        else
+            semilogx(freq, phase, 'r-', 'LineWidth', 1.5);
+        end
+        grid on;
+        xlabel('Frequency (Hz)');
+        ylabel('Phase (degrees)');
+    end
+    
+    if SCPI_LOGGING; fprintf('[PLOT] Figure created successfully\n'); end
+    
+catch ME
+    fprintf('Plot failed: %s\n', ME.message);
+end
+
+%% 7. Clean Up
+try
+    if SCPI_LOGGING; fprintf('\n[SCPI TX] SYST:LOC\n'); end
+    writeline(inst, 'SYST:LOC');
+catch
+end
+
+clear inst;
+fprintf('\nDone - Data saved to %s\n', filename);
+
+if SCPI_LOGGING
+    fprintf('\n=== SCPI Logging Summary ===\n');
+    fprintf('All SCPI commands and responses have been displayed\n');
+    fprintf('Set SCPI_LOGGING = false at top of script to disable\n');
+end
