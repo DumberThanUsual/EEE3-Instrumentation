@@ -3503,6 +3503,17 @@
 		)
 		(uuid "fb9b5de6-5cf5-4756-b2d5-bc91121e9d72")
 	)
+	(hierarchical_label "In-"
+		(shape input)
+		(at 25.4 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "09089f82-a8db-46aa-82d9-7cb6a7191539")
+	)
 	(hierarchical_label "{slash}4"
 		(shape input)
 		(at 87.63 44.45 180)
@@ -3514,17 +3525,6 @@
 		)
 		(uuid "20a7194b-fc53-4c34-933a-7913c3c6269d")
 	)
-	(hierarchical_label "In-"
-		(shape input)
-		(at 25.4 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "391233ea-9ecf-42ad-b4a8-aa95f8c75b07")
-	)
 	(hierarchical_label "x1"
 		(shape input)
 		(at 113.03 25.4 180)
@@ -3535,6 +3535,17 @@
 			(justify right)
 		)
 		(uuid "4aff5154-d68d-49ef-92ab-c18f7cbb4bcc")
+	)
+	(hierarchical_label "In+"
+		(shape input)
+		(at 25.4 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1c7f1c0-ed16-455e-b715-50f1c27c64d6")
 	)
 	(hierarchical_label "x3"
 		(shape input)
@@ -3568,17 +3579,6 @@
 			(justify right)
 		)
 		(uuid "c20c18dd-910b-4ddc-bde9-2fb7ec5496f4")
-	)
-	(hierarchical_label "In+"
-		(shape input)
-		(at 25.4 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c6d36bb6-ac07-4dd4-b8f4-a3602c8fd6d5")
 	)
 	(symbol
 		(lib_id "Device:C")

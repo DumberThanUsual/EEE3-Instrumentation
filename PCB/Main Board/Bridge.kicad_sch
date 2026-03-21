@@ -5771,7 +5771,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 68.58) (xy 196.85 68.58)
+			(xy 191.77 68.58) (xy 196.85 68.58)
 		)
 		(stroke
 			(width 0)
@@ -6083,7 +6083,7 @@
 	)
 	(hierarchical_label "In"
 		(shape input)
-		(at 182.88 68.58 180)
+		(at 191.77 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8783,10 +8783,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "730fba0a-6ca7-4a35-a8e8-bb25d951b180")
 		(property "Reference" "D4"
-			(at 186.69 95.25 0)
+			(at 185.42 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8794,7 +8793,7 @@
 			)
 		)
 		(property "Value" "BAV199"
-			(at 184.15 95.25 0)
+			(at 185.42 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
