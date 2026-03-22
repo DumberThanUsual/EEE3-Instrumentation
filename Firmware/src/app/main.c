@@ -15,96 +15,20 @@
 #include "semphr.h"
 
 #include "measure.h"
+#include "signal.h"
 #include "goertzel.h"
+#include "interface.h"
+#include "process.h"
 
 void SystemClock_Config(void);
 
-uint32_t sample_buffer[4096];
-
-#define SAMPLE_RATE_HZ  2300000
-#define TARGET_TONE_HZ  10000.0f
-
-// Wrap phase to [-pi, pi]
-static inline float wrap_pi(float x)
-{
-    while (x > (float)M_PI)  x -= 2.0f * (float)M_PI;
-    while (x < -(float)M_PI) x += 2.0f * (float)M_PI;
-    return x;
-}
-
 void measure_test(void *pvParameters) 
 {
-    uint32_t f = 100;
-    SemaphoreHandle_t measurement_complete = xSemaphoreCreateBinary();
     while (1) {
-        measurement_request_t req = {
-            .frequency = f,
-            .amplitude = 1500,
-            .range = M_RANGE_,
-            .offset = 0,
-            .offset_type = M_OFFSET_VOLTAGE,
-            .result_buffer = sample_buffer,
-            .result_length = 4096,
-            .complete = measurement_complete
-        };
-        xQueueSendToBack(measurement_queue, &req, portMAX_DELAY);
-        xSemaphoreTake(measurement_complete, portMAX_DELAY);
+        xTaskNotifyGive(measure_task_handle);
+        xSemaphoreTake(complete, portMAX_DELAY);
 
-        volatile float magnitude1;
-        volatile float magnitude2;
-        volatile float phase1;
-        volatile float phase2;
-
-        //Goertzel Algorithm
-        volatile float w = 2 * PI * (float)req.frequency * (15.0f / 35000000.0f);
-        float c_r = arm_cos_f32(w);
-        float c_i = arm_sin_f32(w);
-        float s_prev_1 = 0;
-        float s_prev_2 = 0;
-        float s;
-
-        float X_r;
-        float X_i;
-
-        for (uint16_t i = 0; i < req.result_length; i ++) {
-            uint16_t sample = (uint16_t)(req.result_buffer[i] >> 16);
-            s = (float)sample + (2 * c_r * s_prev_1) - s_prev_2;
-            s_prev_2 = s_prev_1;
-            s_prev_1 = s; 
-        }
-
-        X_r = (s_prev_1 * c_r) - s_prev_2;
-        X_i = s_prev_1 * c_i;
-
-        magnitude1 = sqrtf(X_r*X_r + X_i*X_i) / req.result_length;
-        phase1 = wrap_pi(atan2f(X_i, X_r));
-
-        //Goertzel Algorithm
-        s_prev_1 = 0;
-        s_prev_2 = 0;
-        s = 0;
-
-        for (uint16_t i = 0; i < req.result_length; i ++) {
-            uint16_t sample = (uint16_t)(req.result_buffer[i]);
-            s = (float)sample + (2 * c_r * s_prev_1) - s_prev_2;
-            s_prev_2 = s_prev_1;
-            s_prev_1 = s; 
-        }
-
-        X_r = (s_prev_1 * c_r) - s_prev_2;
-        X_i = s_prev_1 * c_i;
-
-        magnitude2 = sqrtf(X_r*X_r + X_i*X_i) / req.result_length;
-        phase2 = wrap_pi(atan2f(X_i, X_r));
-
-        uint8_t msg[128];
-        int len = snprintf((char*)msg, sizeof(msg), "Frequency %lu, Delta Phase: %f, Magnitude Ratio %f\r\n", f, (phase2 - phase1) * (180.0f / (float)M_PI), magnitude1 / magnitude2);
-        HAL_UART_Transmit(&huart2, msg, len, HAL_MAX_DELAY);
-        vTaskDelay(pdMS_TO_TICKS(250));
-
-        f *= 1.04712854805; // Multiply by 10^(1/10) to increase frequency by 1 semitone
-        if (f > 250000)
-            f = 100;
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
 
@@ -121,23 +45,37 @@ int main(void)
     MX_DMA_Init();
     MX_ADC1_Init();
     MX_ADC2_Init();
-    //MX_ADC3_Init();
     MX_DAC_Init();
-    //MX_USB_OTG_HS_PCD_Init();
     MX_TIM2_Init();
-    MX_USART2_UART_Init();
+    MX_ADC3_Init();
+    MX_USART1_UART_Init();
+    MX_TIM3_Init();
+
+    //Only use if 100 ohm OZ is unpopulates
+    HAL_GPIO_WritePin(SOURCE_SEL_GPIO_Port, SOURCE_SEL_Pin, GPIO_PIN_SET);
+    
+    //HAL_GPIO_WritePin(ABB_DC_ISO_GPIO_Port, ABB_DC_ISO_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(IAMP_ACEN_GPIO_Port, IAMP_ACEN_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(IAMP_AC100_GPIO_Port, IAMP_AC100_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(IAMP_AC1K_GPIO_Port, IAMP_AC1K_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(IAMP_AC10K_GPIO_Port, IAMP_AC10K_Pin, GPIO_PIN_SET);
+
+    buffered_new_setup.source_frequency = 10000;
+    buffered_new_setup.source_amplitude = 1000;
+    buffered_new_setup.auto_current_gain = 1;
+    buffered_new_setup.auto_voltage_gain = 1;
+    buffered_new_setup.mutex = xSemaphoreCreateMutex();
+
+    setup.mutex = xSemaphoreCreateMutex();
 
     measure_init();
     signal_init();
+    //interface_init();
 
-    xTaskCreate(
-        measure_test,
-        "measure_test",
-        1024,
-        NULL,
-        1,
-        NULL
-    );
+    xTaskCreate(measure_test,"measure_test",1024,NULL,1,NULL);
+
+    HAL_DAC_Start(&hdac, DAC_CHANNEL_2);
+    HAL_DAC_SetValue(&hdac, DAC_CHANNEL_2, DAC_ALIGN_12B_R, DAC_MID);
 
     vTaskStartScheduler();
 

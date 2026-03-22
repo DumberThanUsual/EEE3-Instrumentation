@@ -1,63 +1,67 @@
 #include <math.h>
 #include <stdint.h>
 #include <stddef.h>
+#define __FPU_PRESENT 1U
+#include "arm_math.h"
 
 #include "goertzel.h"
+#include "stm32f4xx.h"
 
-static inline float hann_w(size_t n, size_t N)
+#include "main.h"
+#include "measure.h"
+
+struct GoertzelResult {
+    float real;       // Real part of complex bin
+    float imag;       // Imag part of complex bin
+    float magnitude;  // sqrt(real^2 + imag^2)
+    float phase;      // atan2(imag, real) in radians
+};
+
+// Compute a single-frequency complex response using Goertzel on a uint16_t buffer.
+// - buf: input samples (e.g., raw ADC codes)
+// - N: number of samples
+// - fs: sampling rate in Hz
+// - f0: target frequency in Hz (0 < f0 < fs/2 recommended)
+// - removeDC: subtract mean before processing (recommended for ADC codes)
+// - useHann: apply Hann window to reduce leakage
+// - amplitudeScale: if true, apply amplitude scaling (2/(N*CG)) where CG is window coherent gain
+// Returns true on success; fills 'out' with real/imag/mag/phase.
+goertzel_out_t goertzel_u16(
+    const uint16_t* buf,
+    size_t N,
+    float fs,
+    float f0
+)
 {
-#if GOERTZEL_USE_HANN
-    if (N <= 1) return 1.0f;
-    return 0.5f * (1.0f - cosf(2.0f * (float)M_PI * (float)n / (float)(N - 1)));
-#else
-    (void)n; (void)N;
-    return 1.0f;
-#endif
-}
+    goertzel_out_t out = {0};
+    if (!buf || N < 3 || fs <= 0.0f || f0 <= 0.0f || f0 >= (fs * 0.5f)) return out;
 
-// Compute magnitude and phase for a single tone using Goertzel.
-// x: int16 samples, N: length, fs: sampling rate [Hz], f0: target tone [Hz]
-// Returns mag (linear) and phase (radians) via out params.
-// Notes:
-//  - Removes DC (mean) first for stability.
-//  - Use float for speed, double for more precision if needed.
-void goertzel_phase_i16(const int16_t *x, size_t N, float fs, float f0, float *mag, float *phase_rad)
-{
-    if (!x || N < 2 || fs <= 0.0f || f0 <= 0.0f) {
-        if (mag) *mag = 0.0f;
-        if (phase_rad) *phase_rad = 0.0f;
-        return;
-    }
+    // Optional DC removal improves low-f results
+    float mean = 0.0f;
+    for (size_t i = 0; i < N; ++i) mean += buf[i];
+    mean /= (float)N;
 
-    volatile const float omega = 2.0f * (float)M_PI * (f0 / fs);
-    const float cos_omega = cosf(omega);
-    const float sin_omega = sinf(omega);
-    const float coeff = 2.0f * cos_omega;
+    float omega = 2.0f * PI * (f0 / fs);
+    float c = arm_cos_f32(omega);
+    float s = arm_sin_f32(omega);
+    float coeff = 2.0f * c;
 
-    // 1) DC removal
-    double mean = 0.0;
-    for (size_t i = 0; i < N; ++i) {
-        mean += x[i];
-    }
-    mean /= (double)N;
-
-    // 2) Goertzel recursion
     float s0 = 0.0f, s1 = 0.0f, s2 = 0.0f;
     for (size_t n = 0; n < N; ++n) {
-        float xn = (float)((double)x[n] - mean);
-        xn *= hann_w(n, N);
-        s0 = xn + coeff * s1 - s2;
+        float x = (float)buf[n] - mean;
+        s0 = x + coeff * s1 - s2;
         s2 = s1;
         s1 = s0;
     }
 
-    // 3) Final real/imag and outputs
-    float real = s1 - s2 * cos_omega;
-    float imag = s2 * sin_omega;
-    float m = sqrtf(real * real + imag * imag);
-    float ph = atan2f(imag, real);  // [-pi, pi]
+    float real = s1 - s2 * c;
+    float imag = s2 * s;
 
-    if (mag) *mag = m;
-    if (phase_rad) *phase_rad = ph;
+    // Single-sided amplitude scaling
+    real *= 2.0f / (float)N;
+    imag *= 2.0f / (float)N;
+
+    out.magnitude = sqrtf(real * real + imag * imag);
+    out.phase = atan2f(imag, real);
+    return out;
 }
-
