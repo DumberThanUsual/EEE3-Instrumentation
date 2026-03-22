@@ -676,16 +676,6 @@
 		)
 		(uuid "eb67f527-84a4-4589-bb7f-aa1d2bb0fe1e")
 	)
-	(text "https://www.aliexpress.com/item/1005005482292733.html"
-		(exclude_from_sim no)
-		(at 195.58 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f01bd8bb-396c-4fb2-8299-d9be18dc5b52")
-	)
 	(text "HPOT"
 		(exclude_from_sim no)
 		(at 186.69 74.93 0)
