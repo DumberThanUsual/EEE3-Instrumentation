@@ -1,14 +1,21 @@
+#ifndef GOERTZEL_H
+#define GOERTZEL_H
+
 #include <math.h>
 #include <stdint.h>
 #include <stddef.h>
+#include "stm32f4xx.h"
 
-#ifndef M_PI
-#define M_PI 3.14159265358979323846
-#endif
+typedef struct {
+    float magnitude; // peak amplitude in ADC counts (centered)
+    float phase;       // radians in [-pi, pi]
+} goertzel_out_t;
 
-void goertzel_phase_i16(const int16_t *x, size_t N, float fs, float f0, float *mag, float *phase_rad);
+goertzel_out_t goertzel_u16(
+    const uint16_t* buf,
+    size_t N,
+    float fs,
+    float f0
+);
 
-// Optional: enable a Hann window to reduce leakage if f0 is not bin-centered
-#ifndef GOERTZEL_USE_HANN
-#define GOERTZEL_USE_HANN 1
 #endif
