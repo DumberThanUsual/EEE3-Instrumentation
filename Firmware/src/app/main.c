@@ -28,7 +28,7 @@ void measure_test(void *pvParameters)
         xTaskNotifyGive(measure_task_handle);
         xSemaphoreTake(complete, portMAX_DELAY);
 
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(pdMS_TO_TICKS(500));
     }
 }
 
@@ -62,8 +62,10 @@ int main(void)
 
     buffered_new_setup.source_frequency = 10000;
     buffered_new_setup.source_amplitude = 1000;
-    buffered_new_setup.auto_current_gain = 1;
-    buffered_new_setup.auto_voltage_gain = 1;
+    buffered_new_setup.auto_current_gain = 0;
+    buffered_new_setup.auto_voltage_gain = 0;
+    buffered_new_setup.current_gain = MI_100Z;
+    buffered_new_setup.voltage_gain = MV_x1;
     buffered_new_setup.mutex = xSemaphoreCreateMutex();
 
     setup.mutex = xSemaphoreCreateMutex();
