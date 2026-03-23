@@ -2752,10 +2752,6 @@
 		(uuid "febf1ec8-e38e-48d6-b5b1-80cf86e2d683")
 	)
 	(no_connect
-		(at 38.1 58.42)
-		(uuid "866c4f58-a957-4bd7-989d-b57cee94ff65")
-	)
-	(no_connect
 		(at 25.4 48.26)
 		(uuid "d0bf6180-8293-453e-bcfc-42719d017631")
 	)
@@ -4113,6 +4109,71 @@
 		)
 	)
 	(symbol
+		(lib_id "More_power:+1.65VA")
+		(at 38.1 58.42 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "210e793d-2fc1-4a81-bd15-52b0edbf470f")
+		(property "Reference" "#PWR06"
+			(at 38.1 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1.65VA"
+			(at 38.1 65.532 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1.65VA\""
+			(at 38.1 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5f93aef-d6bf-46f6-91fe-282123645ef3")
+		)
+		(instances
+			(project "Main Board"
+				(path "/20aae4b7-3fb8-4924-82e8-1e7a29a313f8/2e1ccfa8-8bce-4bb4-9d3d-716156df4d18"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 203.2 57.15 0)
 		(unit 1)
@@ -4725,7 +4786,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5e475739-f240-4b44-95be-c5bf826063ac")
 		(property "Reference" "#PWR0127"
 			(at 33.02 54.61 0)
@@ -4737,7 +4797,7 @@
 			)
 		)
 		(property "Value" "-18V"
-			(at 33.02 63.5 0)
+			(at 33.02 64.008 90)
 			(effects
 				(font
 					(size 1.27 1.27)

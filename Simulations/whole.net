@@ -1,0 +1,47 @@
+*
+V1 +18V 0 18
+V2 0 -18V 18
+V3 3.3V 0 3.3
+X§U2 N001 1.65V +18V -18V 1.65V OPAx197 ;§pnba IN+)IN-)VCC)VEE)OUT
+R1 3.3V N001 10k
+R2 N001 0 10k
+X§U13 0 LCURR +18V -18V N007 OPAx197 ;§pnba IN+)IN-)VCC)VEE)OUT
+X§U14 N006 N007 BAV99 ;§pnba 1)2
+X§U15 N007 N008 BAV99 ;§pnba 1)2
+Q3 +18V N006 N003 0 NPN
+Q4 N003 N008 -18V 0 PNP
+R26 +18V N006 2k
+R27 N008 -18V 2k
+R28 LCURR N003 1Meg
+R29 LCURR N005 100k
+R30 LCURR N004 10k
+R31 LCURR N003 1k
+R32 LCURR N002 100
+R34 N009 0 2700k
+R35 N009 NC_01 300k
+R36 N009 NC_02 27k
+R37 N009 NC_03 2.7k
+X§U17 0 N009 +18V -18V N010 OPAx197 ;§pnba IN+)IN-)VCC)VEE)OUT
+C7 N010 N009 5.6n
+X§U20 0 N011 +18V -18V N013 OPAx197 ;§pnba IN+)IN-)VCC)VEE)OUT
+X§U21 N012 N013 BAV99 ;§pnba 1)2
+X§U22 N013 N014 BAV99 ;§pnba 1)2
+Q5 +18V N012 LCURR 0 NPN
+Q6 LCURR N014 -18V 0 PNP
+R46 +18V N012 2k
+R47 N014 -18V 2k
+R48 N011 N010 10k
+R49 LCURR N011 10k
+I1 0 LCURR AC 1m
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\yuki\AppData\Local\LTspice\lib\cmp\standard.bjt
+* .tran 1m
+* .dc V4 0 3.3 0.01
+.ac dec 10 1 10000k
+* Library below included based on ModelFile attribute of instance X§U14, X§U15, X§U21, X§U22 (C:\users\yuki\AppData\Local\LTspice\lib\sym\Contrib\Toshiba\diode\BAV99.asy)
+.lib Contrib/Toshiba/DIODE/BAV99_enc.lib
+* Library below included based on ModelFile attribute of instance X§U2, X§U13, X§U17, X§U20 (C:\users\yuki\Documents\LTspice\lib\sym\OPAx197.asy)
+.lib OPAx197.LIB
+.backanno
+.end
