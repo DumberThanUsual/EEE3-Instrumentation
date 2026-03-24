@@ -1,18 +1,6 @@
-LTspice 26.0.1 for Windows
-Circuit: Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\Vamp.net
-Start Time: Mon Mar 23 22:32:37 2026
-solver = Normal
-Maximum thread count: 16
-tnom = 27
-temp = 27
-method = trap
-Compress1stOrder = true
-Compress2ndOrder = true
-Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.940 seconds.
-
-Files loaded:
-Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\Vamp.net
-Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\INA828.LIB
-Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\OPAx197.LIB
-
+Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\Vamp.net(38): File not found.
+.lib INA828.LIB
+     ^^^^^^^^^^
+Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\Vamp.net(40): File not found.
+.lib OPAx197.LIB
+     ^^^^^^^^^^^

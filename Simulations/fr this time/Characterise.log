@@ -1,0 +1,19 @@
+LTspice 26.0.1 for Windows
+Circuit: Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\fr this time\Characterise.net
+Start Time: Tue Mar 24 20:58:15 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 2.597 seconds.
+
+Files loaded:
+Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\fr this time\Characterise.net
+C:\users\yuki\AppData\Local\LTspice\lib\cmp\standard.bjt
+Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\fr this time\INA828.LIB
+Z:\home\yuki\Documents\Projects\EEE3-Instrumentation\Simulations\fr this time\OPAx197.LIB
+
