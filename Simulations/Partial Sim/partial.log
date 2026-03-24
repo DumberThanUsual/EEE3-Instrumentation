@@ -1,0 +1,139 @@
+Circuit: * E:\Git\Group Project\EEE3-Instrumentation\Simulations\Partial Sim\partial.asc
+
+WARNING: Less than two connections to node 3.3V.  This node is used by V3.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 1.00965
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.378788%
+Source Step = 0.852273%
+Source Step = 1.32576%
+Source Step = 1.79924%
+Source Step = 2.27273%
+vernier = 0.0234375
+Source Step = 2.91193%
+Source Step = 3.62216%
+Source Step = 4.33239%
+Source Step = 5.04261%
+Source Step = 5.75284%
+vernier = 0.0351563
+Source Step = 6.67614%
+Source Step = 7.74148%
+Source Step = 8.80682%
+Source Step = 9.87216%
+Source Step = 10.9375%
+vernier = 0.0527344
+Source Step = 12.2692%
+Source Step = 13.8672%
+Source Step = 15.4652%
+vernier = 0.0131836
+Source Step = 15.3953%
+Source Step = 15.4952%
+Source Step = 15.595%
+Source Step = 15.6949%
+Source Step = 15.7948%
+vernier = 0.00494385
+Source Step = 15.9196%
+Source Step = 16.0694%
+Source Step = 16.2193%
+Source Step = 16.3091%
+Source Step = 16.3466%
+Source Step = 16.3841%
+Source Step = 16.4215%
+Source Step = 16.459%
+vernier = 0.00185394
+Source Step = 16.502%
+Source Step = 16.5582%
+Source Step = 16.6144%
+Source Step = 16.6706%
+Source Step = 16.7268%
+vernier = 0.00278091
+Source Step = 16.7886%
+Source Step = 16.8728%
+Source Step = 16.9571%
+Source Step = 17.0414%
+Source Step = 17.1256%
+vernier = 0.00417137
+Source Step = 17.2141%
+Source Step = 17.3405%
+Source Step = 17.4669%
+Source Step = 17.5933%
+Source Step = 17.7197%
+Source Step = 17.8461%
+vernier = 0.00625706
+Source Step = 18.0357%
+Source Step = 18.2254%
+Source Step = 18.415%
+Source Step = 18.6046%
+Source Step = 18.7942%
+vernier = 0.00938559
+Source Step = 19.0691%
+Source Step = 19.3535%
+Source Step = 19.6379%
+Source Step = 19.9223%
+Source Step = 20.2068%
+vernier = 0.0140784
+Source Step = 20.6049%
+Source Step = 21.0316%
+Source Step = 21.4582%
+Source Step = 21.8848%
+Source Step = 22.3114%
+vernier = 0.0211176
+Source Step = 22.8873%
+Source Step = 23.5273%
+Source Step = 24.1672%
+Source Step = 24.8071%
+Source Step = 25.447%
+vernier = 0.0316764
+Source Step = 26.2789%
+Source Step = 27.2388%
+Source Step = 28.1987%
+Source Step = 29.1586%
+Source Step = 30.1185%
+vernier = 0.0475145
+Source Step = 31.3184%
+Source Step = 32.2003%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping aborted.
+Pseudo Transient succeeded in finding the operating point at 6.8297 s.
+
+Date: Tue Mar 24 14:15:36 2026
+Total elapsed time: 49.138 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 138936
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 3308
+matrix size = 1072
+fillins = 12102
+solver = Normal
+Matrix Compiler1: 2.91 MB object code size  420.6/123.2/[122.2]
+Matrix Compiler2: 297.88 KB object code size  10.0/11.4/[7.7]
+

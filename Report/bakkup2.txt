@@ -1,0 +1,357 @@
+\documentclass[10.5pt]{article}
+\usepackage{enumerate}
+\usepackage[a4paper, total={7.5in, 10in}]{geometry}
+\usepackage{graphicx, caption, subcaption} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs} % For better looking tables
+\usepackage{multirow} 
+\usepackage{amssymb}
+\usepackage{gensymb} 
+\usepackage{bbding}
+\usepackage{textcomp}
+
+\counterwithin{figure}{section}
+\raggedright
+\begin{document}
+
+\section{Performance Overview \quad \quad \quad \quad \quad \quad \quad \small{Yuki Hoshino and Harry Hill - 02504354, 02388827}}
+
+The instrument is capable of measuring DUTs in the following range, achieving at least 1\% magnitude accuracy. 
+
+\begin{table}[H]
+\begin{tabular}{lccc}
+DUT Type    & Min & Max & Unit \\
+Resistance  & 4.7   & 10M  & $\Omega$    \\
+Capacitance & 3p   & 680\textmu   & F    \\
+Inductance  & 100\textmu*   & 10m   & H   
+\end{tabular}
+\end{table}
+
+\small{* The minimum inductance measurement reading was limited by the availability of small test inductors}
+\newline
+
+The smallest current measurements are limited by the noise performance of the ABB, which is poor at high gain. The ABB also suffers from a small amount of leakage current in the summing node (\textless 0.1\textmu A), which introduces a maximum upper bound on the achievable accuracy at small currents (and hence the 1\% accuracy range of the instrument). The voltage amplifiers are much less noisy and perform well when the device is shielded from external EMI; 50Hz mains noise renders the device totally unusable below 1kHz if adequate shielding is not used. The phase measurement is generally very accurate, as the signal path is DC coupled, and was not the limiting factor for any of our measurements. Example waveforms showing the performance of the meter using various DUTs and various current/voltage gain and test spot frequency settings are included at the bottom of this report
+\newline
+
+\begin{minipage}[H]{0.49\textwidth}
+    \centering
+    \raggedright{As can be seen in the example waveforms section, it is clear that the optional low impedance mode with the $10\Omega$ ABB feedback resistor would have increased the meter's range by at least a decade when measuring small magnitudes (i.e. would have been helpful for big capacitances, small resistors etc), as measuring big currents causes saturation in the signal path at the current lowest gain setting ($100\Omega$). This can partially be rectified in software, as the Goertzel filter only detects the fundamental signal source frequency, but with a penalty to accuracy which violates the specification once the signal path begins to clip significantly. The design choice to use relays was critical for the high accuracy at low impedance. 
+    \newline
+    
+    The voltage signal path was good and had more range than was needed (we often did not need to use more than 40dB voltage gain, and the instrument's maximum setting was 60dB), hence increasing the largest ABB resistor would have unlocked at least another decade of measurements when the impedance was very large (i.e. very small currents), since the voltage reading was not yet saturating. If such a large ABB resistor was to be used (10M$\Omega$ or greater), the 100mVpp noise seen on the ABB's highest gain setting would completely overwhelm any signal, hence this noise would need to be removed before the resistor could actually provide any useful gain. There are also clearly spikes of switching noise seen in some of the high gain current measurements, one source of this may be from the microcontoller (which can be rectified with better decoupling or an analogue ground), or from interference (better sheilding). These are not easy fixes, so the upper impedance range will be difficult to improve without a redesign/another layout. 
+    \newline
+    
+    A higher operating test frequency up to (and beyond) 1MHz would have been good for measuring small inductors, which the instrument struggled with in its present configuration, due to the current reading clipping.} 
+\end{minipage}%
+\hfill
+\begin{minipage}[H]{0.48\textwidth}
+    \tiny{Blue - signal source, red - voltage amplifier output, yellow - current amplifier output.}
+    \centering
+    \includegraphics[width=0.98\linewidth]{clipping.png}
+    \tiny{A small impedance being measured in the lowest current gain setting (100$\Omega$). We can clearly see that the signal is clipping, here a smaller ABB feedback resistor would have allowed this measurement to be taken without saturation. An AC current of above $\sim$300mA may cause clipping in the current reading}
+    \includegraphics[width=0.98\linewidth]{noise.png}
+    \tiny{Noise on the maximum current gain setting (1M$\Omega$) in open circuit. This contributes to the maximum upper bound of impedances that can be accurately measured.}
+\end{minipage}
+\newline
+\vspace{2mm}
+
+Overall, the instrument was able to meet and exceed the impedance range specification while achieving acceptable, within specification, magnitude accuracy and excellent phase accuracy. A list of improvements has been mentioned, but easy performance gains can be quickly attained from increasing the operating frequency (principally a software issue), shielding, and a smaller low-range ABB resistor.
+
+\section{List of input and output signals of the instrument}
+
+\begin{minipage}[H]{0.48\textwidth}
+    \centering
+    \begin{itemize}
+    \item HCURR (Output) - Excitation signal output
+    \item HPOT (Input) - Positive input voltage terminal
+    \item LPOT (Input) - Negative input voltage terminal
+    \item LCURR (Input) - Current input terminal
+    \item UARTtx (Output) - UART output to send data to computer
+    \item UARTrx (Input) - UART receive to configure instrument from computer
+    \end{itemize}
+
+    \raggedright{Communication to the device is using a COM port. Optional USB communication is also available instead of UART should an external crystal be provided for the microcontroller.}
+
+\end{minipage}%
+\hfill
+\begin{minipage}[H]{0.45\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{20260324_141817 - Copy.jpg}
+    Test fixture with specified terminals
+\end{minipage}
+
+\section{BOM and all order details}
+
+\vspace{-5mm}
+\begin{table}[H]
+\begin{tabular}{llrrr}
+Part Description                     & Part Name   & \multicolumn{1}{l}{Unit Cost (£)} & \multicolumn{1}{l}{Number of Parts} & \multicolumn{1}{l}{Cost (£)} \\
+Analogue Switch ICs                  & DG201BDY-E3 & 1.28                              & 10                                  & 12.80                        \\
+Precision Operational Amplifiers & OPA2197IDR  & 1.30                              & 12                                  & 15.60                        \\
+Precision Instrumentation Amplifier     & INA828IDR   & 4.16                              & 5                                   & 20.80                        \\
+                                     &             & \multicolumn{1}{l}{}              & Sum =                               & 49.20                       
+\end{tabular}
+\end{table}
+\vspace{-3.5mm}
+
+Other components were gathered from the lab, old PCBs, component books, and from the STM32 Nucleo board. 
+
+\section{Graphs of measurements covering the range achieved}
+
+
+\section{Calibration Scheme and Uncertanties}
+It is possible to offset some of the errors in the test fixture, such as the lead impedance, by measuring the impedance with an open circuit and a short circuit. From the Keysight impedance measurement handbook, 
+
+$$Z_{DUT} = \frac{Z_{XM} - Z{S}}{1 - (X_{XM} - Z_S)Y_O}$$
+
+Where:
+\begin{itemize}
+ \item $Z_{DUT}$ is the corrected impedance,
+ \item $Z_{XM}$ is the apparent impedance measured,
+ \item $Z_S$ is the residual short circuit impedance, and
+ \item $Y_O$ is the stray admittance, measured from the open circuit
+\end{itemize}
+
+The user can trigger a short or open circuit correction by issuing a CORRection:OPEN:ACQuire or CORRection:SHORT:ACQuire SCPI command. This will trigger a measurement and the result will be stored and the correction applied to future measurements. This is the scheme to implement basic short-open calibration; short-load-open, or multiple point calibration, is also available in the microcontroller firmware.
+\newline
+
+There is additional error contributed from the temperature dependence of the resistors in the device. Assuming the resistors in the device have a temperature dependence of 200ppm/$\degree$C, and the device is in the maximum gain setting for current, and in unity gain voltage mode, there is an error of 0.00032\% per \degree C deviated the calibration temperature. This temperature dependence is extremely small and can safely be ignored while the instrument is near the calibration temperature (room temperature in our case). 
+\newline
+
+As discussed in the previous report, there is also an error contributed by the microcontroller's ADC. The magnitude error is approximately 0.1\%, simply derived from the dynamic range of the ADC. Contrary to what was suggested in the previous report, the phase error in an ADC measurement is almost zero, this is due to the fact that the ADC reads are timed synchronously by the microcontroller.
+\newline
+
+Overall, once calibrated, the instrument is accurate enough to deliver the magnitude accuracy specification, and to perform above the phase measurement specification. 
+
+\section{Simulations}
+
+
+This report should be up to FOUR pages plus pictures of the schematic, and the PCB.
+• The ten-page limit includes all other figures and tables.
+• Any appendices submitted will be ignored.
+Feedback on the Final Report will be returned by Monday May 11th.
+
+\newpage
+\section{Specifications}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Updated Block Diagram}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{instrument.drawio (1).png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Accuracy With Impedance Range (at 1kHz)}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{sampleerrorvR.png}
+\end{minipage}
+
+\newpage
+\section{Group Work}
+\subsection{Bringup and Testing}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Initial Bringup}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{IMG-20260313-WA0002.jpg}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Microcontroller Fault-Finding}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{20260320_164459.jpg}
+\end{minipage}
+
+\vspace{2mm}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Final Characterisation}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{20260324_021617.jpg}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Finished Board (with external Nucleo)}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{rn_image_picker_lib_temp_c9e650ea-6d41-4fa2-b6fd-65dc6d0a8875.jpg}
+\end{minipage}
+
+\vspace{-4mm}
+\subsection{Division of Responsibilities}
+\vspace{-4mm}
+\begin{table}[H]
+\begin{tabular}{lcc}
+Responsibility:                   & Yuki & Harry \\
+Schematic                        & \Checkmark    & \Checkmark     \\
+Layout                           & \Checkmark    & \Checkmark     \\
+Firmware                         & \Checkmark    &       \\
+MATLAB                           &      & \Checkmark     \\
+Simulations                      & \Checkmark    & \Checkmark     \\
+Ordering and Component Selection & \Checkmark    & \Checkmark     \\
+Reports                          & \Checkmark    & \Checkmark     \\
+Bringup                          & \Checkmark    &      \\
+Testing                          & \Checkmark    & \Checkmark      
+\end{tabular}
+\end{table}
+
+\newpage
+\section{MATLAB, SCPI Instructions and Embedded Serial Interface }
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Initial Bringup}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{IMG-20260313-WA0002.jpg}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Microcontroller Fault-Finding}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{20260320_164459.jpg}
+\end{minipage}
+
+\newpage
+\section{Example Waveforms}
+\vspace{-2mm}
+The traces represent the following: blue - signal source, red - voltage amplifier output, yellow - current amplifier output. Information regarding the instrument configuration in each measurement will be provided in the format: test frequency, voltage gain, current gain
+\newline
+
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{DUT = Open Circuit}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{SDS824X_HD_PNG_4.png}
+100kHz, 1x, 300$\Omega$
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{DUT = Short Circuit}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{SDS824X_HD_PNG_5.png}
+100kHz, 1x, 300$\Omega$
+\end{minipage}
+
+\vspace{2mm}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{DUT = 200$\Omega$}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{SDS824X_HD_PNG_18.png}
+100kHz, 1x, 300$\Omega$
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{DUT = 1M$\Omega$}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{SDS824X_HD_PNG_20.png}
+100kHz, 1x, 3M$\Omega$
+\end{minipage}
+
+\vspace{2mm}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{DUT = 10pF}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{SDS824X_HD_PNG_22.png}
+100kHz, 1x, 3M$\Omega$
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{DUT = 2.2\textmu F}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{SDS824X_HD_PNG_24.png}
+500Hz, 1x, 300$\Omega$
+\end{minipage}
+
+\vspace{2mm}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{DUT = 10mH}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{SDS824X_HD_PNG_28.png}
+10kHz, 1x, 300$\Omega$
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\textbf{DUT = 10mH $\vert \vert$ 15nF}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{SDS824X_HD_PNG_30.png}
+10kHz, 1x, 300$\Omega$
+\end{minipage}
+
+\newpage
+\section{Final Schematic and Layout}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Top Level}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{1.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Processor Sheet}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{2.png}
+\end{minipage}
+
+\vspace{5mm}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Signal Source Sheet}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{3.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{ABB Sheet}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{4.png}
+\end{minipage}
+
+\vspace{5mm}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{ABB Resistor Selector Sheet}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{abbresistor.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Voltage Amplifier Sheet}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{5.png}
+\end{minipage}
+
+\vspace{5mm}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Current Amplifier Sheet}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{6.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Power Supply Sheet}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{7.png}
+\end{minipage}
+
+\vspace{5mm}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Top Metal}\\[0.2cm]
+\includegraphics[width=0.8\textwidth]{Fmetal.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Bottom Metal}\\[0.2cm]
+\includegraphics[width=0.8\textwidth]{Bmetal.png}
+\end{minipage}
+
+\vspace{5mm}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Top 3D View}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{pcbfront.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{Blank PCB}\\[0.2cm]
+\includegraphics[width=0.95\textwidth]{blankpcb.jpg}
+\end{minipage}
+
+
+\end{document}
